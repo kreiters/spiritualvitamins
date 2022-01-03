@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiritual Vitamins</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="smallscreen.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">Spiritual Vitamins</div>
+        <div class="dropdown">
+            <button onclick="seriesSelect()" class="dropbtn">Select a Series</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Kindness</a>
+              <a href="#">Love</a>
+              <a href="#">Peace</a>
+            </div>
+        </div>
+        <div class="selection" id="selectedSeries"></div>
+        
+        <div class="vitamin">
+            <div class="day-controls">
+            <button onclick="prev()" class="prevDayBtn" id="prev"></button>
+            <div class="day" id="day-display"></div>
+            <button onclick="next()" class="nextDayBtn" id="next"></button> 
+            </div>
+            <div class="front">
+                <div class="front-content" id="show-selection"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
