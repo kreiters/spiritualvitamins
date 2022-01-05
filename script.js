@@ -330,6 +330,7 @@ viewSelection.addEventListener('click', event => {
 });
 //gets the scripture for the current day
 function updateScripture() {
+ scriptView.innerHTML = "";
   console.log("scripture update function ran");
   scriptureMatrix.forEach(script => {
     //console.log(image)
