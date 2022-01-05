@@ -17,26 +17,26 @@ body,html {
   text-align: center;
   background-image: url("bottle2.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+  background-size: contain;
+  /* overflow: hidden; */
 }
  
  .title {
   font-size: 2.75rem;
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: .25rem;
   /* background-color: thistle; */
   user-select: none;
 }  
  /* Dropdown Button */
  .dropbtn {
-    width: 85vw;
+    width: 200px;
     background-color: rgb(223, 109, 252);
     color: white;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 30px;
+    /* margin-bottom: 16px; */
     padding: 8px;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     border: none;
     cursor: pointer;
     border-radius: 4px;
@@ -62,8 +62,9 @@ body,html {
     display: none;
     position: absolute;
     background-color: rgb(223, 109, 252);
-    font-size: 1.75rem;
-    width: auto;
+    font-size: 1.25rem;
+    max-width: 70%;
+    /* width: auto; */
     /* min-width: 100px; */
     border-radius: 4px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -72,6 +73,7 @@ body,html {
   
   /* Links inside the dropdown */
   .dropdown-content a {
+    
     color: white;
     padding: 12px 16px;
     text-decoration: none;
@@ -97,21 +99,18 @@ body,html {
   }
 
   .dayControls {
-    
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap; */
+    width: 330px;
   }
 
   .day {
-    display: inline-block;
+    display:inline-block;
     left: 0;
     right: 0;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
+    /* margin-bottom: 20px; */
     width: 220px;
     text-align: center;
     font-size: 1.5rem;
@@ -124,6 +123,30 @@ body,html {
     user-select: none;
   }
 
+  .left-arrow {
+    position: absolute;
+    display: inline-block;
+    left: 45px;
+    top: 222px;
+    border-color: transparent rgb(138, 111, 138);
+    border-style: solid;
+    border-width: 25px 25px 25px 0px;
+    height: 0px;
+    width: 0px;
+  }
+
+  .left-arrow:hover {
+    position: absolute;
+    display: inline-block;
+    left: 45px;
+    top: 222px;
+    border-color: transparent rgb(143, 132, 143);
+    border-style: solid;
+    border-width: 25px 25px 25px 0px;
+    height: 0px;
+    width: 0px;
+  }
+
   .prevDayBtn {
     display: inline;
     left: 0;
@@ -134,8 +157,9 @@ body,html {
     text-align: center;
     font-size: 1.25rem;
     color: white;
-    padding-top: .25rem;
+    padding-top: .5rem;
     padding-bottom: .25rem;
+    padding-right: .25rem;
     background-color: rgb(138, 111, 138);
     border-radius: 4px;
     user-select: none;
@@ -154,14 +178,39 @@ body,html {
     text-align: center;
     font-size: 1.25rem;
     color: white;
-    padding-top: .25rem;
+    padding-top: .5rem;
     padding-bottom: .25rem;
+    padding-right: .25rem;
     background-color: rgb(143, 132, 143);
     border-radius: 4px;
     user-select: none;
     border: none;
     cursor: pointer;
     box-shadow: 2px 2px 8px black;
+  }
+
+  .right-arrow {
+    position: absolute;
+    display: inline-block;
+    right: 45px;
+    top: 222px;
+    border-color: transparent rgb(138, 111, 138);
+    border-style: solid;
+    border-width: 25px 0px 25px 25px;
+    height: 0px;
+    width: 0px;
+  }
+
+  .right-arrow:hover {
+    position: absolute;
+    display: inline-block;
+    right: 45px;
+    top: 222px;
+    border-color: transparent rgb(143, 132, 143);
+    border-style: solid;
+    border-width: 25px 0px 25px 25px;
+    height: 0px;
+    width: 0px;
   }
 
   .nextDayBtn {
@@ -174,8 +223,9 @@ body,html {
     text-align: center;
     font-size: 1.25rem;
     color: white;
-    padding-top: .25rem;
+    padding-top: .5rem;
     padding-bottom: .25rem;
+    padding-left: .25rem;
     background-color: rgb(138, 111, 138);
     border-radius: 4px;
     user-select: none;
@@ -194,8 +244,9 @@ body,html {
     text-align: center;
     font-size: 1.25rem;
     color: white;
-    padding-top: .25rem;
+    padding-top: .5rem;
     padding-bottom: .25rem;
+    padding-left: .25rem;
     background-color: rgb(143, 132, 143);
     border-radius: 4px;
     user-select: none;
@@ -216,10 +267,58 @@ body,html {
     right: 0;
     margin: auto;
     text-align: center;
-    width: 100%;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
+    width: 90%;
+    height: 28%;
+    min-height: 135px;
+    /* padding: 5px; */
+    margin-top: 10px;
+    /* margin-bottom: 20vh; */
     font-size: 3rem;
     color: rgb(0, 0, 0);
     user-select: none;
+    border-radius: 20%/50%;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px black;
+  }
+
+  .scripture {
+    display: none;
+  }
+
+  .showScripture{
+    display: block;
+    font-size: 1.05rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    padding: 13px;
+    width: 90%;
+    height: 40%;
+    min-height: 150px;
+    margin-top: 2px;
+    /* margin-bottom: 20vh; */
+    color: rgb(0, 0, 0);
+    background-color: white;
+    user-select: none;
+    border-radius: 50vw/50vw;
+    white-space: pre-wrap; /*this will create a new line after the verse */
+    box-shadow: 2px 2px 8px black;
+  }
+
+  .view {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .instructions {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+
   }
