@@ -2,17 +2,17 @@ let d = new Date();
 let day = d.getDay();
 let prevDay = ((day - 1));
 let nextDay = ((day + 1));
-let imgMatrix = [{Evil: {img: "/scanned vitamins/evil.jpg"}},
- {Forgiveness: {img: "/scanned vitamins/forgiveness.jpg"}},
-  {Happiness: {img: "/scanned vitamins/happiness.jpg"}},
-   {Noah_1: {img: "/scanned vitamins/noah1.jpg"}},
-    {Noah_2: {img: "/scanned vitamins/noah2.jpg"}},
-     {Pray: {img: "/scanned vitamins/pray.jpg"}},
-      {Spirit: {img: "/scanned vitamins/spirit.jpg"}},
-       {Study: {img: "/scanned vitamins/study.jpg"}},
-        {Sword: {img: "/scanned vitamins/sword.jpg"}},
-         {Thankful: {img: "/scanned vitamins/thankful.jpg"}},
-          {Think: {img: "/scanned vitamins/think.jpg"}}];
+let imgMatrix = [{Evil: {img: "evil.jpg"}},
+ {Forgiveness: {img: "forgiveness.jpg"}},
+  {Happiness: {img: "happiness.jpg"}},
+   {Noah_1: {img: "noah1.jpg"}},
+    {Noah_2: {img: "noah2.jpg"}},
+     {Pray: {img: "pray.jpg"}},
+      {Spirit: {img: "spirit.jpg"}},
+       {Study: {img: "study.jpg"}},
+        {Sword: {img: "sword.jpg"}},
+         {Thankful: {img: "thankful.jpg"}},
+          {Think: {img: "think.jpg"}}];
 
 // let scriptMatrix = [{Evil: {img: '\n""'}},
 // {Forgiveness: {img: '\n""'}},
