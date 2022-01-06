@@ -83,7 +83,7 @@ user-select: none;
     padding: 8px;
     font-size: 1.5rem;
     border: none;
-    cursor: pointer;
+    /*cursor: pointer;*/
     border-radius: 4px;
     box-shadow: 4px 2px 12px black;
   }
@@ -336,7 +336,7 @@ user-select: none;
     border-radius: 20%/50%;
     cursor: pointer;
     box-shadow: 2px 2px 8px black;
-    cursor: pointer;
+    /*cursor: pointer;*/
   }
 
   .scripture {
