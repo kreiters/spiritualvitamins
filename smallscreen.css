@@ -375,11 +375,20 @@ user-select: none;
 
   }
 
-  .instructions p {
+  .instructions h2 {
     font-size: 1.25rem;
     font-weight: bold;
     text-align: left;
-    text-indent: 120px;
+    text-indent: 150px;
+    line-height: .25;
+    color: red;
+  }
+
+  .instructions p {
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 85px;
     line-height: .25;
     color: red;
   }
