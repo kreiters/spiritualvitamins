@@ -2,17 +2,17 @@ let d = new Date();
 let day = d.getDay();
 let prevDay = ((day - 1));
 let nextDay = ((day + 1));
-let imgMatrix = [{Evil: {img: "evil.jpg"}},
- {Forgiveness: {img: "forgiveness.jpg"}},
-  {Happiness: {img: "happiness.jpg"}},
-   {Noah_1: {img: "noah1.jpg"}},
-    {Noah_2: {img: "noah2.jpg"}},
-     {Pray: {img: "pray.jpg"}},
-      {Spirit: {img: "spirit.jpg"}},
-       {Study: {img: "study.jpg"}},
-        {Sword: {img: "sword.jpg"}},
-         {Thankful: {img: "thankful.jpg"}},
-          {Think: {img: "think.jpg"}}];
+let imgMatrix = [{Evil: {img: "/scanned vitamins/evil.jpg"}},
+ {Forgiveness: {img: "/scanned vitamins/forgiveness.jpg"}},
+  {Happiness: {img: "/scanned vitamins/happiness.jpg"}},
+   {Noah_1: {img: "/scanned vitamins/noah1.jpg"}},
+    {Noah_2: {img: "/scanned vitamins/noah2.jpg"}},
+     {Pray: {img: "/scanned vitamins/pray.jpg"}},
+      {Spirit: {img: "/scanned vitamins/spirit.jpg"}},
+       {Study: {img: "/scanned vitamins/study.jpg"}},
+        {Sword: {img: "/scanned vitamins/sword.jpg"}},
+         {Thankful: {img: "/scanned vitamins/thankful.jpg"}},
+          {Think: {img: "/scanned vitamins/think.jpg"}}];
 
 // let scriptMatrix = [{Evil: {img: '\n""'}},
 // {Forgiveness: {img: '\n""'}},
@@ -103,14 +103,14 @@ let scriptureMatrix = [{Evil: [{sun: 'Psalm 105:1,3\n"O give thanks to the Lord,
         {fri: '1 Chronicles 16:34\n"O give thanks to the Lord for He is good; for His lovingkindness is everlasting."'},
          {sat: 'Psalm 95:2-3\n"Let us come before the Lord\'s presence with thanksgiving, let us shout joyfully to Him with psalms. For the Lord is a great God and a great King above all gods."'},
          {bonus: '1 Thessalonians 1:3\n"We ought always to give thanks to God for you brethren...your faith is greatly enlarged and the love of each one of you towards one another grows even greater."'}]},
-         {Think: [{sun: 'Psalm 145:18\nTRUTH\n"The Lord is near to all who call upon Him, to all who call upon Him in TRUTH."'}, 
-         {mon: 'Luke 8:15\nHONESTY\n"But the seed in the good soil, these are the ones who have heard the word in an HONEST and good heart, and hold it fast and bear fruit with perseverance."'},
-          {tue: 'Psalm 19:8\nRIGHT\n"The precepts of the Lord are RIGHT, rejoicing the heart."'}, 
-         {wed: '1 Timothy 1:5\nPURITY\n"But the goal of our instruction is love from a PURE heart and a good conscience and a sincere faith."'},
-          {thu: 'Isaiah 52:7\nLOVELY\n"How LOVELY on the mountains are the feet of him who brings good news, who announces peace and brings good news of happiness, and who announces salvation...your God reigns!"'}, 
-         {fri: 'John 12:36-38\nGOOD REPUTE\n"These things Jesus spoke,...But though He had performed so many signs before them, yet they were not believing in Him...Lord, who has believed our REPORT?"'},
-          {sat: '1 Peter 2:9\nEXCELLENCE\n"But you are a chosen race, a royal priesthood, a holy nation, a people for God\'s own possession so that you may proclaim the EXCELLENCE of Him."'},
-          {bonus: 'Psalm 103:1\nPRAISE\n"BLESS the Lord O my soul; and all that is within me, BLESS His Holy Name."'}]}];
+         {Think: [{sun: 'TRUTH\nPsalm 145:18\n"The Lord is near to all who call upon Him, to all who call upon Him in TRUTH."'}, 
+         {mon: 'HONESTY\nLuke 8:15\n"But the seed in the good soil, these are the ones who have heard the word in an HONEST and good heart, and hold it fast and bear fruit with perseverance."'},
+          {tue: 'RIGHT\nPsalm 19:8\n"The precepts of the Lord are RIGHT, rejoicing the heart."'}, 
+         {wed: 'PURITY\n1 Timothy 1:5\n"But the goal of our instruction is love from a PURE heart and a good conscience and a sincere faith."'},
+          {thu: 'LOVELY\nIsaiah 52:7\n"How LOVELY on the mountains are the feet of him who brings good news, who announces peace and brings good news of happiness, and who announces salvation...your God reigns!"'}, 
+         {fri: 'GOOD REPUTE\nJohn 12:36-38\n"These things Jesus spoke,...But though He had performed so many signs before them, yet they were not believing in Him...Lord, who has believed our REPORT?"'},
+          {sat: 'EXCELLENCE\n1 Peter 2:9\n"But you are a chosen race, a royal priesthood, a holy nation, a people for God\'s own possession so that you may proclaim the EXCELLENCE of Him."'},
+          {bonus: 'PRAISE\nPsalm 103:1\n"BLESS the Lord O my soul; and all that is within me, BLESS His Holy Name."'}]}];
 
 let daysArray = ["Sacred Sunday", "Marvelous Monday", "Terrific Tuesday",
  "Wonderful Wednesday", "Thankful Thursday", "Fabulous Friday", "Satisfying Saturday"];
