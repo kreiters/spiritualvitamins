@@ -11,38 +11,63 @@
 </head>
 <body>
     <div class="wrapper">
-        
-        <div class="dropdown">
-            <button onclick="seriesSelect()" class="dropbtn">Select a Series</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#">Noah_1</a>
-              <a href="#">Noah_2</a>
-              <a href="#">Evil</a>
-              <a href="#">Forgiveness</a>
-              <a href="#">Happiness</a>
-              <a href="#">Pray</a>
-              <a href="#">Spirit</a>
-              <a href="#">Study</a>
-              <a href="#">Sword</a>
-              <a href="#">Thankful</a>
-              <a href="#">Think</a>
-            </div>
-            <div class="title">Spiritual Vitamins</div>
+        <div class="menu" id="menuBtn">More...</div>
+        <div class="info" id="info">
+            
+<p>Would you like to ask Jesus to be your personal Lord and Savior?</p>
+
+<p>You can pray this prayer right now:</p>
+
+<p>“Dear God,
+
+I know I’m a sinner, and I ask for your forgiveness.
+I believe Jesus Christ is Your Son. I believe that He died
+for my sin and that you raised Him to life.
+I want to trust Him as my Savior and follow Him as Lord,
+from this day forward. Guide my life and help me to do your will.
+
+I pray this in the name of Jesus. Amen.”</p>
+<p>Did you pray this prayer?</p>
+            <button onclick="returnMain()" class="closeMenu">Return to Vitamins</button> 
         </div>
-        <div class="selection" id="selectedSeries"></div>
-        
-        <div class="vitamin">
-            <div class="day-controls">
-                    <div onclick="prev()" class="left-arrow" id="prev"></div>
-                <!-- <button onclick="prev()" class="prevDayBtn" id="prev"></button> -->
-                <div class="day" id="day-display"></div>
-                    <div onclick="next()" class="right-arrow" id="next"></div>
-                <!-- <button onclick="next()" class="nextDayBtn" id="next"></button>  -->
+        <div class="sidebar">
+            <div class="side-content">
+                <h1>Spiritual Vitamins</h1>
             </div>
-            <div class="front">
-                <div class="instructions" id="show-instructions">instructions:<br>1) Select Series<br>2) Click Vitamin<br>3)Click verse to get quote<br>4) Click arrows</div>
-                <img class="front-content" id="show-selection"></img>
-                <div class="scripture" id="scripture"></div>
+        </div>
+        <div class="content">
+            <div class="dropdown">
+                <button onclick="seriesSelect()" class="dropbtn">Select a Series</button>
+                <div id="myDropdown" class="dropdown-content">
+                <a href="#">Noah_1</a>
+                <a href="#">Noah_2</a>
+                <a href="#">Evil</a>
+                <a href="#">Forgiveness</a>
+                <a href="#">Happiness</a>
+                <a href="#">Pray</a>
+                <a href="#">Spirit</a>
+                <a href="#">Study</a>
+                <a href="#">Sword</a>
+                <a href="#">Thankful</a>
+                <a href="#">Think</a>
+                </div>
+                <div class="title">Spiritual Vitamins</div>
+            </div>
+            <div class="selection" id="selectedSeries"></div>
+            
+            <div class="vitamin">
+                <div class="day-controls">
+                        <div onclick="prev()" class="left-arrow" id="prev"></div>
+                    <!-- <button onclick="prev()" class="prevDayBtn" id="prev"></button> -->
+                    <div class="day" id="day-display"></div>
+                        <div onclick="next()" class="right-arrow" id="next"></div>
+                    <!-- <button onclick="next()" class="nextDayBtn" id="next"></button>  -->
+                </div>
+                <div class="front">
+                    <div class="instructions" id="show-instructions">instructions:<br>1) Select Series<br>2) Click Vitamin<br>3)Click verse to get quote<br>4) Click arrows</div>
+                    <img class="front-content" id="show-selection"></img>
+                    <div class="scripture" id="scripture"></div>
+                </div>
             </div>
         </div>
     </div>

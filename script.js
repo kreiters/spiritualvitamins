@@ -2,17 +2,17 @@ let d = new Date();
 let day = d.getDay();
 let prevDay = ((day - 1));
 let nextDay = ((day + 1));
-let imgMatrix = [{Evil: {img: "evil.jpg"}},
- {Forgiveness: {img: "forgiveness.jpg"}},
-  {Happiness: {img: "happiness.jpg"}},
-   {Noah_1: {img: "noah1.jpg"}},
-    {Noah_2: {img: "noah2.jpg"}},
-     {Pray: {img: "pray.jpg"}},
-      {Spirit: {img: "spirit.jpg"}},
-       {Study: {img: "study.jpg"}},
-        {Sword: {img: "sword.jpg"}},
-         {Thankful: {img: "thankful.jpg"}},
-          {Think: {img: "think.jpg"}}];
+let imgMatrix = [{Evil: {img: "/scanned vitamins/evil.jpg"}},
+ {Forgiveness: {img: "/scanned vitamins/forgiveness.jpg"}},
+  {Happiness: {img: "/scanned vitamins/happiness.jpg"}},
+   {Noah_1: {img: "/scanned vitamins/noah1.jpg"}},
+    {Noah_2: {img: "/scanned vitamins/noah2.jpg"}},
+     {Pray: {img: "/scanned vitamins/pray.jpg"}},
+      {Spirit: {img: "/scanned vitamins/spirit.jpg"}},
+       {Study: {img: "/scanned vitamins/study.jpg"}},
+        {Sword: {img: "/scanned vitamins/sword.jpg"}},
+         {Thankful: {img: "/scanned vitamins/thankful.jpg"}},
+          {Think: {img: "/scanned vitamins/think.jpg"}}];
 
 // let scriptMatrix = [{Evil: {img: '\n""'}},
 // {Forgiveness: {img: '\n""'}},
@@ -25,7 +25,8 @@ let imgMatrix = [{Evil: {img: "evil.jpg"}},
 //         {Sword: {img: '\n""'}},
 //         {Thankful: {img: '\n""'}},
 //           {Think: {img: '\n""'}}];
-
+let menuBtn = document.getElementById("menuBtn");
+let infoScreen = document.getElementById("info");
 // to access the scriptureMatrix, use: scriptureMatrix[0].Evil[0].sun
 // or: scriptureMatrix[1].Forgiveness[0].sun
 // or: scriptureMatrix[1].Forgiveness[1].mon   ....etc
@@ -142,13 +143,13 @@ let quoteMatrix = [{Evil: [{sun: 'QUOTE:\n\n"God would rather transform the EVIL
 {fri: 'QUOTE:\n\n"EVIL is what disagrees with the provision God has made concerning a matter"\n(Justice Kojo Bentil)'},
  {sat: 'QUOTE:\n\n"This scripture says the love of money is the very root of Satan\'s operation. We can cut him off at the very root and destroy his base with the love of giving. Glory to God."\n(Kenneth M. Copeland)'},
  {bonus: 'QUOTE:\n\n"Anything good is hated by everything EVIL."\n(Mike Murdock)'}]},
-{Forgiveness: [{sun: 'QUOTE:\n\n"To err is human, to forgive divine"\n\n(Alexander Pope)'}, 
-{mon: 'QUOTE:\n\n"Darkness cannot drive out darkness, only light can do that. Hate cannot drive out hate, only love."\n\n(Martin Luther King, Jr.)'},
- {tue: 'QUOTE:\n\n"Holding a grudge does not make you strong; it makes you bitter. Forgiving does not make you weak, it sets you free."\n\n(Dave Willis)'}, 
-{wed: 'QUOTE:\n\n"There is a nobility in compassion, a beauty in empathy, a grace in forgiveness."\n\n(John Connolly)'},
- {thu: 'QUOTE:\n\n"Forgiveness is a funny thing. It warms the heart and cools the sting."\n\n(William Arthur Ward)'}, 
-{fri: 'QUOTE:\n\n"The weak can never forgive. Forgiveness is the attribute of the strong."\n\n(Mahatmas Gandi)'},
- {sat: 'QUOTE:\n\n"A broken friendship that is mended through forgiveness can be even stronger than it ever was."\n\n(Stephan Richards)'}]},
+{Forgiveness: [{sun: 'QUOTE:\n\n"To err is human, to forgive divine"\n(Alexander Pope)'}, 
+{mon: 'QUOTE:\n\n"Darkness cannot drive out darkness, only light can do that. Hate cannot drive out hate, only love."\n(Martin Luther King, Jr.)'},
+ {tue: 'QUOTE:\n\n"Holding a grudge does not make you strong; it makes you bitter. Forgiving does not make you weak, it sets you free."\n(Dave Willis)'}, 
+{wed: 'QUOTE:\n\n"There is a nobility in compassion, a beauty in empathy, a grace in forgiveness."\n(John Connolly)'},
+ {thu: 'QUOTE:\n\n"Forgiveness is a funny thing. It warms the heart and cools the sting."\n(William Arthur Ward)'}, 
+{fri: 'QUOTE:\n\n"The weak can never forgive. Forgiveness is the attribute of the strong."\n(Mahatmas Gandi)'},
+ {sat: 'QUOTE:\n\n"A broken friendship that is mended through forgiveness can be even stronger than it ever was."\n(Stephan Richards)'}]},
  {Happiness: [{sun: '1 Chronicles 16:10\n"Glory in His holy name, let the heart of those who seek the Lord be glad."'}, 
  {mon: 'Proverbs 16:20\n"Blessed (happy) is he who trusts in the Lord."'},
   {tue: 'Romans 15:13\n"Now may the God of hope fill you with all joy and peace."'}, 
@@ -228,6 +229,16 @@ window.onload = function() {
     //prevBtn.innerHTML += shortDaysArray[prevDay];//adds day to button
     //nextBtn.innerHTML += shortDaysArray[nextDay];
     viewInstruct.style.display = "block";
+}
+
+menuBtn.addEventListener('click', event => {
+  event.preventDefault();
+  console.log("clicked on menu");
+  infoScreen.style.display = "block";
+});
+
+function returnMain() {
+  infoScreen.style.display = "none";
 }
 
 jumpLinks.forEach(link => {
