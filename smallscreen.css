@@ -42,7 +42,7 @@ body,html {
   height: 100vh;
   background-color: white;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding-left: 30px;
   padding-right: 30px;
   z-index: 1000;
@@ -50,7 +50,7 @@ body,html {
 
 .closeMenu {
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   left: 0;
   right: 0;
   margin: auto;
