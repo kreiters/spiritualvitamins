@@ -12,7 +12,7 @@ let imgMatrix = [{Evil: {img: "evil.jpg"}},
        {Study: {img: "study.jpg"}},
         {Sword: {img: "sword.jpg"}},
          {Thankful: {img: "thankful.jpg"}},
-          {Think: {img: "think.jpg"}}];
+          {Think: {img: "think.jpg"}};
            {Hope: {img: "hope.jpg"}}];
 
 
