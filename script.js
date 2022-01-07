@@ -13,6 +13,8 @@ let imgMatrix = [{Evil: {img: "evil.jpg"}},
         {Sword: {img: "sword.jpg"}},
          {Thankful: {img: "thankful.jpg"}},
           {Think: {img: "think.jpg"}}];
+           {Hope: {img: "hope.jpg"}}];
+
 
 // let scriptMatrix = [{Evil: {img: '\n""'}},
 // {Forgiveness: {img: '\n""'}},
@@ -109,9 +111,16 @@ let scriptureMatrix = [{Evil: [{sun: 'Psalm 105:1,3\n"O give thanks to the Lord,
          {wed: 'PURITY\n1 Timothy 1:5\n"But the goal of our instruction is love from a PURE heart and a good conscience and a sincere faith."'},
           {thu: 'LOVELY\nIsaiah 52:7\n"How LOVELY on the mountains are the feet of him who brings good news, who announces peace and brings good news of happiness, and who announces salvation...your God reigns!"'}, 
          {fri: 'GOOD REPUTE\nJohn 12:36-38\n"These things Jesus spoke,...But though He had performed so many signs before them, yet they were not believing in Him...Lord, who has believed our REPORT?"'},
-          {sat: 'EXCELLENCE\n1 Peter 2:9\n"But you are a chosen race, a royal priesthood, a holy nation, a people for God\'s own possession so that you may proclaim the EXCELLENCE of Him."'},
-          {bonus: 'PRAISE\nPsalm 103:1\n"BLESS the Lord O my soul; and all that is within me, BLESS His Holy Name."'}]}];
-
+          {sat: 'EXCELLENCE\n1 Peter 2:9\n"But you are a chosen race, a royal priesthood, a holy nation, a people for God\'s own possession so that you may proclaim the EXCELLENCE of Him."'}]},
+          {bonus: 'PRAISE\nPsalm 103:1\n"BLESS the Lord O my soul; and all that is within me, BLESS His Holy Name."'},
+          {Hope: [{sun: 'Romans 5:5\n"And HOPE does not disappoint, because the love of God has been poured out within our hearts through the Holy Spirit Who was given us."'}, 
+         {mon: '1 Peter 1:13\n"Therefore, with minds that are alert and fully sober, set your HOPE on the grace to be brought to you when Jesus Christ is revealed at His coming."'},
+          {tue: 'Romans 8:24\n"For in HOPE we have been saved, but HOPE that is seen is not HOPE...but if we HOPE for what we do not see, with perseverance we wait eagerly for it."'}, 
+         {wed: 'Titus 2:12-13\n"Instructing us to deny ungodliness...looking for the blessed HOPE and the appearing of the glory of our great God and Savior Christ Jesus."'},
+          {thu: 'Romans 15:13\n"Now may the God of HOPE fill you with all joy and peace in believing that you may abound in HOPE by the power of the Holy Spirit."'}, 
+         {fri: 'Psalm 130:5\n"I wait for the Lord, my soul does wait, and in His word do I HOPE."'},
+          {sat: 'Psalm 33:18\n"But the eyes of the Lord are on those who fear Him, on those whose HOPE is in His unfailing love."'},
+          {bonus: '1 Peter 3:15\n"But set apart Christ Jesus in your heart, always being ready to give a reason to everyone who asks you to give an account for the HOPE that is in you."'}]}];
 let daysArray = ["Sacred Sunday", "Marvelous Monday", "Terrific Tuesday",
  "Wonderful Wednesday", "Thankful Thursday", "Fabulous Friday", "Satisfying Saturday"];
 let shortDaysArray = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
@@ -214,7 +223,15 @@ let quoteMatrix = [{Evil: [{sun: 'QUOTE:\n\n"God would rather transform the EVIL
           {thu: 'QUOTE:\n\n"For I am persuaded that the Lord has more truth and light yet to break forth from His holy word."\n(John Robinson)'}, 
          {fri: 'QUOTE:\n\n"I hope I shall possess firmness and virtue enough to maintain what I consider the most enviable of all titles, the character of an honest man."\n(George Washington)'},
           {sat: 'QUOTE:\n\n"The right kind of heart is a kind heart like God\'s."\n(Unknown)'},
-          {bonus: 'QUOTE:\n\n"The Word of God is perfect and pure, it is truth itself."\n(Martin Luther)'}]}];
+          {bonus: 'QUOTE:\n\n"The Word of God is perfect and pure, it is truth itself."\n(Martin Luther)'}]},
+          {Hope: [{sun: 'QUOTE:\n\n"Do not look to HOPE, but to the source of your HOPE."\n(Charles Spurgeon)'}, 
+         {mon: 'QUOTE:\n\n"If we are saved by grace alone, our salvation is a constant source of amazed delight...we don\'t take ourselves seriously and we\'re full of HOPE for the world."\n(Tim Keller)'},
+          {tue: 'QUOTE:\n\n"True faith is ever connected to HOPE."\n(John Calvin)'}, 
+         {wed: 'QUOTE:\n\n"Let us be alert to the season in which we are living. It is the season of the blessed HOPE."\n(A.W. Tozer)'},
+          {thu: 'QUOTE:\n\n"Find ways of using your own platform to share the HOPE of Christ."\n(David Jeremiah)'}, 
+         {fri: 'QUOTE:\n\n"All great things are simple and many can be expressed in a single word: freedom, justice, honor, duty, mercy, and HOPE."\n(Winston Churchill)'},
+          {sat: 'QUOTE:\n\n"Where there is no vision, there is no HOPE!"\n(George Washington Carver)'},
+          {bonus: 'QUOTE:\n\n"Jesus gives us HOPE because He keeps us company, has a vision, and knows the way we should go."\n(Max Lucado)'}]}];
 let dailyQuote;
 
 window.onload = function() {
