@@ -2,33 +2,23 @@ let d = new Date();
 let day = d.getDay();
 let prevDay = ((day - 1));
 let nextDay = ((day + 1));
-let imgMatrix = [{Evil: {img: "evil.jpg"}},
- {Forgiveness: {img: "forgiveness.jpg"}},
-  {Happiness: {img: "happiness.jpg"}},
-   {Noah_1: {img: "noah1.jpg"}},
-    {Noah_2: {img: "noah2.jpg"}},
-     {Pray: {img: "pray.jpg"}},
-      {Spirit: {img: "spirit.jpg"}},
-       {Study: {img: "study.jpg"}},
-        {Sword: {img: "sword.jpg"}},
-         {Thankful: {img: "thankful.jpg"}},
-          {Think: {img: "think.jpg"}},
-           {Hope: {img: "hope.jpg"}}];
+let imgMatrix = [{Evil: {img: "assets/scanned vitamins/evil.jpg"}},
+ {Forgiveness: {img: "assets/scanned vitamins/forgiveness.jpg"}},
+  {Happiness: {img: "assets/scanned vitamins/happiness.jpg"}},
+   {Noah_1: {img: "assets/scanned vitamins/noah1.jpg"}},
+    {Noah_2: {img: "assets/scanned vitamins/noah2.jpg"}},
+     {Pray: {img: "assets/scanned vitamins/pray.jpg"}},
+      {Spirit: {img: "assets/scanned vitamins/spirit.jpg"}},
+       {Study: {img: "assets/scanned vitamins/study.jpg"}},
+        {Sword: {img: "assets/scanned vitamins/sword.jpg"}},
+         {Thankful: {img: "assets/scanned vitamins/thankful.jpg"}},
+          {Think: {img: "assets/scanned vitamins/think.jpg"}},
+          {Hope: {img: "assets/scanned vitamins/hope.jpg"}}];
 
-
-// let scriptMatrix = [{Evil: {img: '\n""'}},
-// {Forgiveness: {img: '\n""'}},
-//   {Happiness: {img: '\n""'}},
-//   {Noah_1: {img: '\n""'}},
-//     {Noah_2: {img: '\n""'}},
-//     {Pray: {img: '\n""'}},
-//       {Spirit: {img: '\n""'}},
-//       {Study: {img: '\n""'}},
-//         {Sword: {img: '\n""'}},
-//         {Thankful: {img: '\n""'}},
-//           {Think: {img: '\n""'}}];
 let menuBtn = document.getElementById("menuBtn");
 let infoScreen = document.getElementById("info");
+
+
 // to access the scriptureMatrix, use: scriptureMatrix[0].Evil[0].sun
 // or: scriptureMatrix[1].Forgiveness[0].sun
 // or: scriptureMatrix[1].Forgiveness[1].mon   ....etc
@@ -121,6 +111,7 @@ let scriptureMatrix = [{Evil: [{sun: 'Psalm 105:1,3\n"O give thanks to the Lord,
          {fri: 'Psalm 130:5\n"I wait for the Lord, my soul does wait, and in His word do I HOPE."'},
           {sat: 'Psalm 33:18\n"But the eyes of the Lord are on those who fear Him, on those whose HOPE is in His unfailing love."'},
           {bonus: '1 Peter 3:15\n"But set apart Christ Jesus in your heart, always being ready to give a reason to everyone who asks you to give an account for the HOPE that is in you."'}]}];
+
 let daysArray = ["Sacred Sunday", "Marvelous Monday", "Terrific Tuesday",
  "Wonderful Wednesday", "Thankful Thursday", "Fabulous Friday", "Satisfying Saturday"];
 let shortDaysArray = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
@@ -275,18 +266,6 @@ jumpLinks.forEach(link => {
         scriptView.classList.remove('showScripture');
       }
     })
-            //viewSelection.src = "";
-            // viewSelection.innerHTML = "";//these 2 lines printout the selection
-            // viewSelection.innerHTML += selection;
-            //console.log("the show-selection inner html contains: " + viewSelection);
-            // Do something else instead, like handle the navigation behavior yourself
-            
-            // let selectedImg = ("imgMatrix[0]." + selection + ".img");
-    // let selectedImg = imgMatrix[1][selection].img;
-    // console.log(selectedImg);
-    //           // let imgRef = selectedImg;
-    //           // console.log(imgRef);
-    // viewSelection.src += selectedImg;
 
     // resetting all day variables to the current day after a new series is selected
     let revertDay = d.getDay();
@@ -354,18 +333,7 @@ function seriesSelect() {
         currentDay = currentDay - 1;
         prevDay = (daysMatrix[currentDay][currentDay].prev);
         nextDay = (daysMatrix[currentDay][currentDay].next);
-
-        // console.log("The current day is: ", daysArray[currentDay]);
-        // console.log("The prev day is: ", shortDaysArray[prevDay]);
-        // console.log("The next day is: ", shortDaysArray[nextDay]);
-
         displayedDay.innerHTML = daysArray[currentDay];
-        // prevBtn.innerHTML = "";
-        // nextBtn.innerHTML = "";
-        // prevBtn.innerHTML += shortDaysArray[prevDay];
-        // nextBtn.innerHTML += shortDaysArray[nextDay];
-        // prevBtn.innerHTML = shortDaysArray[prevDay - 1];
-        // nextBtn.innerHTML = shortDaysArray[nextDay + 1];
         updateScripture()
         
     }
@@ -397,18 +365,7 @@ function seriesSelect() {
         currentDay = currentDay + 1;
         prevDay = (daysMatrix[currentDay][currentDay].prev);
         nextDay = (daysMatrix[currentDay][currentDay].next);
-
-        // console.log("The current day is: ", daysArray[currentDay]);
-        // console.log("The prev day is: ", shortDaysArray[prevDay]);
-        // console.log("The next day is: ", shortDaysArray[nextDay]);
-        
         displayedDay.innerHTML = daysArray[currentDay];
-        // prevBtn.innerHTML = "";
-        // nextBtn.innerHTML = "";
-        // prevBtn.innerHTML += shortDaysArray[prevDay];
-        // nextBtn.innerHTML += shortDaysArray[nextDay];
-        // prevBtn.innerHTML = shortDaysArray[prevDay - 1];
-        // nextBtn.innerHTML = shortDaysArray[nextDay + 1];
         updateScripture()
         
     }
@@ -457,15 +414,6 @@ scriptView.addEventListener('click', event => {
   event.preventDefault();
   console.log("clicked on scriptView element", dailyScript);
   viewChanger()
-  // if (scriptView.innerHTML === dailyScript) {
-  //   updateQuote()
-  // }
-  // if (scriptView.innerHTML === dailyQuote) {
-  //   console.log("the dailyquote = ",dailyQuote)
-  //   //scriptView.classList.toggle('showScripture');
-  //   console.log("the scriptView.innerHTML contains: ",scriptView.innerHTML);
-  //   updateScripture()
-  // }
 });
 
 function viewChanger() {
@@ -476,7 +424,6 @@ function viewChanger() {
   }
   else if (scriptView.innerHTML === dailyQuote) {
     console.log("the dailyquote = ",dailyQuote)
-    //scriptView.classList.toggle('showScripture');
     console.log("the scriptView.innerHTML contains: ",scriptView.innerHTML);
     updateScripture()
   }
@@ -486,7 +433,6 @@ function updateQuote() {
   scriptView.innerHTML = "";
   console.log("quote update function ran and the innerHTML contains: ", scriptView.innerHTML);
   quoteMatrix.forEach(quote => {
-    //console.log(image)
     if (quote[selection]) {
       console.log("here is the quote[selection]: ", quote[selection]);
        quote[selection].forEach(dayQuote => {
@@ -500,4 +446,11 @@ function updateQuote() {
     }
     
   });
+}
+
+function openMenu() {
+  window.open('./pages/salvation.html', "_self");
+}
+function openLetter() {
+  window.open('./assets/letters/hope.html', "_self");
 }
