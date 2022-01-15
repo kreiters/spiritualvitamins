@@ -13,6 +13,7 @@ let imgMatrix = [{Evil: {img: "assets/scanned vitamins/evil.jpg"}},
         {Sword: {img: "assets/scanned vitamins/sword.jpg"}},
          {Thankful: {img: "assets/scanned vitamins/thankful.jpg"}},
           {Think: {img: "assets/scanned vitamins/think.jpg"}},
+           {Rewards: {img: "assets/scanned vitamins/rewards.jpg"}},
           {Hope: {img: "assets/scanned vitamins/hope.jpg"}}];
 
 let menuBtn = document.getElementById("menuBtn");
