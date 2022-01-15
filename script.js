@@ -113,13 +113,13 @@ let scriptureMatrix = [{Evil: [{sun: 'Psalm 105:1,3\n"O give thanks to the Lord,
          {fri: 'Psalm 130:5\n"I wait for the Lord, my soul does wait, and in His word do I HOPE."'},
           {sat: 'Psalm 33:18\n"But the eyes of the Lord are on those who fear Him, on those whose HOPE is in His unfailing love."'},
           {bonus: '1 Peter 3:15\n"But set apart Christ Jesus in your heart, always being ready to give a reason to everyone who asks you to give an account for the HOPE that is in you."'}]},
-          {Rewards: [{sun: 'Christ\'s Reward\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
-         {mon: 'The Crown of Victors\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
-          {tue: 'The Crown of Exultation\n1 Thessalonians 2:19\n"Who is our crown of exultation? It is you in the presence of Jesus at His coming."'}, 
-         {wed: 'The Crown of Righteousness\n2 Timothy 4:8\n"...will be laid up for me and all who have loved His appearing."'},
-          {thu: 'The Crown of Life\nRevelation 2:10\n"Be faithful until death, and I (Jesus) will give you the crown of life."'}, 
-         {fri: 'The Crown of Glory\n1 Peter 5:4\n"When the Chief Shepherd appears, you will receive the crown of glory."'},
-          {sat: 'The Crown of Thorns\nMatthew 27:29\n"And after weaving a crown of thorns they put it on Jesus\' head."'},
+          {Rewards: [{sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
+         {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
+          {tue: 'The Crown of Exultation\n\n1 Thessalonians 2:19\n"Who is our crown of exultation? It is you in the presence of Jesus at His coming."'}, 
+         {wed: 'The Crown of Righteousness\n\n2 Timothy 4:8\n"...will be laid up for me and all who have loved His appearing."'},
+          {thu: 'The Crown of Life\n\nRevelation 2:10\n"Be faithful until death, and I (Jesus) will give you the crown of life."'}, 
+         {fri: 'The Crown of Glory\n\n1 Peter 5:4\n"When the Chief Shepherd appears, you will receive the crown of glory."'},
+          {sat: 'The Crown of Thorns\n\nMatthew 27:29\n"And after weaving a crown of thorns they put it on Jesus\' head."'},
           {bonus: '1 Peter 3:15\n"But set apart Christ Jesus in your heart, always being ready to give a reason to everyone who asks you to give an account for the HOPE that is in you."'}]}];
 
 let daysArray = ["Sacred Sunday", "Marvelous Monday", "Terrific Tuesday",
@@ -232,7 +232,16 @@ let quoteMatrix = [{Evil: [{sun: 'QUOTE:\n\n"God would rather transform the EVIL
           {thu: 'QUOTE:\n\n"Find ways of using your own platform to share the HOPE of Christ."\n(David Jeremiah)'}, 
          {fri: 'QUOTE:\n\n"All great things are simple and many can be expressed in a single word: freedom, justice, honor, duty, mercy, and HOPE."\n(Winston Churchill)'},
           {sat: 'QUOTE:\n\n"Where there is no vision, there is no HOPE!"\n(George Washington Carver)'},
-          {bonus: 'QUOTE:\n\n"Jesus gives us HOPE because He keeps us company, has a vision, and knows the way we should go."\n(Max Lucado)'}]}];
+          {bonus: 'QUOTE:\n\n"Jesus gives us HOPE because He keeps us company, has a vision, and knows the way we should go."\n(Max Lucado)'}]},
+          {Rewards: [{sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
+         {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
+          {tue: 'The Crown of Exultation\n\n1 Thessalonians 2:19\n"Who is our crown of exultation? It is you in the presence of Jesus at His coming."'}, 
+         {wed: 'The Crown of Righteousness\n\n2 Timothy 4:8\n"...will be laid up for me and all who have loved His appearing."'},
+          {thu: 'The Crown of Life\n\nRevelation 2:10\n"Be faithful until death, and I (Jesus) will give you the crown of life."'}, 
+         {fri: 'The Crown of Glory\n\n1 Peter 5:4\n"When the Chief Shepherd appears, you will receive the crown of glory."'},
+          {sat: 'The Crown of Thorns\n\nMatthew 27:29\n"And after weaving a crown of thorns they put it on Jesus\' head."'},
+          {bonus: '1 Peter 3:15\n"But set apart Christ Jesus in your heart, always being ready to give a reason to everyone who asks you to give an account for the HOPE that is in you."'}]}];
+
 let dailyQuote;
 
 window.onload = function() {
