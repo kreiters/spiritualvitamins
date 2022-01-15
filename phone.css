@@ -435,6 +435,7 @@
         }
 
         .letter-button {
+          display: none;
           height: 100px;
           width: 75px;
           background: black;
@@ -908,39 +909,40 @@
         }
   
   .letter-button {
-          height: 100px;
-          width: 75px;
-          background: black;
-          position: absolute;
-          left: 0;
-          right: 0;
-          margin: auto;
-          bottom: 5px;
-          border-radius: 3px;
-          box-shadow: 2px 2px 8px black;
-          cursor: pointer;
-        }
+    display: none;
+    height: 100px;
+    width: 75px;
+    background: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 5px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 8px black;
+    cursor: pointer;
+  }
 
-        .page {
-          height: 90px;
-          width: 65px;
-          background: white;
-          position: absolute;
-          left: 0;
-          right: 0;
-          top: 5px;
-          margin: auto;
-          padding-top: 9px;
-          padding-bottom: 4px;
-          padding-left: 4px;
-          padding-right: 4px;
-          font-size: 2px;
-          overflow: hidden;
-        }
+  .page {
+    height: 90px;
+    width: 65px;
+    background: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5px;
+    margin: auto;
+    padding-top: 9px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 2px;
+    overflow: hidden;
+  }
 
-        .glass {
-          display: none;
-        }
+  .glass {
+    display: none;
+  }
  }
  /* ###########################################################################################################################################
  ########################################################################################################################################### */
@@ -1379,6 +1381,7 @@
         }
   
   .letter-button {
+          display: none;
           height: 100px;
           width: 75px;
           background: black;
