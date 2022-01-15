@@ -452,5 +452,6 @@ function openMenu() {
   window.open('./pages/salvation.html', "_self");
 }
 function openLetter() {
-  window.open('./assets/letters/hope.html', "_self");
+  let letterSelect = ("/assets/letters/" + selection + ".html");//open the letter of the selected series
+  window.open(letterSelect, "_self");
 }
