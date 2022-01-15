@@ -292,6 +292,7 @@ jumpLinks.forEach(link => {
     imgMatrix.forEach(image => {
       //console.log(image)
       letterButton.style.display = "block";
+      document.getElementById("page-title").innerHTML = selection;//add the series title to the letter
       if (image[selection]) {
         //console.log(image[selection].img);
         let selectedImg = image[selection].img;
