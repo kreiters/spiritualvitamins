@@ -162,7 +162,7 @@ let quoteMatrix = [{Evil: [{sun: 'QUOTE:\n\n"God would rather transform the EVIL
 {fri: 'QUOTE:\n\n"EVIL is what disagrees with the provision God has made concerning a matter"\n(Justice Kojo Bentil)'},
  {sat: 'QUOTE:\n\n"This scripture says the love of money is the very root of Satan\'s operation. We can cut him off at the very root and destroy his base with the love of giving. Glory to God."\n(Kenneth M. Copeland)'},
  {bonus: 'QUOTE:\n\n"Anything good is hated by everything EVIL."\n(Mike Murdock)'}]},
- {Faith: [{sun: 'QUOTE:\n\n"To err is human, to forgive divine"\n(Alexander Pope)'}, 
+ {Faith: [{sun: 'QUOTE:\n\n"Faith is God\'s antidote for fear"\n(David Jeremiah)'}, 
 {mon: 'QUOTE:\n\n"Darkness cannot drive out darkness, only light can do that. Hate cannot drive out hate, only love."\n(Martin Luther King, Jr.)'},
  {tue: 'QUOTE:\n\n"Holding a grudge does not make you strong; it makes you bitter. Forgiving does not make you weak, it sets you free."\n(Dave Willis)'}, 
 {wed: 'QUOTE:\n\n"There is a nobility in compassion, a beauty in empathy, a grace in forgiveness."\n(John Connolly)'},
