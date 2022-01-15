@@ -412,6 +412,7 @@
         }
    
    .letter-button {
+          display: none;
           height: 100px;
           width: 75px;
           background: black;
@@ -865,6 +866,7 @@
         }
    
    .letter-button {
+          display: none;
           height: 100px;
           width: 75px;
           background: black;
@@ -1318,6 +1320,7 @@
         }
     
     .letter-button {
+          display: none;
           height: 100px;
           width: 75px;
           background: black;
