@@ -468,7 +468,7 @@
         }
 
         .page-title {
-          padding: 2px;
+          padding-top: 2px;
           text-align: center;
           font-size: 12px;
         }
@@ -949,7 +949,7 @@
   }
 
   .page-title {
-    padding: 4px;
+    padding-top: 2px;
     font-size: 12px;
   }
 
@@ -1427,7 +1427,7 @@
         }
 
         .page-title {
-          padding: 4px;
+          padding-top: 2px;
           font-size: 12px;
         }
 
