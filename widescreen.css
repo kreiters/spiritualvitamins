@@ -439,7 +439,8 @@
   }
 
   .page-title {
-    padding: 4px;
+    padding-top: 4px;
+    text-align: center;
     font-size: 12px;
   }
   
