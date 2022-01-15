@@ -388,6 +388,7 @@
   }
 
   .letter-button {
+    display: none;
     height: 110px;
     width: 75px;
     background: black;
