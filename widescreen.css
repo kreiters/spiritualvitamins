@@ -422,7 +422,7 @@
   }
 
   .page {
-    height: 90px;
+    height: 90%;
     width: 65px;
     background: white;
     position: absolute;
@@ -430,15 +430,22 @@
     right: 0;
     top: 5px;
     margin: auto;
-    padding-top: 9px;
+    padding-top: 2px;
+    /* padding-bottom: 4px; */
     padding-left: 4px;
     padding-right: 4px;
     font-size: 2px;
   }
 
+  .page-title {
+    padding: 4px;
+    font-size: 12px;
+  }
+  
   .glass {
     display: none;
   }
+  
   /* .sidebar {
     display: none;
   } */
