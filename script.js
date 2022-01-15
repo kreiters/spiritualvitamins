@@ -17,6 +17,7 @@ let imgMatrix = [{Evil: {img: "assets/scanned vitamins/evil.jpg"}},
 
 let menuBtn = document.getElementById("menuBtn");
 let infoScreen = document.getElementById("info");
+let letterButton = document.getElementById("letterBtn");
 
 
 // to access the scriptureMatrix, use: scriptureMatrix[0].Evil[0].sun
@@ -255,6 +256,7 @@ jumpLinks.forEach(link => {
     selection = (link.innerHTML);
     imgMatrix.forEach(image => {
       //console.log(image)
+      letterButton.style.display = "block";
       if (image[selection]) {
         //console.log(image[selection].img);
         let selectedImg = image[selection].img;
