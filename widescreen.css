@@ -435,6 +435,7 @@
     padding-left: 4px;
     padding-right: 4px;
     font-size: 2px;
+    overflow: hidden;
   }
 
   .page-title {
