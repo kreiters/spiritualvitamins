@@ -121,7 +121,7 @@
           position: absolute;
           background-color: rgb(223, 109, 252);
           font-size: 1.25rem;
-          max-width: 70%;
+          width: 200px;
           height: 190%;
           /* width: auto; */
           /* min-width: 100px; */
@@ -596,7 +596,7 @@
           position: absolute;
           background-color: rgb(223, 109, 252);
           font-size: 1.25rem;
-          max-width: 70%;
+          width: 200px;
           height: 190%;
           /* width: auto; */
           /* min-width: 100px; */
@@ -1066,7 +1066,7 @@
           position: absolute;
           background-color: rgb(223, 109, 252);
           font-size: 1.25rem;
-          max-width: 70%;
+          width: 200px;
           height: 190%;
           /* width: auto; */
           /* min-width: 100px; */
