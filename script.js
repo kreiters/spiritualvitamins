@@ -453,5 +453,6 @@ function openMenu() {
 }
 function openLetter() {
   let letterSelect = ("./assets/letters/" + selection + ".html");//open the letter of the selected series
-  window.open("./pages/salvation.html", "_self");
+  console.log(letterSelect);
+  window.open(letterSelect, "_self");
 }
