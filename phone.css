@@ -967,6 +967,11 @@
         box-sizing: border-box;
       }
       
+      body {
+        height: 100vw;
+        transform: rotate(90deg);
+      }
+  
       body,html {
         margin:0;
         padding:0;
