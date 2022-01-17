@@ -173,7 +173,7 @@
     /* min-width: 100px; */
     border-radius: 4px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 200;
+    z-index: 2000;
   }
   
   /* Links inside the dropdown */
