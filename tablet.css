@@ -10,6 +10,7 @@
       }
       
       .wrapper{
+         display: flex;
         top: 0;
         left:0;
         margin: auto;
@@ -156,10 +157,10 @@
           border-radius: 2px; */
         }
       
-        .dayControls {
-          
-          width: 330px;
-          max-width: 400px;
+        .day-controls {
+          display: flex;
+          text-align: center;
+          justify-content: center;
         }
       
         .day {
@@ -464,6 +465,7 @@
       }
       
       .wrapper{
+         display: flex;
         top: 0;
         left:0;
         margin: auto;
@@ -610,10 +612,10 @@
           border-radius: 2px; */
         }
       
-        .dayControls {
-          
-          width: 330px;
-          max-width: 400px;
+        .day-controls {
+          display: flex;
+          text-align: center;
+          justify-content: center;
         }
       
         .day {
@@ -918,6 +920,7 @@
       }
       
       .wrapper{
+         display: flex;
         top: 0;
         left:0;
         margin: auto;
@@ -1064,10 +1067,10 @@
           border-radius: 2px; */
         }
       
-        .dayControls {
-          
-          width: 330px;
-          max-width: 400px;
+        .day-controls {
+          display: flex;
+          text-align: center;
+          justify-content: center;
         }
       
         .day {
