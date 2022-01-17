@@ -459,6 +459,7 @@
           right: 0;
           top: 5px;
           margin: auto;
+          margin-top: 5px;
           padding-top: 2px;
           /* padding-bottom: 4px; */
           padding-left: 4px;
@@ -940,6 +941,7 @@
     right: 0;
     top: 5px;
     margin: auto;
+    margin-top: 5px;
     padding-top: 2px;
     /* padding-bottom: 4px; */
     padding-left: 4px;
@@ -1423,6 +1425,7 @@
           right: 0;
           top: 5px;
           margin: auto;
+          margin-top: 5px;
           padding-top: 2px;
           /* padding-bottom: 4px; */
           padding-left: 4px;
