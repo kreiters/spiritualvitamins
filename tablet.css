@@ -182,7 +182,7 @@
         }
       
         .day {
-          display: inline-block;
+          /*display: inline-block;*/
           left: 0;
           right: 0;
           top: 0;
@@ -205,11 +205,10 @@
         }
       
         .left-arrow {
-          position: absolute;
-          display: inline-block;
+          /*position: absolute;*/
+          /*display: inline-block;*/
           left: 45px;
           top: 222px;
-          display: inline-block;
           border-color: transparent rgb(138, 111, 138);
           border-style: solid;
           border-width: 25px 25px 25px 0px;
@@ -218,8 +217,8 @@
         }
       
         .left-arrow:hover {
-          display: inline-block;
-          position: absolute;
+          /*display: inline-block;*/
+          /*position: absolute;*/
           left: 45px;
           top: 222px;
           border-color: transparent rgb(143, 132, 143);
@@ -272,11 +271,10 @@
         }
       
         .right-arrow {
-          position: absolute;
-          display: inline-block;
+          /*position: absolute;*/
+          /*display: inline-block;*/
           right: 45px;
           top: 222px;
-          display: inline-block;
           border-color: transparent rgb(138, 111, 138);
           border-style: solid;
           border-width: 25px 0px 25px 25px;
@@ -285,8 +283,8 @@
         }
       
         .right-arrow:hover {
-          display: inline-block;
-          position: absolute;
+          /*display: inline-block;*/
+          /*position: absolute;*/
           right: 45px;
           top: 222px;
           border-color: transparent rgb(143, 132, 143);
@@ -655,7 +653,7 @@
         }
       
         .day {
-          display: inline-block;
+          /*display: inline-block;*/
           left: 0;
           right: 0;
           top: 0;
@@ -678,11 +676,10 @@
         }
       
         .left-arrow {
-          position: absolute;
-          display: inline-block;
+          /*position: absolute;*/
+          /*display: inline-block;*/
           left: 45px;
           top: 222px;
-          display: inline-block;
           border-color: transparent rgb(138, 111, 138);
           border-style: solid;
           border-width: 25px 25px 25px 0px;
@@ -691,8 +688,8 @@
         }
       
         .left-arrow:hover {
-          display: inline-block;
-          position: absolute;
+          /*display: inline-block;*/
+          /*position: absolute;*/
           left: 45px;
           top: 222px;
           border-color: transparent rgb(143, 132, 143);
@@ -745,11 +742,10 @@
         }
       
         .right-arrow {
-          position: absolute;
-          display: inline-block;
+          /*position: absolute;*/
+          /*display: inline-block;*/
           right: 45px;
           top: 222px;
-          display: inline-block;
           border-color: transparent rgb(138, 111, 138);
           border-style: solid;
           border-width: 25px 0px 25px 25px;
@@ -758,8 +754,8 @@
         }
       
         .right-arrow:hover {
-          display: inline-block;
-          position: absolute;
+          /*display: inline-block;*/
+          /*position: absolute;*/
           right: 45px;
           top: 222px;
           border-color: transparent rgb(143, 132, 143);
@@ -1128,7 +1124,7 @@
         }
       
         .day {
-          display: inline-block;
+          /*display: inline-block;*/
           left: 0;
           right: 0;
           top: 0;
@@ -1151,11 +1147,10 @@
         }
       
         .left-arrow {
-          position: absolute;
-          display: inline-block;
+          /*position: absolute;*/
+          /*display: inline-block;*/
           left: 45px;
           top: 222px;
-          display: inline-block;
           border-color: transparent rgb(138, 111, 138);
           border-style: solid;
           border-width: 25px 25px 25px 0px;
@@ -1164,8 +1159,8 @@
         }
       
         .left-arrow:hover {
-          display: inline-block;
-          position: absolute;
+          /*display: inline-block;*/
+          /*position: absolute;*/
           left: 45px;
           top: 222px;
           border-color: transparent rgb(143, 132, 143);
@@ -1218,11 +1213,10 @@
         }
       
         .right-arrow {
-          position: absolute;
-          display: inline-block;
+          /*position: absolute;*/
+          /*display: inline-block;*/
           right: 45px;
           top: 222px;
-          display: inline-block;
           border-color: transparent rgb(138, 111, 138);
           border-style: solid;
           border-width: 25px 0px 25px 25px;
@@ -1231,8 +1225,8 @@
         }
       
         .right-arrow:hover {
-          display: inline-block;
-          position: absolute;
+          /*display: inline-block;*/
+          /*position: absolute;*/
           right: 45px;
           top: 222px;
           border-color: transparent rgb(143, 132, 143);
