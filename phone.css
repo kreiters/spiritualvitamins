@@ -439,10 +439,11 @@
           height: 100px;
           width: 75px;
           background: black;
-          position: absolute;
+          /*position: absolute;*/
           left: 0;
           right: 0;
           margin: auto;
+          margin-top: 10px;
           bottom: 5px;
           border-radius: 3px;
           box-shadow: 2px 2px 8px black;
@@ -453,7 +454,7 @@
           height: 90%;
           width: 65px;
           background: white;
-          position: absolute;
+          /*position: absolute;*/
           left: 0;
           right: 0;
           top: 5px;
@@ -919,10 +920,11 @@
     height: 100px;
     width: 75px;
     background: black;
-    position: absolute;
+    /*position: absolute;*/
     left: 0;
     right: 0;
     margin: auto;
+    margin-top: 10px;
     bottom: 5px;
     border-radius: 3px;
     box-shadow: 2px 2px 8px black;
@@ -933,7 +935,7 @@
     height: 90%;
     width: 65px;
     background: white;
-    position: absolute;
+    /*position: absolute;*/
     left: 0;
     right: 0;
     top: 5px;
@@ -1401,10 +1403,11 @@
           height: 100px;
           width: 75px;
           background: black;
-          position: absolute;
+          /*position: absolute;*/
           left: 0;
           right: 0;
           margin: auto;
+          margin-top: 10px;
           bottom: 5px;
           border-radius: 3px;
           box-shadow: 2px 2px 8px black;
@@ -1415,7 +1418,7 @@
           height: 90%;
           width: 65px;
           background: white;
-          position: absolute;
+          /*position: absolute;*/
           left: 0;
           right: 0;
           top: 5px;
