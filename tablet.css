@@ -15,7 +15,7 @@
         left:0;
         margin: auto;
         width: 100vw;
-        max-width: 475px;
+        /*max-width: 475px;*/
         height: 100vh;
         background-color: aquamarine;
         text-align: center;
@@ -486,7 +486,7 @@
         left:0;
         margin: auto;
         width: 100vw;
-        max-width: 475px;
+        /*max-width: 475px;*/
         height: 100vh;
         background-color: aquamarine;
         text-align: center;
