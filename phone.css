@@ -169,7 +169,7 @@
       }
         
         .vitamin {
-          margin-top: 16px;
+          margin-top: 5px;
           /* width: 100vw; */
           max-width: 400px;
           text-align: center;
@@ -458,7 +458,7 @@
           height: 90%;
           width: 65px;
           background: white;
-          /*position: absolute;*/
+          position: relative;
           left: 0;
           right: 0;
           top: 5px;
