@@ -450,6 +450,10 @@
           cursor: pointer;
         }
 
+        .bottle {
+          display: block;
+        }
+  
         .page {
           height: 90%;
           width: 65px;
