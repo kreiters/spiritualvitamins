@@ -270,9 +270,15 @@ getState()//get the contents of localStorage if user went from vitamins to lette
 function getState() {//added this function to load previous series selections when returning to vitamin from letter or other screen
   viewInstruct.innerHTML = "";
   viewInstruct.style.display = "none";
-  if (localStorage) {
-    // alert(localStorage.getItem('storedSelection'));
-    selection = sessionStorage.getItem('storedSelection');
+  selection = sessionStorage.getItem('storedSelection');
+  
+  if (selection == null) {
+    // alert("session storage is: " + sessionStorage.getItem('storedSelection'));
+    letterButton.style.display = "none";
+  }
+  else {
+    console.log(sessionStorage.getItem('storedSelection') + " available in session storage");
+    // selection = sessionStorage.getItem('storedSelection');
     
     imgMatrix.forEach(image => {
       //console.log(image);
@@ -291,9 +297,6 @@ function getState() {//added this function to load previous series selections wh
         scriptView.classList.remove('showScripture');
       }
     })
-  }
-  else {
-    alert("Nothing in local storage");
   }
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
