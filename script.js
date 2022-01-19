@@ -274,7 +274,7 @@ function getState() {//added this function to load previous series selections wh
   
   if (selection == null) {
     // alert("session storage is: " + sessionStorage.getItem('storedSelection'));
-    infoScreen.style.display = "block";
+    //infoScreen.style.display = "block";
     letterButton.style.display = "none";
   }
   else {
