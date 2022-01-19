@@ -268,16 +268,17 @@ let storedSelection;
 getState()//get the contents of localStorage if user went from vitamins to letter then back to vitamins
 
 function getState() {//added this function to load previous series selections when returning to vitamin from letter or other screen
-  viewInstruct.innerHTML = "";
-  viewInstruct.style.display = "none";
+  
   selection = sessionStorage.getItem('storedSelection');
   
   if (selection == null) {
     // alert("session storage is: " + sessionStorage.getItem('storedSelection'));
-    //infoScreen.style.display = "block";
+    viewInstruct.style.display = "block";
     letterButton.style.display = "none";
   }
   else {
+    viewInstruct.innerHTML = "";
+    viewInstruct.style.display = "none";
     console.log(sessionStorage.getItem('storedSelection') + " available in session storage");
     // selection = sessionStorage.getItem('storedSelection');
     
@@ -335,6 +336,7 @@ jumpLinks.forEach(link => {
       //console.log(image)
       letterButton.style.display = "block";
       document.getElementById("page-title").innerHTML = selection;//add the series title to the letter
+      
       if (image[selection]) {
         //console.log(image[selection].img);
         let selectedImg = image[selection].img;
@@ -364,6 +366,7 @@ jumpLinks.forEach(link => {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function seriesSelect() {
+  saveState()//save the series selection to session storage
   console.log("seriesSelect function running");
   viewInstruct.style.display = "none";
   console.log("the scriptView class is: ", scriptView.className);
