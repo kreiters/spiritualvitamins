@@ -528,6 +528,7 @@ function openMenu() {
   window.open('./pages/salvation.html', "_self");
 }
 function openLetter() {
+  saveState()
   let letterSelect = ("./assets/letters/" + selection + ".html");//open the letter of the selected series
   console.log(letterSelect);
   window.open(letterSelect, "_self");
