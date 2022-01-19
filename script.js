@@ -261,6 +261,44 @@ let quoteMatrix = [{Evil: [{sun: 'QUOTE:\n\n"God would rather transform the EVIL
 
 let dailyQuote;
 
+let storedSelection;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//added 1/18/22   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+getState()//get the contents of localStorage if user went from vitamins to letter then back to vitamins
+
+function getState() {//added this function to load previous series selections when returning to vitamin from letter or other screen
+  viewInstruct.innerHTML = "";
+  viewInstruct.style.display = "none";
+  if (localStorage) {
+    // alert(localStorage.getItem('storedSelection'));
+    selection = sessionStorage.getItem('storedSelection');
+    
+    imgMatrix.forEach(image => {
+      //console.log(image);
+      letterButton.style.display = "block";
+      document.getElementById("page-title").innerHTML = selection;
+      //console.log(selection);
+      if (image[selection]) {
+        
+        //console.log(image[selection].img);
+        let selectedImg = image[selection].img;
+        //console.log(selectedImg);
+        // let imgRef = selectedImg;
+        //console.log(imgRef);
+        viewSelection.src = selectedImg;
+        // scriptView.classList.toggle('view');
+        scriptView.classList.remove('showScripture');
+      }
+    })
+  }
+  else {
+    alert("Nothing in local storage");
+  }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 window.onload = function() {
     displayedDay.innerHTML = daysArray[day];
     if (day == "0") {
@@ -493,4 +531,8 @@ function openLetter() {
   let letterSelect = ("./assets/letters/" + selection + ".html");//open the letter of the selected series
   console.log(letterSelect);
   window.open(letterSelect, "_self");
+}
+
+function saveState() {//save current setting to storage
+  sessionStorage.setItem('storedSelection', selection);
 }
