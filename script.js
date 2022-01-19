@@ -332,6 +332,7 @@ jumpLinks.forEach(link => {
  link.addEventListener('click', event => {
     event.preventDefault();
     selection = (link.innerHTML);
+    saveState()//save the series selection to session storage
     imgMatrix.forEach(image => {
       //console.log(image)
       letterButton.style.display = "block";
@@ -366,7 +367,6 @@ jumpLinks.forEach(link => {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function seriesSelect() {
-  saveState()//save the series selection to session storage
   console.log("seriesSelect function running");
   viewInstruct.style.display = "none";
   console.log("the scriptView class is: ", scriptView.className);
