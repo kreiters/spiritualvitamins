@@ -346,7 +346,7 @@
           flex-direction: column;
           justify-content: center;
           width: 100vw;
-          max-width: 400px;
+          /*max-width: 400px;*/
         }
       
         .front-content {
