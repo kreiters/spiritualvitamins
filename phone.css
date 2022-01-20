@@ -81,7 +81,7 @@
       }
       
       .title {
-      font-size: 2.75rem;
+      font-size: 10vw;
       padding-top: 4.2rem;
       /*padding-bottom: .25rem;*/
       /* background-color: thistle; */
@@ -197,7 +197,7 @@
           max-width: 400px;
           height: 45px;
           text-align: center;
-          font-size: 10vw;
+          font-size: 6vw;
           color: white;
           /* padding: .25rem; */
           padding-top: .25rem;
