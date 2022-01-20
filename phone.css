@@ -89,13 +89,13 @@
       }  
        /* Dropdown Button */
        .dropbtn {
-          width: 200px;
+          width: 55vw;
           background-color: rgb(223, 109, 252);
           color: white;
-          margin-top: 30px;
+          margin-top: 8vw;
           /* margin-bottom: 16px; */
           padding: 8px;
-          font-size: 1.5rem;
+          font-size: 6vw;
           border: none;
           cursor: pointer;
           border-radius: 4px;
@@ -170,8 +170,8 @@
         
         .vitamin {
           margin-top: 5px;
-          /* width: 100vw; */
-          max-width: 400px;
+          width: 100vw;
+          /*max-width: 400px;*/
           text-align: center;
           /* border: 2px solid rgb(247, 81, 4);
           border-radius: 2px; */
@@ -193,9 +193,9 @@
           margin-left: 5px;
           margin-right: 5px;
           /* margin-bottom: 20px; */
-          width: 230px;
-          max-width: 400px;
-          height: 45px;
+          width: 60vw;
+          /*max-width: 400px;*/
+          height: 10vw;
           text-align: center;
           font-size: 6vw;
           color: white;
