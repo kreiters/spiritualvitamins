@@ -418,7 +418,7 @@
           font-size: 5vw;
           font-weight: bold;
           text-align: center;
-          text-indent: 150px;
+          /*text-indent: 150px;*/
           line-height: .25;
           color: red;
           margin-top: 10px;
