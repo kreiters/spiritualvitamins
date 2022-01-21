@@ -40,15 +40,15 @@
       .menu {
         position: absolute;
         top: 0;
-        left: -65px;
-        width: 200px;
-        height: 40px;
+        left: -15vw;
+        width: 45vw;
+        height: 10vw;
         padding: 5px;
         background-color: rgb(252, 159, 38);
         transform: rotateZ(-45deg);
-        font-size: 1.5rem;
+        font-size: 6vw;
         z-index: 10;
-       cursor: pointer;
+        cursor: pointer;
       }
       
       .info {
@@ -415,19 +415,20 @@
         }
       
         .instructions h2 {
-          font-size: 1.25rem;
+          font-size: 5vw;
           font-weight: bold;
-          text-align: left;
+          text-align: center;
           text-indent: 150px;
           line-height: .25;
           color: red;
+          margin-top: 10px;
         }
       
         .instructions p {
-          font-size: 1.15rem;
+          font-size: 4vw;
           font-weight: bold;
           text-align: left;
-          text-indent: 85px;
+          text-indent: 23vw;
           line-height: .25;
           color: red;
         }
