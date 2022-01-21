@@ -339,6 +339,7 @@ jumpLinks.forEach(link => {
       document.getElementById("page-title").innerHTML = selection;//add the series title to the letter
       
       if (image[selection]) {
+        viewInstruct.style.display = "none";
         //console.log(image[selection].img);
         let selectedImg = image[selection].img;
         //console.log(selectedImg);
@@ -368,7 +369,7 @@ jumpLinks.forEach(link => {
 toggle between hiding and showing the dropdown content */
 function seriesSelect() {
   console.log("seriesSelect function running");
-  viewInstruct.style.display = "none";
+  //viewInstruct.style.display = "none";
   console.log("the scriptView class is: ", scriptView.className);
   document.getElementById("myDropdown").classList.toggle("show");
   }
