@@ -19,19 +19,19 @@
         height: 100vh;
         background-color: aquamarine;
         text-align: center;
-        /*background-image: url("assets/bottle2.png");
+        background-image: url("assets/bottle2.png");
         background-repeat: no-repeat;
         background-size: contain;
-        overflow: hidden;*/
+        /*overflow: hidden;*/
       }
        
-      .content {
+      /*.content {
        background-image: url("assets/bottle2.png");
        background-repeat: no-repeat;
        background-size: contain;
        overflow: hidden;
        background-position: center;
-     }
+     }*/
   
       .header {
         display: none;
