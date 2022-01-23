@@ -620,6 +620,11 @@
           cursor: pointer;
           border-radius: 4px;
           box-shadow: 4px 2px 12px black;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          top: -25vw;
         }
         
         /* Dropdown button on hover & focus */
