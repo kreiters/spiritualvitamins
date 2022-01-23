@@ -704,8 +704,8 @@
         
         .vitamin {
           margin-top: 16px;
-          /* width: 100vw; */
-          max-width: 400px;
+          width: 100vw;
+          /*max-width: 400px;*/
           text-align: center;
           /* border: 2px solid rgb(247, 81, 4);
           border-radius: 2px; */
@@ -1207,8 +1207,8 @@
         
         .vitamin {
           margin-top: 16px;
-          /* width: 100vw; */
-          max-width: 400px;
+          width: 100vw;
+          /*max-width: 400px;*/
           text-align: center;
           /* border: 2px solid rgb(247, 81, 4);
           border-radius: 2px; */
