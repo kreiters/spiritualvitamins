@@ -26,11 +26,15 @@
       }
        
    .content {
-       background-image: url("assets/bottle2.png");
-       background-repeat: no-repeat;
-       background-size: contain;
-       overflow: hidden;
-       background-position: center;
+      background-image: url("assets/bottle2.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
      }
    
       .header {
@@ -526,11 +530,15 @@
       }
          
       .content {
-       background-image: url("assets/bottle2.png");
-       background-repeat: no-repeat;
-       background-size: contain;
-       overflow: hidden;
-       background-position: center;
+      background-image: url("assets/bottle2.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
      }
    
       .header {
@@ -1020,11 +1028,15 @@
       }
         
       .content {
-       background-image: url("assets/bottle2.png");
-       background-repeat: no-repeat;
-       background-size: contain;
-       overflow: hidden;
-       background-position: center;
+      background-image: url("assets/bottle2.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
      }
     
       .header {
