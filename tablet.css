@@ -105,7 +105,7 @@
           width: 70vw;
           background-color: rgb(223, 109, 252);
           color: white;
-          margin-bottom: 15vw;
+          margin-bottom: 10vw;
           /* margin-bottom: 16px; */
           padding: 8px;
           font-size: 10vw;
@@ -194,6 +194,7 @@
           display: flex;
           text-align: center;
           justify-content: center;
+          margin-bottom: 10vw;
         }
       
         .day {
@@ -377,7 +378,7 @@
           /* padding: 5px; */
           margin-top: 10px;
          margin-left: 5vw;
-          /* margin-bottom: 20vh; */
+          margin-bottom: 10vw;
           font-size: 3rem;
           color: rgb(0, 0, 0);
           user-select: none;
@@ -612,8 +613,7 @@
           width: 70vw;
           background-color: rgb(223, 109, 252);
           color: white;
-          margin-bottom: 15vw;
-          /* margin-bottom: 16px; */
+          margin-bottom: 10vw;
           padding: 8px;
           font-size: 10vw;
           border: none;
@@ -715,6 +715,7 @@
           display: flex;
           text-align: center;
           justify-content: center;
+          margin-bottom: 10vw;
         }
       
         .day {
@@ -1217,6 +1218,7 @@
           display: flex;
           text-align: center;
           justify-content: center;
+          margin-bottom: 10vw;
         }
       
         .day {
@@ -1395,7 +1397,7 @@
           min-height: 135px;
           /* padding: 5px; */
           margin-top: 10px;
-          /* margin-bottom: 20vh; */
+          margin-bottom: 10vw;
           font-size: 3rem;
           color: rgb(0, 0, 0);
           user-select: none;
