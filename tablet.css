@@ -19,12 +19,20 @@
         height: 100vh;
         background-color: aquamarine;
         text-align: center;
-        background-image: url("assets/bottle2.png");
+        /*background-image: url("assets/bottle2.png");
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: contain;*/
         /* overflow: hidden; */
       }
        
+   .content {
+       background-image: url("assets/bottle2.png");
+       background-repeat: no-repeat;
+       background-size: contain;
+       overflow: hidden;
+       background-position: center;
+     }
+   
       .header {
         display: none;
       }
@@ -511,15 +519,19 @@
         height: 100vh;
         background-color: aquamarine;
         text-align: center;
-        background-image: url("assets/bottle2.png");
+        /*background-image: url("assets/bottle2.png");
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: contain;*/
         /* overflow: hidden; */
       }
          
       .content {
-         width: 100%;
-      }
+       background-image: url("assets/bottle2.png");
+       background-repeat: no-repeat;
+       background-size: contain;
+       overflow: hidden;
+       background-position: center;
+     }
    
       .header {
         display: none;
@@ -1001,15 +1013,19 @@
         height: 100vh;
         background-color: aquamarine;
         text-align: center;
-        background-image: url("assets/bottle2.png");
+        /*background-image: url("assets/bottle2.png");
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: contain;*/
         /* overflow: hidden; */
       }
         
       .content {
-         width: 100%;
-      }
+       background-image: url("assets/bottle2.png");
+       background-repeat: no-repeat;
+       background-size: contain;
+       overflow: hidden;
+       background-position: center;
+     }
     
       .header {
         display: none;
