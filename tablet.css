@@ -26,15 +26,15 @@
       }
        
    .content {
-      background-image: url("assets/bottle2.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      overflow: hidden;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      width: 100%;
+       background-image: url(assets/bottle2.png);
+       background-repeat: no-repeat;
+       background-size: contain;
+       overflow: hidden;
+       background-position: center;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       width: 100%;
      }
    
       .header {
@@ -93,21 +93,22 @@
       }
       
       .title {
-      font-size: 10vw;
-      padding-top: 4.2rem;
-      /*padding-bottom: .25rem;*/
-      /* background-color: thistle; */
-      user-select: none;
+       font-size: 10vw;
+       padding-top: 5rem;
+       padding-bottom: .25rem;
+       /* background-color: thistle; */
+       user-select: none;
+       margin-bottom: 10vw;
       }  
        /* Dropdown Button */
        .dropbtn {
-          width: 55vw;
+          width: 70vw;
           background-color: rgb(223, 109, 252);
           color: white;
-          margin-top: 8vw;
+          margin-bottom: 15vw;
           /* margin-bottom: 16px; */
           padding: 8px;
-          font-size: 6vw;
+          font-size: 10vw;
           border: none;
           cursor: pointer;
           border-radius: 4px;
@@ -530,15 +531,15 @@
       }
          
       .content {
-      background-image: url("assets/bottle2.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      overflow: hidden;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      width: 100%;
+       background-image: url(assets/bottle2.png);
+       background-repeat: no-repeat;
+       background-size: contain;
+       overflow: hidden;
+       background-position: center;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       width: 100%;
      }
    
       .header {
@@ -596,21 +597,22 @@
       }
       
       .title {
-      font-size: 2.75rem;
-      padding-top: 5rem;
-      padding-bottom: .25rem;
-      /* background-color: thistle; */
-      user-select: none;
+       font-size: 10vw;
+       padding-top: 5rem;
+       padding-bottom: .25rem;
+       /* background-color: thistle; */
+       user-select: none;
+       margin-bottom: 10vw;
       }  
        /* Dropdown Button */
        .dropbtn {
-          width: 100%;
+          width: 70vw;
           background-color: rgb(223, 109, 252);
           color: white;
-          margin-top: 60px;
+          margin-bottom: 15vw;
           /* margin-bottom: 16px; */
           padding: 8px;
-          font-size: 3.5rem;
+          font-size: 10vw;
           border: none;
           cursor: pointer;
           border-radius: 4px;
@@ -1028,15 +1030,15 @@
       }
         
       .content {
-      background-image: url("assets/bottle2.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      overflow: hidden;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      width: 100%;
+       background-image: url(assets/bottle2.png);
+       background-repeat: no-repeat;
+       background-size: contain;
+       overflow: hidden;
+       background-position: center;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       width: 100%;
      }
     
       .header {
@@ -1094,21 +1096,22 @@
       }
       
       .title {
-      font-size: 3.75rem;
-      padding-top: 5rem;
-      padding-bottom: .25rem;
-      /* background-color: thistle; */
-      user-select: none;
+       font-size: 10vw;
+       padding-top: 5rem;
+       padding-bottom: .25rem;
+       /* background-color: thistle; */
+       user-select: none;
+       margin-bottom: 10vw;
       }  
        /* Dropdown Button */
        .dropbtn {
-          width: 100%;
+          width: 70vw;
           background-color: rgb(223, 109, 252);
           color: white;
-          margin-top: 60px;
+          margin-bottom: 15vw;
           /* margin-bottom: 16px; */
           padding: 8px;
-          font-size: 3.5rem;
+          font-size: 10vw;
           border: none;
           cursor: pointer;
           border-radius: 4px;
