@@ -363,8 +363,9 @@ function returnMain() {
 jumpLinks.forEach(link => {
  link.addEventListener('click', event => {
     event.preventDefault();
-    selection = (link.innerHTML);
-    if (selection != "Home") {//keeps home from appearing in letter title
+    
+    if (link.innerHTML != "Home") {//keeps home from appearing in letter title
+      selection = (link.innerHTML);
       saveState()//save the series selection to session storage
       imgMatrix.forEach(image => {
         //console.log(image)
