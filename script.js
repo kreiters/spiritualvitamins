@@ -364,25 +364,27 @@ jumpLinks.forEach(link => {
  link.addEventListener('click', event => {
     event.preventDefault();
     selection = (link.innerHTML);
-    saveState()//save the series selection to session storage
-    imgMatrix.forEach(image => {
-      //console.log(image)
-      letterButton.style.display = "block";
-      document.getElementById("page-title").innerHTML = selection;//add the series title to the letter
-      
-      if (image[selection]) {
-        viewInstruct.style.display = "none";
-        //console.log(image[selection].img);
-        let selectedImg = image[selection].img;
-        //console.log(selectedImg);
-        // let imgRef = selectedImg;
-        // console.log(imgRef);
-        viewSelection.src = selectedImg;
-        // scriptView.classList.toggle('view');
-        scriptView.classList.remove('showScripture');
-      }
-    })
+    if (selection != "Home") {//keeps home from appearing in letter title
+      saveState()//save the series selection to session storage
+      imgMatrix.forEach(image => {
+        //console.log(image)
+        letterButton.style.display = "block";
+        document.getElementById("page-title").innerHTML = selection;//add the series title to the letter
 
+        if (image[selection]) {
+          viewInstruct.style.display = "none";
+          //console.log(image[selection].img);
+          let selectedImg = image[selection].img;
+          //console.log(selectedImg);
+          // let imgRef = selectedImg;
+          // console.log(imgRef);
+          viewSelection.src = selectedImg;
+          // scriptView.classList.toggle('view');
+          scriptView.classList.remove('showScripture');
+        }
+      })
+    }
+  
     // resetting all day variables to the current day after a new series is selected
     let revertDay = d.getDay();
     console.log("revert day is: ", revertDay);
