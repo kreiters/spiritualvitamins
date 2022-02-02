@@ -22,5 +22,5 @@ function getVerse(verseSelection) {
     let result = verseSelection.replace(/\s/g, "");//removes whitespace
     // window.open(urlBeg + result + urlEnd);
     sessionStorage.setItem('verse', verseSelection);
-    window.open("verse.html", "_self");
+    window.open("Verse.html", "_self");
 }
