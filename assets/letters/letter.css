@@ -1,0 +1,51 @@
+img {
+    display: block;
+    position: relative;
+    width: 50vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+.back-button {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.719);
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 6px;
+    box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.2);
+}
+
+.back-button:hover {
+    background-color: red;
+    border-radius: 6px;
+    box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.2);
+}
+
+.back-button:active {
+    background-color: black;
+    border-radius: 6px;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.2);
+}
+
+p {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/* a:visited {
+background-color: #ccc;
+} */
+div {
+    height: 100px;
+}
