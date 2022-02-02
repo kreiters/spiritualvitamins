@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(132, 222, 252);
+}
+
+.topnav {
+
+background-color: #333;
+overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: rgba(0, 255, 255, 0.5);
+    color: white;
+}
+
+.decision {
+    display: flex;
+    flex-direction: row;
+}
+.decision a {
+    position: relative;
+    font-size: 2vw;
+    margin: auto;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+    width: 25vw;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.719);
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 6px;
+    box-shadow: 2px 4px 4px 2px rgb(0 0 0 / 20%);
+}
+
+.decision a:hover {
+    background-color: red;
+    border-radius: 6px;
+    box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.2);
+}
+
+.decision a:active {
+    background-color: black;
+    border-radius: 6px;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.2);
+}
+
+/* a:visited {
+background-color: #ccc;
+} */
+p {
+    font-size: 4vh;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+img {
+    display: block;
+    position: relative;
+    width: 50vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+.back-button {
+    display: block;
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 4vh;
+    width: 200px;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.719);
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 6px;
+    box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.2);
+}
+
+.back-button:hover {
+    background-color: red;
+    border-radius: 6px;
+    box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.2);
+}
+
+.back-button:active {
+    background-color: black;
+    border-radius: 6px;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.2);
+}
+
+p {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/* a:visited {
+background-color: #ccc;
+} */
+/* div {
+    height: 100px;
+} */
