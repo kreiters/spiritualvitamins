@@ -342,6 +342,7 @@
     cursor: pointer;
     box-shadow: 2px 2px 8px black;
     background: white;
+    object-fit: contain;
   }
 
   .scripture {
