@@ -363,7 +363,7 @@
           margin: auto;
           text-align: center;
           width: 90vw;
-          height: 35vw;
+          height: 34.9vw;
           /*max-height: 160px;*/
           /*min-height: 135px;*/
           /* padding: 5px; */
@@ -853,10 +853,10 @@
           right: 0;
           margin: auto;
           text-align: center;
-          width: 90%;
-          /*height: 28%;*/
-          max-height: 160px;
-          min-height: 135px;
+          width: 90vw;
+          height: 34.9vw;
+          /*max-height: 160px;*/
+          /*min-height: 135px;*/
           /* padding: 5px; */
           margin-top: 10px;
           /* margin-bottom: 20vh; */
@@ -1339,10 +1339,10 @@
           right: 0;
           margin: auto;
           text-align: center;
-          width: 90%;
-          /*height: 28%;*/
-          max-height: 160px;
-          min-height: 135px;
+          width: 90vw;
+          height: 34.9vw;
+          /*max-height: 160px;*/
+          /*min-height: 135px;*/
           /* padding: 5px; */
           margin-top: 10px;
           /* margin-bottom: 20vh; */
