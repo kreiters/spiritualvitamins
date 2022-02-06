@@ -384,6 +384,8 @@
           border-radius: 20%/50%;
           cursor: pointer;
           box-shadow: 2px 2px 8px black;
+          background: white;
+          object-fit: contain;
         }
       
         .scripture {
@@ -902,6 +904,8 @@
           border-radius: 20%/50%;
           cursor: pointer;
           box-shadow: 2px 2px 8px black;
+          background: white;
+          object-fit: contain;
         }
       
         .scripture {
@@ -1402,6 +1406,8 @@
           border-radius: 20%/50%;
           cursor: pointer;
           box-shadow: 2px 2px 8px black;
+          background: white;
+          object-fit: contain;
         }
       
         .scripture {
