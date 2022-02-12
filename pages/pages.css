@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: rgb(132, 222, 252);
+    background: aquamarine;
 }
 
 .topnav {
@@ -15,7 +15,7 @@ overflow: hidden;
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 14px; /*changed left/right to 14px */
     text-decoration: none;
     font-size: 17px;
 }
@@ -38,7 +38,7 @@ overflow: hidden;
 }
 .decision a {
     position: relative;
-    font-size: 2vw;
+    font-size: 2.5vh;
     margin: auto;
     margin-top: 6vw;
     margin-bottom: 6vw;
@@ -85,6 +85,7 @@ img {
     margin: auto;
     text-align: center;
 }
+
 .back-button {
     display: block;
     /* position: absolute; */
@@ -116,6 +117,37 @@ img {
     box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.2);
 }
 
+.lookup-button {
+    display: block;
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 15%;
+    width: 200px;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.719);
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.2);
+}
+
+.lookup-button:hover {
+    background-color: red;
+    border-radius: 6px;
+    box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.2);
+}
+
+.lookup-button:active {
+    background-color: black;
+    border-radius: 6px;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.2);
+}
 p {
     text-align: center;
     padding-left: 10%;
@@ -127,3 +159,23 @@ background-color: #ccc;
 /* div {
     height: 100px;
 } */
+
+.form {
+    display: block;
+    margin: auto;
+}
+
+.form::-webkit-scrollbar {/*custom scroll bar */
+    width: 1.25rem;
+}
+
+.form::-webkit-scrollbar-track {
+border-radius: 6px; 
+box-shadow: inset 0 0 6px gray;
+}
+
+.form::-webkit-scrollbar-thumb {
+border-radius: 6px;
+background-color: rgb(204, 0, 255);
+/*outline: 1px solid slategray;*/ 
+}
