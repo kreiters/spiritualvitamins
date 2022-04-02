@@ -6,8 +6,8 @@ let imgMatrix = [{Evil: {img: "assets/scanned vitamins/evil.jpg"}},
  {Faith: {img: "assets/scanned vitamins/faith.jpg"}},
  {Forgiveness: {img: "assets/scanned vitamins/forgiveness.jpg"}},
  {Happiness: {img: "assets/scanned vitamins/happiness.jpg"}},
- {Noah_1: {img: "assets/scanned vitamins/noah1.jpg"}},
- {Noah_2: {img: "assets/scanned vitamins/noah2.jpg"}},
+ {Ark: {img: "assets/scanned vitamins/ark.jpg"}},
+ {Worship: {img: "assets/scanned vitamins/worship.jpg"}},
  {Promise: {img: "assets/scanned vitamins/promise.jpg"}},
  {Pray: {img: "assets/scanned vitamins/pray.jpg"}},
  {Spirit: {img: "assets/scanned vitamins/spirit.jpg"}},
@@ -20,6 +20,8 @@ let imgMatrix = [{Evil: {img: "assets/scanned vitamins/evil.jpg"}},
  {Letters: {img: "assets/scanned vitamins/letters.jpg"}},
  {Love: {img: "assets/scanned vitamins/love.jpg"}},
  {Grace: {img: "assets/scanned vitamins/grace.jpg"}},
+ {Wisdom: {img: "assets/scanned vitamins/wisdom.jpg"}},
+ {Resurrection: {img: "assets/scanned vitamins/resurrection.jpg"}},
  {Hope: {img: "assets/scanned vitamins/hope.jpg"}}];
 
 let menuBtn = document.getElementById("menuBtn");
@@ -53,14 +55,14 @@ let scriptureMatrix = [{Evil: [{sun: 'Psalm 105:1,3\n"O give thanks to the Lord,
   {thu: 'Psalm 132:9\n"Let your Godly people sing for joy."'}, 
  {fri: 'Psalm 144:5\n"How blessed (happy) are the people whose God is the Lord."'},
   {sat: 'Proverbs 29:18\n"Happy is he who keeps the law (God\'s Commandments)."'}]},
-  {Noah_1: [{sun: "Genesis 1:31\nThen God looked over all He had made, and He saw that it was very good."}, 
+  {Ark: [{sun: "Genesis 1:31\nThen God looked over all He had made, and He saw that it was very good."}, 
   {mon: "Romans 6:13\nSurrender your whole being to God to be used for righteous purpose."},
    {tue: "Isaiah 30:15\nIn repentance and rest is your salvation, in quietness and trust is your strength."}, 
   {wed: 'John 7:37\nJesus stood and cried out, "If anyone thirsts, let him come to Me and drink." (living water)'},
    {thu: "Proverb 23:17\nDo not let your heart envy sinners, but live in fear of the Lord."}, 
   {fri: "Proverb 21:23\nHe (the person) who guards his/her tongue guards their soul from trouble."},
    {sat: "1 John 4:16\nAnd so we know and rely on the love God has for us. God is love."}]},
-   {Noah_2: [{sun: "Psalm 2:11\nWorship the Lord with reverence and rejoice with trembling."}, 
+   {Worship: [{sun: "Psalm 2:11\nWorship the Lord with reverence and rejoice with trembling."}, 
    {mon: "Psalm 66:4\nAll the earth will worship You (God), and will sing praises to You."},
     {tue: "Isaiah 29:13\nPeople honor Me with their lips but their heart is far away from Me."}, 
    {wed: "John 4:24\nGod is spirit and those who worship Him must worship in spirit and truth."},
@@ -166,6 +168,17 @@ let scriptureMatrix = [{Evil: [{sun: 'Psalm 105:1,3\n"O give thanks to the Lord,
          {fri: 'Hebrews 4:16\n"Let us therefore draw near with confidence to the throne of grace, that we may receive mercy and may find grace to help in times of need."'},
           {sat: '2 Corinthians 12:9\n"My (God\'s) grace is sufficient for you, for power is perfected in your weaknesses."'},
           {bonus: 'Romans 5:20\n"The law came in so that the transgression would increase, but where sin increases My grace increases all the more."'}]},
+          
+          {Wisdom: [{mon: 'Proverbs 9:10\n"The fear (awe) of the Lord is the beginning of wisdom, and knowledge of the Holy One is understanding."'},
+          {tue: 'Matthew 11:19\n"Yet wisdom is vindicated by her deeds."'}, 
+         {wed: '2 Timothy 3:15\n"From childhood you have known the Sacred Scriptures which are able to give you the wisdom that leads to salvation through faith which is in Jesus Christ."'},
+          {thu: 'James 1:5\n"But if any of you lacks wisdom, let him ask of God, Who gives to all men generously without reproach."'}, 
+         {fri: 'Proverbs 1:7\n"Do not be wise in your own eyes; Fear the Lord and turn away from evil."'},
+          {sat: 'Proverbs 2:2\n"Make your ear attentive to wisdom. Incline your heart to understanding."'},
+          {sun: '1 Corinthians 2:5-6\n"Your faith should not rest on the wisdom of men, but on the power of God. Yet we do speak wisdom among those who are mature."'},
+           {bonus: '1 Corinthians 1:19-20\n"It is written, I (the Lord) will destroy the wisdom of the wise, and the cleverness of the clever I will set aside ... Has not God made foolish the wisdom of the world?"'}]},
+
+          
           {Rewards: [{sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
          {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
           {tue: 'The Crown of Exultation\n\n1 Thessalonians 2:19\n"Who is our crown of exultation? It is you in the presence of Jesus at His coming."'}, 
@@ -228,14 +241,14 @@ let quoteMatrix = [{Evil: [{sun: 'QUOTE:\n\n"God would rather transform the EVIL
        {thu: 'Psalm 132:9\n"Let your Godly people sing for joy."'}, 
       {fri: 'Psalm 144:5\n"How blessed (happy) are the people whose God is the Lord."'},
        {sat: 'Proverbs 29:18\n"Happy is he who keeps the law (God\'s Commandments)."'}]},
-{Noah_1: [{sun: "Genesis 1:31\nThen God looked over all He had made, and He saw that it was very good."}, 
+{Ark: [{sun: "Genesis 1:31\nThen God looked over all He had made, and He saw that it was very good."}, 
   {mon: "Romans 6:13\nSurrender your whole being to God to be used for righteous purpose."},
    {tue: "Isaiah 30:15\nIn repentance and rest is your salvation, in quietness and trust is your strength."}, 
   {wed: 'John 7:37\nJesus stood and cried out, "If anyone thirsts, let him come to Me and drink." (living water)'},
    {thu: "Proverb 23:17\nDo not let your heart envy sinners, but live in fear of the Lord."}, 
   {fri: "Proverb 21:23\nHe (the person) who guards his/her tongue guards their soul from trouble."},
    {sat: "1 John 4:16\nAnd so we know and rely on the love God has for us. God is love."}]},
-{Noah_2: [{sun: "Psalm 2:11\nWorship the Lord with reverence and rejoice with trembling."}, 
+{Worship: [{sun: "Psalm 2:11\nWorship the Lord with reverence and rejoice with trembling."}, 
    {mon: "Psalm 66:4\nAll the earth will worship You (God), and will sing praises to You."},
     {tue: "Isaiah 29:13\nPeople honor Me with their lips but their heart is far away from Me."}, 
    {wed: "John 4:24\nGod is spirit and those who worship Him must worship in spirit and truth."},
@@ -332,8 +345,16 @@ let quoteMatrix = [{Evil: [{sun: 'QUOTE:\n\n"God would rather transform the EVIL
           {thu: 'QUOTE:\n\n"God\'s strength can only work in our weakness."\n(Andrew Murry)'},
           {fri: 'QUOTE:\n\n"In the darkness of our miseries, the grace of God shines more brightly."\n(John Calvin)'}, 
           {sat: 'QUOTE:\n\n"No evil can resist grace forever."\n(Brennan Manning)'},
-          {bonus: 'QUOTE:\n\n"Grace, grace, God\'s grace, grace that is greater than all our sin."\n(Julia H. Johnston)'}]},          
-{Rewards: [{sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
+          {bonus: 'QUOTE:\n\n"Grace, grace, God\'s grace, grace that is greater than all our sin."\n(Julia H. Johnston)'}]},
+  {Wisdom: [{mon: 'QUOTE:\n\n"Wisdom opens the eyes both to the glories of heaven and to the hollowness of earth."\n(J.A. Motyer)'},
+          {tue: 'QUOTE:\n\n"Wise men talk because they have something to say, fools, because they have to say something."\n(Plato)'}, 
+         {wed: 'QUOTE:\n\n"The chief means for attaining wisdom, and suitable gifts for the ministry, are the Holy Scripture, and prayer."\n(John Newton)'},
+          {thu: 'QUOTE:\n\n"Christ is the true light of the world; it is through Him alone that true wisdom is imparted to the mind."\n(Jonathan Edwards)'}, 
+         {fri: 'QUOTE:\n\n"Never argue with a fool. Onlookers may not be able to tell the difference."\n(Mark Twain)'},
+          {sat: 'QUOTE:\n\n"Patience is a companion of wisdom."\n(Augustine)'},
+          {sun: 'QUOTE:\n\n"Some view the Spiritual quest as one of seeking wisdom, knowledge, and understanding - a learning process."\n(Alice Camille)'},
+           {bonus: 'QUOTE:\n\n"For it is not our natural reasoning powers that will guide us correctly or give us right judgment in all things. No, Christ alone is our wisdom."\n()'}]},
+   {Rewards: [{sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
          {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
           {tue: 'The Crown of Exultation\n\n1 Thessalonians 2:19\n"Who is our crown of exultation? It is you in the presence of Jesus at His coming."'}, 
          {wed: 'The Crown of Righteousness\n\n2 Timothy 4:8\n"...will be laid up for me and all who have loved His appearing."'},
@@ -341,6 +362,15 @@ let quoteMatrix = [{Evil: [{sun: 'QUOTE:\n\n"God would rather transform the EVIL
          {fri: 'The Crown of Glory\n\n1 Peter 5:4\n"When the Chief Shepherd appears, you will receive the crown of glory."'},
           {sat: 'The Crown of Thorns\n\nMatthew 27:29\n"And after weaving a crown of thorns they put it on Jesus\' head."'},
           {bonus: '1 Peter 3:15\n"But set apart Christ Jesus in your heart, always being ready to give a reason to everyone who asks you to give an account for the HOPE that is in you."'}]}];
+
+        //   {: [{mon: 'QUOTE:\n\n""\n()'},
+        //   {tue: 'QUOTE:\n\n""\n()'}, 
+        //  {wed: 'QUOTE:\n\n""\n()'},
+        //   {thu: 'QUOTE:\n\n""\n()'}, 
+        //  {fri: 'QUOTE:\n\n""\n()'},
+        //   {sat: 'QUOTE:\n\n""\n()'},
+        //   {sun: 'QUOTE:\n\n""\n()'},
+        //    {bonus: 'QUOTE:\n\n""\n()'}]},
 
 let dailyQuote;
 
@@ -416,7 +446,9 @@ jumpLinks.forEach(link => {
     event.preventDefault();
     
     if (link.innerHTML != "Home") {//keeps home from appearing in letter title
-      selection = (link.innerHTML);
+      // console.log("the link data-name is: ", link.getAttribute("data-name"));
+      // selection = (link.innerHTML);//old way
+      selection = link.getAttribute("data-name");
       saveState()//save the series selection to session storage
       imgMatrix.forEach(image => {
         //console.log(image)
