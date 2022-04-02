@@ -145,19 +145,33 @@
           z-index: 200;
         }
         
-        /* Links inside the dropdown */
-        .dropdown-content a {
-          
-          color: white;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-        }
-        
-        /* Change color of dropdown links on hover */
-        .dropdown-content a:hover {
-            background-color: rgb(204, 0, 255);
-        }
+        /* Links inside the dropdown
+  .dropdown-content a {
+    
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  /* .dropdown-content a:hover {
+      background-color: rgb(204, 0, 255);
+  } */
+
+  /* Links inside the dropdown */
+  .normal-links {
+    
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .normal-links:hover {
+      background-color: rgb(204, 0, 255);
+  }
         
       .show::-webkit-scrollbar {/*custom scroll bar */
       width: 1.25rem;
@@ -393,7 +407,9 @@
         }
       
         .showScripture{
-          display: block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           font-size: 1.05rem;
           left: 0;
           right: 0;
@@ -502,6 +518,20 @@
         .glass {
           display: none;
         }
+        
+        .bonus {
+          background-color: gold;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+      
+        .bonus:hover {
+          background-color: rgb(219, 187, 2);
+          color: white;
+        }
+
  }
 
 /* ###########################################################################################################################################
@@ -656,19 +686,33 @@
           z-index: 1;
         }
         
-        /* Links inside the dropdown */
-        .dropdown-content a {
-          
-          color: white;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-        }
-        
-        /* Change color of dropdown links on hover */
-        .dropdown-content a:hover {
-            background-color: rgb(204, 0, 255);
-        }
+        /* Links inside the dropdown
+  .dropdown-content a {
+    
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  /* .dropdown-content a:hover {
+      background-color: rgb(204, 0, 255);
+  } */
+
+  /* Links inside the dropdown */
+  .normal-links {
+    
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .normal-links:hover {
+      background-color: rgb(204, 0, 255);
+  }
         
         .show::-webkit-scrollbar {/*custom scroll bar */
       width: 1.25rem;
@@ -913,7 +957,9 @@
         }
       
         .showScripture{
-          display: block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           font-size: 1.05rem;
           left: 0;
           right: 0;
@@ -1008,6 +1054,20 @@
         .glass {
           display: none;
         }
+        
+        .bonus {
+          background-color: gold;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+      
+        .bonus:hover {
+          background-color: rgb(219, 187, 2);
+          color: white;
+        }
+
 }
 
 /* ###########################################################################################################################################
@@ -1158,19 +1218,33 @@
           z-index: 1;
         }
         
-        /* Links inside the dropdown */
-        .dropdown-content a {
-          
-          color: white;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-        }
-        
-        /* Change color of dropdown links on hover */
-        .dropdown-content a:hover {
-            background-color: rgb(204, 0, 255);
-        }
+        /* Links inside the dropdown
+  .dropdown-content a {
+    
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  /* .dropdown-content a:hover {
+      background-color: rgb(204, 0, 255);
+  } */
+
+  /* Links inside the dropdown */
+  .normal-links {
+    
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .normal-links:hover {
+      background-color: rgb(204, 0, 255);
+  }
         
        .show::-webkit-scrollbar {/*custom scroll bar */
       width: 1.25rem;
@@ -1415,7 +1489,9 @@
         }
       
         .showScripture{
-          display: block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           font-size: 1.05rem;
           left: 0;
           right: 0;
@@ -1510,4 +1586,18 @@
         .glass {
           display: none;
         }
+        
+        .bonus {
+          background-color: gold;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+      
+        .bonus:hover {
+          background-color: rgb(219, 187, 2);
+          color: white;
+        }
+
   }

@@ -49,3 +49,8 @@ background-color: #ccc;
 div {
     height: 100px;
 }
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+}
