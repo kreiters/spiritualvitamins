@@ -219,7 +219,7 @@
           /*max-width: 400px;*/
           height: 10vw;
           text-align: center;
-          font-size: 6vw;
+          font-size: 1.25rem;
           color: white;
           /* padding: .25rem; */
           padding-top: .25rem;
@@ -741,7 +741,7 @@
           width: 220px;
           max-width: 400px;
           text-align: center;
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           color: white;
           /* padding: .25rem; */
           padding-top: .25rem;
@@ -1257,7 +1257,7 @@
           width: 220px;
           max-width: 400px;
           text-align: center;
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           color: white;
           /* padding: .25rem; */
           padding-top: .25rem;
