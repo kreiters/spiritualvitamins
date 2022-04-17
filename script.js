@@ -32,8 +32,8 @@ let letterButton = document.getElementById("letterBtn");
 // to access the scriptureMatrix, use: scriptureMatrix[0].Evil[0].sun
 // or: scriptureMatrix[1].Forgiveness[0].sun
 // or: scriptureMatrix[1].Forgiveness[1].mon   ....etc
-let resurrectionDaysArray = ["Palm Sunday", "Good Shepherd Monday", "Zion's Cornerstone Tuesday",
-"Lord's Supper Wednesday", "Passover Thursday", "Crucifixion Friday", "Burial Saturday", "Resurrection Sunday!"];
+let resurrectionDaysArray = ["Resurrection Sunday!", "Good Shepherd Monday", "Zion's Cornerstone Tuesday",
+"Lord's Supper Wednesday", "Passover Thursday", "Crucifixion Friday", "Burial Saturday", "Palm Sunday"];
 let resurrectionDaysMatrix = [{0: {prev: "7", next: "1"}}, {1: {prev: "0", next: "2"}},
  {2: {prev: "1", next: "3"}}, {3: {prev: "2", next: "4"}},
   {4: {prev: "3", next: "5"}}, {5: {prev: "4", next: "6"}},
