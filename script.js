@@ -2,52 +2,84 @@ let d = new Date();
 let day = d.getDay();
 let prevDay = ((day - 1));
 let nextDay = ((day + 1));
-let imgMatrix = [{Evil: {img: "assets/scanned vitamins/evil.jpg"}},
- {Faith: {img: "assets/scanned vitamins/faith.jpg"}},
- {Forgiveness: {img: "assets/scanned vitamins/forgiveness.jpg"}},
- {Happiness: {img: "assets/scanned vitamins/happiness.jpg"}},
- {Ark: {img: "assets/scanned vitamins/ark.jpg"}},
- {Worship: {img: "assets/scanned vitamins/worship.jpg"}},
- {Promise: {img: "assets/scanned vitamins/promise.jpg"}},
- {Pray: {img: "assets/scanned vitamins/pray.jpg"}},
- {Spirit: {img: "assets/scanned vitamins/spirit.jpg"}},
- {Study: {img: "assets/scanned vitamins/study.jpg"}},
- {Sword: {img: "assets/scanned vitamins/sword.jpg"}},
- {Thankful: {img: "assets/scanned vitamins/thankful.jpg"}},
- {Think: {img: "assets/scanned vitamins/think.jpg"}},
- {Time: {img: "assets/scanned vitamins/time.jpg"}},
- {Rewards: {img: "assets/scanned vitamins/rewards.jpg"}},
- {Letters: {img: "assets/scanned vitamins/letters.jpg"}},
- {Love: {img: "assets/scanned vitamins/love.jpg"}},
- {Grace: {img: "assets/scanned vitamins/grace.jpg"}},
- {Wisdom: {img: "assets/scanned vitamins/wisdom.jpg"}},
- {Resurrection: {img: "assets/scanned vitamins/resurrection.jpg"}},
- {Hope: {img: "assets/scanned vitamins/hope.jpg"}}];
+let imgMatrix = [
+  {Evil: {img: "assets/scanned vitamins/evil.jpg"}},
+  {Faith: {img: "assets/scanned vitamins/faith.jpg"}},
+  {Forgiveness: {img: "assets/scanned vitamins/forgiveness.jpg"}},
+  {Happiness: {img: "assets/scanned vitamins/happiness.jpg"}},
+  {Ark: {img: "assets/scanned vitamins/ark.jpg"}},
+  {Worship: {img: "assets/scanned vitamins/worship.jpg"}},
+  {Promise: {img: "assets/scanned vitamins/promise.jpg"}},
+  {Pray: {img: "assets/scanned vitamins/pray.jpg"}},
+  {Spirit: {img: "assets/scanned vitamins/spirit.jpg"}},
+  {Study: {img: "assets/scanned vitamins/study.jpg"}},
+  {Sword: {img: "assets/scanned vitamins/sword.jpg"}},
+  {Thankful: {img: "assets/scanned vitamins/thankful.jpg"}},
+  {Think: {img: "assets/scanned vitamins/think.jpg"}},
+  {Time: {img: "assets/scanned vitamins/time.jpg"}},
+  {Rewards: {img: "assets/scanned vitamins/rewards.jpg"}},
+  {Letters: {img: "assets/scanned vitamins/letters.jpg"}},
+  {Love: {img: "assets/scanned vitamins/love.jpg"}},
+  {Grace: {img: "assets/scanned vitamins/grace.jpg"}},
+  {Wisdom: {img: "assets/scanned vitamins/wisdom.jpg"}},
+  {Resurrection: {img: "assets/scanned vitamins/resurrection.jpg"}},
+  {Obey: {img: "assets/scanned vitamins/obey.jpg"}},
+  {Hope: {img: "assets/scanned vitamins/hope.jpg"}}];
 
 let menuBtn = document.getElementById("menuBtn");
 let infoScreen = document.getElementById("info");
 let letterButton = document.getElementById("letterBtn");
+let kidsLetterButton = document.getElementById("kidsLetterBtn");
+
+let kidsArray = [
+  "Obey"];
 
 //all scriptures and quotes moved to content.js file
 // to access the scriptureMatrix, use: scriptureMatrix[0].Evil[0].sun
 // or: scriptureMatrix[1].Forgiveness[0].sun
 // or: scriptureMatrix[1].Forgiveness[1].mon   ....etc
-let resurrectionDaysArray = ["Resurrection Sunday!", "Good Shepherd Monday", "Zion's Cornerstone Tuesday",
-"Lord's Supper Wednesday", "Passover Thursday", "Crucifixion Friday", "Burial Saturday", "Palm Sunday"];
-let resurrectionDaysMatrix = [{0: {prev: "7", next: "1"}}, {1: {prev: "0", next: "2"}},
- {2: {prev: "1", next: "3"}}, {3: {prev: "2", next: "4"}},
-  {4: {prev: "3", next: "5"}}, {5: {prev: "4", next: "6"}},
-   {6: {prev: "5", next: "7"}}, {7: {prev: "6", next: "0"}}];
+let resurrectionDaysArray = [
+  "Resurrection Sunday!",
+  "Good Shepherd Monday",
+  "Zion's Cornerstone Tuesday",
+  "Lord's Supper Wednesday",
+  "Passover Thursday",
+  "Crucifixion Friday",
+  "Burial Saturday",
+  "Palm Sunday"];
+
+let resurrectionDaysMatrix = [
+  {0: {prev: "7", next: "1"}},
+  {1: {prev: "0", next: "2"}},
+  {2: {prev: "1", next: "3"}},
+  {3: {prev: "2", next: "4"}},
+  {4: {prev: "3", next: "5"}},
+  {5: {prev: "4", next: "6"}},
+  {6: {prev: "5", next: "7"}},
+  {7: {prev: "6", next: "0"}}];
+
 let resurrectionShortDaysArray = ["sun", "mon", "tue", "wed", "thu", "fri", "sat", "bonus"];
 
 
-let daysArray = ["Sacred Sunday", "Marvelous Monday", "Terrific Tuesday",
- "Wonderful Wednesday", "Thankful Thursday", "Fabulous Friday", "Satisfying Saturday"];
+let daysArray = ["Sacred Sunday",
+  "Marvelous Monday",
+  "Terrific Tuesday",
+  "Wonderful Wednesday",
+  "Thankful Thursday",
+  "Fabulous Friday",
+  "Satisfying Saturday"];
+
 let shortDaysArray = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
-let daysMatrix = [{0: {prev: "6", next: "1"}}, {1: {prev: "0", next: "2"}},
- {2: {prev: "1", next: "3"}}, {3: {prev: "2", next: "4"}},
-  {4: {prev: "3", next: "5"}}, {5: {prev: "4", next: "6"}},
-   {6: {prev: "5", next: "0"}}];
+
+let daysMatrix = [
+  {0: {prev: "6", next: "1"}},
+  {1: {prev: "0", next: "2"}},
+  {2: {prev: "1", next: "3"}},
+  {3: {prev: "2", next: "4"}},
+  {4: {prev: "3", next: "5"}},
+  {5: {prev: "4", next: "6"}},
+  {6: {prev: "5", next: "0"}}];
+
 let displayedDay = document.getElementById("day-display");
 let displayedPrevDay = shortDaysArray[prevDay];
 let prevBtn = document.getElementById("prev");
@@ -65,7 +97,6 @@ let dailyScript;
 let scriptView = document.getElementById("scripture");
 let viewInstruct = document.getElementById("show-instructions");
 
-
 let dailyQuote;
 
 let storedSelection;
@@ -79,11 +110,14 @@ function getState() {//added this function to load previous series selections wh
   selection = sessionStorage.getItem('storedSelection');
   
   if (selection == null) {
+    checkForKidsLetter()
     // alert("session storage is: " + sessionStorage.getItem('storedSelection'));
     viewInstruct.style.display = "block";
     letterButton.style.display = "none";
+    kidsLetterButton.style.display = "none";
   }
   else {
+    checkForKidsLetter()
     viewInstruct.innerHTML = "";
     viewInstruct.style.display = "none";
     console.log(sessionStorage.getItem('storedSelection') + " available in session storage");
@@ -106,6 +140,7 @@ function getState() {//added this function to load previous series selections wh
         scriptView.classList.remove('showScripture');
       }
     })
+    
   }
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -149,6 +184,7 @@ jumpLinks.forEach(link => {
       // console.log("the link data-name is: ", link.getAttribute("data-name"));
       // selection = (link.innerHTML);//old way
       selection = link.getAttribute("data-name");
+      checkForKidsLetter()
       saveState()//save the series selection to session storage
       imgMatrix.forEach(image => {
         //console.log(image)
@@ -194,113 +230,51 @@ function seriesSelect() {
   //viewInstruct.style.display = "none";
   console.log("the scriptView class is: ", scriptView.className);
   document.getElementById("myDropdown").classList.toggle("show");
-  }
+}
   
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-    //   console.log(daysArray[day]);
-    //   console.log(viewSelection)//display what was selected
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+  //   console.log(daysArray[day]);
+  //   console.log(viewSelection)//display what was selected
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
       }
     }
   }
+}
   
-  function prev() {
-      //console.log("the days matrix is: ", daysMatrix[day]);
-      if (selection == "Resurrection") {//set days to special if series in memory is resurrection
-        if (day == "0") {
-          day = 7;
-          console.log("The day was 0");
-          currentDay = 7;
-          prevDay = (resurrectionDaysMatrix[currentDay][currentDay].prev);
-          nextDay = (resurrectionDaysMatrix[currentDay][currentDay].next);
-          displayedDay.innerHTML = resurrectionDaysArray[currentDay];
-          updateScripture()
-        }
-        else {
-            day = day - 1;
-            currentDay = currentDay - 1;
-            prevDay = (resurrectionDaysMatrix[currentDay][currentDay].prev);
-            nextDay = (resurrectionDaysMatrix[currentDay][currentDay].next);
-            displayedDay.innerHTML = resurrectionDaysArray[currentDay];
-            updateScripture()  
-        }
-        
-      }
-      else {
-        if (day == "0") {
-            day = 6;
-            console.log("The day was 0");
-            currentDay = 6;
-            prevDay = (daysMatrix[currentDay][currentDay].prev);
-            nextDay = (daysMatrix[currentDay][currentDay].next);
-            // nextDay = "0";
-            // console.log("The current day is: ", daysArray[day]);
-            // console.log("The prev day is: ", prevDay);
-            // console.log("The next day is: ", nextDay);
-
-            displayedDay.innerHTML = daysArray[currentDay];
-            // prevBtn.innerHTML = shortDaysArray[prevDay];
-            // nextBtn.innerHTML = shortDaysArray[nextDay];
-            updateScripture()
-            
-
-        }
-      
-        else {
-            day = day - 1;
-            
-            currentDay = currentDay - 1;
-            prevDay = (daysMatrix[currentDay][currentDay].prev);
-            nextDay = (daysMatrix[currentDay][currentDay].next);
-            displayedDay.innerHTML = daysArray[currentDay];
-            updateScripture()
-            
-        }
-      }
-  }
-
-  function next() {
-        //console.log("the days matrix is: ", daysMatrix[day]);
+function prev() {
+    //console.log("the days matrix is: ", daysMatrix[day]);
     if (selection == "Resurrection") {//set days to special if series in memory is resurrection
-      if (day == "7") {
-        day = 0;
-        console.log("The day was 6");
-        currentDay = 0;
+      if (day == "0") {
+        day = 7;
+        console.log("The day was 0");
+        currentDay = 7;
         prevDay = (resurrectionDaysMatrix[currentDay][currentDay].prev);
         nextDay = (resurrectionDaysMatrix[currentDay][currentDay].next);
-        // nextDay = "0";
-        // console.log("The current day is: ", daysArray[day]);
-        // console.log("The prev day is: ", prevDay);
-        // console.log("The next day is: ", nextDay);
-
         displayedDay.innerHTML = resurrectionDaysArray[currentDay];
-        // prevBtn.innerHTML = shortDaysArray[prevDay];
-        // nextBtn.innerHTML = shortDaysArray[nextDay];
-        updateScripture()  
+        updateScripture()
       }
       else {
-          day = day + 1;
-          currentDay = currentDay + 1;
+          day = day - 1;
+          currentDay = currentDay - 1;
           prevDay = (resurrectionDaysMatrix[currentDay][currentDay].prev);
           nextDay = (resurrectionDaysMatrix[currentDay][currentDay].next);
           displayedDay.innerHTML = resurrectionDaysArray[currentDay];
-          updateScripture()
-          
+          updateScripture()  
       }
+      
     }
     else {
-      if (day == "6") {
-          day = 0;
-          console.log("The day was 6");
-          currentDay = 0;
+      if (day == "0") {
+          day = 6;
+          console.log("The day was 0");
+          currentDay = 6;
           prevDay = (daysMatrix[currentDay][currentDay].prev);
           nextDay = (daysMatrix[currentDay][currentDay].next);
           // nextDay = "0";
@@ -313,12 +287,13 @@ function seriesSelect() {
           // nextBtn.innerHTML = shortDaysArray[nextDay];
           updateScripture()
           
+
       }
     
       else {
-          day = day + 1;
+          day = day - 1;
           
-          currentDay = currentDay + 1;
+          currentDay = currentDay - 1;
           prevDay = (daysMatrix[currentDay][currentDay].prev);
           nextDay = (daysMatrix[currentDay][currentDay].next);
           displayedDay.innerHTML = daysArray[currentDay];
@@ -326,6 +301,67 @@ function seriesSelect() {
           
       }
     }
+}
+
+function next() {
+      //console.log("the days matrix is: ", daysMatrix[day]);
+  if (selection == "Resurrection") {//set days to special if series in memory is resurrection
+    if (day == "7") {
+      day = 0;
+      console.log("The day was 6");
+      currentDay = 0;
+      prevDay = (resurrectionDaysMatrix[currentDay][currentDay].prev);
+      nextDay = (resurrectionDaysMatrix[currentDay][currentDay].next);
+      // nextDay = "0";
+      // console.log("The current day is: ", daysArray[day]);
+      // console.log("The prev day is: ", prevDay);
+      // console.log("The next day is: ", nextDay);
+
+      displayedDay.innerHTML = resurrectionDaysArray[currentDay];
+      // prevBtn.innerHTML = shortDaysArray[prevDay];
+      // nextBtn.innerHTML = shortDaysArray[nextDay];
+      updateScripture()  
+    }
+    else {
+        day = day + 1;
+        currentDay = currentDay + 1;
+        prevDay = (resurrectionDaysMatrix[currentDay][currentDay].prev);
+        nextDay = (resurrectionDaysMatrix[currentDay][currentDay].next);
+        displayedDay.innerHTML = resurrectionDaysArray[currentDay];
+        updateScripture()
+        
+    }
+  }
+  else {
+    if (day == "6") {
+        day = 0;
+        console.log("The day was 6");
+        currentDay = 0;
+        prevDay = (daysMatrix[currentDay][currentDay].prev);
+        nextDay = (daysMatrix[currentDay][currentDay].next);
+        // nextDay = "0";
+        // console.log("The current day is: ", daysArray[day]);
+        // console.log("The prev day is: ", prevDay);
+        // console.log("The next day is: ", nextDay);
+
+        displayedDay.innerHTML = daysArray[currentDay];
+        // prevBtn.innerHTML = shortDaysArray[prevDay];
+        // nextBtn.innerHTML = shortDaysArray[nextDay];
+        updateScripture()
+        
+    }
+  
+    else {
+        day = day + 1;
+        
+        currentDay = currentDay + 1;
+        prevDay = (daysMatrix[currentDay][currentDay].prev);
+        nextDay = (daysMatrix[currentDay][currentDay].next);
+        displayedDay.innerHTML = daysArray[currentDay];
+        updateScripture()
+        
+    }
+  }
 }
 
 //this function opens the scripture when the vitamin front is clicked
@@ -340,11 +376,9 @@ viewSelection.addEventListener('click', event => {
     //scriptureMatrix[1].Forgiveness[0].sun
     //scriptureMatrix[1].Forgiveness[1].mon
     updateScripture()//moved code below to the updateScripture function
-    
-
   }
-  
 });
+
 //gets the scripture for the current day
 function updateScripture() {
   if (selection == "Resurrection") {
@@ -452,11 +486,40 @@ function updateQuote() {
 function openMenu() {
   window.open('./pages/salvation.html', "_self");
 }
+
 function openLetter() {
   saveState()
   let letterSelect = ("./assets/letters/" + selection + ".html");//open the letter of the selected series
   console.log(letterSelect);
   window.open(letterSelect, "_self");
+}
+
+function checkForKidsLetter() {
+  // alert("just checked for kids letter");
+  // console.log("just checked for kids letter");
+  let kidsLetterSelect = ("./assets/letters/kids" + selection + ".html");
+  kidsArray.forEach(file => {
+    console.log("here is the selection: ", selection);
+    console.log("here are the kids letters files: ", file);
+    if(file == selection) {
+      console.log("file == selection");
+      letterButton.style.left = "480px";
+      kidsLetterButton.style.display = "block";
+    }
+    else {
+      letterButton.style.left = "400px";
+      kidsLetterButton.style.display = "none";
+    }
+  });
+  
+}
+
+function openKidsLetter() {
+  saveState()
+  checkForKidsLetter()
+  let kidsLetterSelect = ("./assets/letters/kids" + selection + ".html");//open the kids letter of the selected series
+  console.log(kidsLetterSelect);
+  window.open(kidsLetterSelect, "_self");
 }
 
 function saveState() {//save current setting to storage

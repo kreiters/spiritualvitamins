@@ -208,7 +208,7 @@
           display: flex;
           text-align: center;
           justify-content: center;
-          margin-bottom: 10vw;
+          margin-bottom: 10px;
         }
       
         .day {
@@ -399,15 +399,17 @@
           cursor: pointer;
           box-shadow: 2px 2px 8px black;
           background: white;
-          object-fit: contain;
+          /* object-fit: contain; */
         }
       
         .scripture {
-          display: none;
+          /* display: none; */
+          visibility: hidden;
         }
-      
+      /* trying to use visibility instead of display so that space stays the same for the elements */
         .showScripture{
-          display: flex;
+          visibility: visible;
+          /* display: flex; */
           justify-content: center;
           align-items: center;
           font-size: 1.05rem;
@@ -418,9 +420,9 @@
           padding: 13px;
           width: 90%;
           height: 40%;
-          min-height: 150px;
+          min-height: 250px;
           margin-top: 2px;
-          /* margin-bottom: 20vh; */
+          margin-bottom: -100px;
           color: rgb(0, 0, 0);
           background-color: white;
           user-select: none;
@@ -486,6 +488,21 @@
           box-shadow: 2px 2px 8px black;
           cursor: pointer;
         }
+        
+        .kids-letter-button {
+          display: none;
+          height: 100px;
+          width: 75px;
+          background: black;
+          /* position: absolute; */
+          left: 300px;
+          right: 0;
+          margin: auto;
+          bottom: 100px;
+          border-radius: 3px;
+          box-shadow: 2px 2px 8px black;
+          cursor: pointer;
+        }
 
         .bottle {
           display: block;
@@ -500,7 +517,7 @@
           right: 0;
           top: 5px;
           margin: auto;
-          margin-top: 5px;
+          /* margin-top: 5px; */
           padding-top: 2px;
           /* padding-bottom: 4px; */
           padding-left: 4px;
@@ -515,10 +532,34 @@
           font-size: 12px;
         }
 
+        
+        .kids-page {
+          height: 90%;
+          width: 65px;
+          background: white;
+          position: relative;
+          left: 0;
+          right: 0;
+          top: 5px;
+          margin: auto;
+          padding-top: 2px;
+          /* padding-bottom: 4px; */
+          padding-left: 4px;
+          padding-right: 4px;
+          font-size: 22px;
+          overflow: hidden;
+        }
+
+        .kids-page-title {
+          padding-top: 4px;
+          text-align: center;
+          font-size: 12px;
+        }
+  
         .glass {
           display: none;
         }
-        
+
         .bonus {
           background-color: gold;
           color: black;
@@ -530,6 +571,15 @@
         .bonus:hover {
           background-color: rgb(219, 187, 2);
           color: white;
+        }
+
+        .letter-container {
+          display: flex;
+          /* position: absolute;
+          left: 100px;
+          right: 0;
+          margin: auto;
+          bottom: 0; */
         }
 
  }
@@ -655,7 +705,7 @@
           left: 0;
           right: 0;
           margin: auto;
-          top: -25vw;
+          top: -120px;
         }
         
         /* Dropdown button on hover & focus */
@@ -765,7 +815,7 @@
           display: flex;
           text-align: center;
           justify-content: center;
-          margin-bottom: 10vw;
+          margin-bottom: 10px;
         }
       
         .day {
@@ -949,15 +999,17 @@
           cursor: pointer;
           box-shadow: 2px 2px 8px black;
           background: white;
-          object-fit: contain;
+          /* object-fit: contain; */
         }
       
         .scripture {
-          display: none;
+          /* display: none; */
+          visibility: hidden;
         }
       
         .showScripture{
-          display: flex;
+          visibility: visible;
+          /* display: flex; */
           justify-content: center;
           align-items: center;
           font-size: 1.05rem;
@@ -968,9 +1020,9 @@
           padding: 13px;
           width: 90%;
           height: 40%;
-          min-height: 150px;
+          min-height: 250px;
           margin-top: 2px;
-          /* margin-bottom: 20vh; */
+          margin-bottom: -100px;
           color: rgb(0, 0, 0);
           background-color: white;
           user-select: none;
@@ -1033,28 +1085,78 @@
           box-shadow: 2px 2px 8px black;
           cursor: pointer;
         }
+        
+        .kids-letter-button {
+          display: none;
+          height: 100px;
+          width: 75px;
+          background: black;
+          /* position: absolute; */
+          left: 300px;
+          right: 0;
+          margin: auto;
+          bottom: 100px;
+          border-radius: 3px;
+          box-shadow: 2px 2px 8px black;
+          cursor: pointer;
+        }
 
+        .bottle {
+          display: block;
+        }
+  
         .page {
-          height: 90px;
+          height: 90%;
           width: 65px;
           background: white;
-          position: absolute;
+          position: relative;
           left: 0;
           right: 0;
           top: 5px;
           margin: auto;
-          padding-top: 9px;
-          padding-bottom: 4px;
+          /* margin-top: 5px; */
+          padding-top: 2px;
+          /* padding-bottom: 4px; */
           padding-left: 4px;
           padding-right: 4px;
           font-size: 2px;
           overflow: hidden;
         }
 
+        .page-title {
+          padding-top: 2px;
+          text-align: center;
+          font-size: 12px;
+        }
+
+        
+        .kids-page {
+          height: 90%;
+          width: 65px;
+          background: white;
+          position: relative;
+          left: 0;
+          right: 0;
+          top: 5px;
+          margin: auto;
+          padding-top: 2px;
+          /* padding-bottom: 4px; */
+          padding-left: 4px;
+          padding-right: 4px;
+          font-size: 22px;
+          overflow: hidden;
+        }
+
+        .kids-page-title {
+          padding-top: 4px;
+          text-align: center;
+          font-size: 12px;
+        }
+  
         .glass {
           display: none;
         }
-        
+
         .bonus {
           background-color: gold;
           color: black;
@@ -1066,6 +1168,15 @@
         .bonus:hover {
           background-color: rgb(219, 187, 2);
           color: white;
+        }
+
+        .letter-container {
+          display: flex;
+          /* position: absolute;
+          left: 100px;
+          right: 0;
+          margin: auto;
+          bottom: 0; */
         }
 
 }
@@ -1297,7 +1408,7 @@
           display: flex;
           text-align: center;
           justify-content: center;
-          margin-bottom: 10vw;
+          margin-bottom: 10px;
         }
       
         .day {
@@ -1481,15 +1592,17 @@
           cursor: pointer;
           box-shadow: 2px 2px 8px black;
           background: white;
-          object-fit: contain;
+          /* object-fit: contain; */
         }
       
         .scripture {
-          display: none;
+          /* display: none; */
+          visibility: hidden;
         }
       
         .showScripture{
-          display: flex;
+          visibility: visible;
+          /* display: flex; */
           justify-content: center;
           align-items: center;
           font-size: 1.05rem;
@@ -1500,9 +1613,9 @@
           padding: 13px;
           width: 90%;
           height: 40%;
-          min-height: 150px;
+          min-height: 250px;
           margin-top: 2px;
-          /* margin-bottom: 20vh; */
+          margin-bottom: -100px;
           color: rgb(0, 0, 0);
           background-color: white;
           user-select: none;
@@ -1565,28 +1678,78 @@
           box-shadow: 2px 2px 8px black;
           cursor: pointer;
         }
+        
+        .kids-letter-button {
+          display: none;
+          height: 100px;
+          width: 75px;
+          background: black;
+          /* position: absolute; */
+          left: 300px;
+          right: 0;
+          margin: auto;
+          bottom: 100px;
+          border-radius: 3px;
+          box-shadow: 2px 2px 8px black;
+          cursor: pointer;
+        }
 
+        .bottle {
+          display: block;
+        }
+  
         .page {
-          height: 90px;
+          height: 90%;
           width: 65px;
           background: white;
-          position: absolute;
+          position: relative;
           left: 0;
           right: 0;
           top: 5px;
           margin: auto;
-          padding-top: 9px;
-          padding-bottom: 4px;
+          /* margin-top: 5px; */
+          padding-top: 2px;
+          /* padding-bottom: 4px; */
           padding-left: 4px;
           padding-right: 4px;
           font-size: 2px;
           overflow: hidden;
         }
 
+        .page-title {
+          padding-top: 2px;
+          text-align: center;
+          font-size: 12px;
+        }
+
+        
+        .kids-page {
+          height: 90%;
+          width: 65px;
+          background: white;
+          position: relative;
+          left: 0;
+          right: 0;
+          top: 5px;
+          margin: auto;
+          padding-top: 2px;
+          /* padding-bottom: 4px; */
+          padding-left: 4px;
+          padding-right: 4px;
+          font-size: 22px;
+          overflow: hidden;
+        }
+
+        .kids-page-title {
+          padding-top: 4px;
+          text-align: center;
+          font-size: 12px;
+        }
+  
         .glass {
           display: none;
         }
-        
+
         .bonus {
           background-color: gold;
           color: black;
@@ -1598,6 +1761,15 @@
         .bonus:hover {
           background-color: rgb(219, 187, 2);
           color: white;
+        }
+
+        .letter-container {
+          display: flex;
+          /* position: absolute;
+          left: 100px;
+          right: 0;
+          margin: auto;
+          bottom: 0; */
         }
 
   }
