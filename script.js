@@ -24,20 +24,28 @@ let imgMatrix = [
   {Wisdom: {img: "assets/scanned vitamins/wisdom.jpg"}},
   {Resurrection: {img: "assets/scanned vitamins/resurrection.jpg"}},
   {Obey: {img: "assets/scanned vitamins/obey.jpg"}},
+  {Prayer: {img: "assets/scanned vitamins/prayer.jpg"}},
   {Hope: {img: "assets/scanned vitamins/hope.jpg"}}];
 
 let menuBtn = document.getElementById("menuBtn");
 let infoScreen = document.getElementById("info");
 let letterButton = document.getElementById("letterBtn");
 let kidsLetterButton = document.getElementById("kidsLetterBtn");
+let bonusBtn = document.getElementById("bonus-vitamin");
+let revealBonus;
+let bonusDay;
 
 let kidsArray = [
-  "Obey"];
+  "Obey",
+  "Prayer"];
+
+let containsBonusDay = [];//declare an array to contain all the series names that have bonus days
 
 //all scriptures and quotes moved to content.js file
 // to access the scriptureMatrix, use: scriptureMatrix[0].Evil[0].sun
 // or: scriptureMatrix[1].Forgiveness[0].sun
 // or: scriptureMatrix[1].Forgiveness[1].mon   ....etc
+
 let resurrectionDaysArray = [
   "Resurrection Sunday!",
   "Good Shepherd Monday",
@@ -60,6 +68,26 @@ let resurrectionDaysMatrix = [
 
 let resurrectionShortDaysArray = ["sun", "mon", "tue", "wed", "thu", "fri", "sat", "bonus"];
 
+let bonusShortDaysArray = ["sun", "mon", "tue", "wed", "thu", "fri", "sat", "bonus"];
+
+let bonusDaysMatrix = [
+  {0: {prev: "7", next: "1"}},
+  {1: {prev: "0", next: "2"}},
+  {2: {prev: "1", next: "3"}},
+  {3: {prev: "2", next: "4"}},
+  {4: {prev: "3", next: "5"}},
+  {5: {prev: "4", next: "6"}},
+  {6: {prev: "5", next: "7"}},
+  {7: {prev: "6", next: "0"}}];
+
+let bonusDaysArray = ["Sacred Sunday",
+  "Marvelous Monday",
+  "Terrific Tuesday",
+  "Wonderful Wednesday",
+  "Thankful Thursday",
+  "Fabulous Friday",
+  "Satisfying Saturday",
+  "Bountiful Bonus!"];
 
 let daysArray = ["Sacred Sunday",
   "Marvelous Monday",
@@ -80,6 +108,7 @@ let daysMatrix = [
   {5: {prev: "4", next: "6"}},
   {6: {prev: "5", next: "0"}}];
 
+let previousDisplayedDay;//value will be the day that was displayed before the bonus was clicked
 let displayedDay = document.getElementById("day-display");
 let displayedPrevDay = shortDaysArray[prevDay];
 let prevBtn = document.getElementById("prev");
@@ -94,7 +123,7 @@ viewSelection.innerHTML = "";
 //prevBtn.innerHTML = "";//clears day from button
 //nextBtn.innerHTML = "";
 let dailyScript;
-let scriptView = document.getElementById("scripture");
+let scriptView = document.getElementById("scripture");//this is what shows the active vitamin scripture verse
 let viewInstruct = document.getElementById("show-instructions");
 
 let dailyQuote;
@@ -106,9 +135,11 @@ let storedSelection;
 getState()//get the contents of localStorage if user went from vitamins to letter then back to vitamins
 
 function getState() {//added this function to load previous series selections when returning to vitamin from letter or other screen
+  previousDisplayedDay = displayedDay.innerHTML;
+  findBonusDays()//check to see which series contain bonus days
   console.log("getState function running...");
   selection = sessionStorage.getItem('storedSelection');
-  
+  isThereBonus()
   if (selection == null) {
     checkForKidsLetter()
     // alert("session storage is: " + sessionStorage.getItem('storedSelection'));
@@ -147,11 +178,14 @@ function getState() {//added this function to load previous series selections wh
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 window.onload = function() {
+  previousDisplayedDay = displayedDay.innerHTML;
+  console.log("the previousDisplayedDay = ", previousDisplayedDay);
   if (selection == "Resurrection") {//set days to special if series in memory is resurrection
     displayedDay.innerHTML = resurrectionDaysArray[currentDay];
   }
   else {
     displayedDay.innerHTML = daysArray[day];
+    console.log("on window load, the displayedDay innerHTML was set to daysArray[day]", daysArray[day]);
     if (day == "0") {
         prevDay = "6";
         console.log("the prevDay is set to: ", prevDay);
@@ -184,6 +218,7 @@ jumpLinks.forEach(link => {
       // console.log("the link data-name is: ", link.getAttribute("data-name"));
       // selection = (link.innerHTML);//old way
       selection = link.getAttribute("data-name");
+      isThereBonus()//check to see if the selected series has a bonus scripture
       checkForKidsLetter()
       saveState()//save the series selection to session storage
       imgMatrix.forEach(image => {
@@ -209,6 +244,7 @@ jumpLinks.forEach(link => {
     let revertDay = d.getDay();
     if (selection == "Resurrection") {//set days to special if series in memory is resurrection
       displayedDay.innerHTML = resurrectionDaysArray[revertDay];
+
     }
     else {
     displayedDay.innerHTML = daysArray[revertDay];
@@ -226,6 +262,8 @@ jumpLinks.forEach(link => {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function seriesSelect() {
+  scriptView.classList.remove("bonus-style");//hide previously opened bonus vitamin when selecting a different vitamin
+  scriptView.classList.add("scripture");
   console.log("seriesSelect function running");
   //viewInstruct.style.display = "none";
   console.log("the scriptView class is: ", scriptView.className);
@@ -249,7 +287,15 @@ window.onclick = function(event) {
 }
   
 function prev() {
-    //console.log("the days matrix is: ", daysMatrix[day]);
+  scriptView.classList.remove("bonus-style");
+  previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
+  if (scriptView.classList.contains("bonus-style")) {
+    scriptView.classList.toggle("bonus-style");
+    scriptView.classList.toggle("scripture");
+    console.log("the scriptView classname toggled to: ", scriptView.className);
+  }
+  else{
+    console.log("the scriptView classname is: ", scriptView.className);
     if (selection == "Resurrection") {//set days to special if series in memory is resurrection
       if (day == "0") {
         day = 7;
@@ -257,6 +303,7 @@ function prev() {
         currentDay = 7;
         prevDay = (resurrectionDaysMatrix[currentDay][currentDay].prev);
         nextDay = (resurrectionDaysMatrix[currentDay][currentDay].next);
+        previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@///////////////////////////////////
         displayedDay.innerHTML = resurrectionDaysArray[currentDay];
         updateScripture()
       }
@@ -265,6 +312,7 @@ function prev() {
           currentDay = currentDay - 1;
           prevDay = (resurrectionDaysMatrix[currentDay][currentDay].prev);
           nextDay = (resurrectionDaysMatrix[currentDay][currentDay].next);
+          previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
           displayedDay.innerHTML = resurrectionDaysArray[currentDay];
           updateScripture()  
       }
@@ -281,7 +329,7 @@ function prev() {
           // console.log("The current day is: ", daysArray[day]);
           // console.log("The prev day is: ", prevDay);
           // console.log("The next day is: ", nextDay);
-
+          previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
           displayedDay.innerHTML = daysArray[currentDay];
           // prevBtn.innerHTML = shortDaysArray[prevDay];
           // nextBtn.innerHTML = shortDaysArray[nextDay];
@@ -296,14 +344,19 @@ function prev() {
           currentDay = currentDay - 1;
           prevDay = (daysMatrix[currentDay][currentDay].prev);
           nextDay = (daysMatrix[currentDay][currentDay].next);
+          previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
           displayedDay.innerHTML = daysArray[currentDay];
           updateScripture()
           
       }
     }
+  }
+  
 }
 
 function next() {
+  scriptView.classList.remove("bonus-style");
+  console.log("the scriptView classname is: ", scriptView.className);//hide previously opened bonus vitamin when selecting a different vitamin
       //console.log("the days matrix is: ", daysMatrix[day]);
   if (selection == "Resurrection") {//set days to special if series in memory is resurrection
     if (day == "7") {
@@ -316,7 +369,7 @@ function next() {
       // console.log("The current day is: ", daysArray[day]);
       // console.log("The prev day is: ", prevDay);
       // console.log("The next day is: ", nextDay);
-
+      previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
       displayedDay.innerHTML = resurrectionDaysArray[currentDay];
       // prevBtn.innerHTML = shortDaysArray[prevDay];
       // nextBtn.innerHTML = shortDaysArray[nextDay];
@@ -327,6 +380,7 @@ function next() {
         currentDay = currentDay + 1;
         prevDay = (resurrectionDaysMatrix[currentDay][currentDay].prev);
         nextDay = (resurrectionDaysMatrix[currentDay][currentDay].next);
+        previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
         displayedDay.innerHTML = resurrectionDaysArray[currentDay];
         updateScripture()
         
@@ -343,7 +397,7 @@ function next() {
         // console.log("The current day is: ", daysArray[day]);
         // console.log("The prev day is: ", prevDay);
         // console.log("The next day is: ", nextDay);
-
+        previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
         displayedDay.innerHTML = daysArray[currentDay];
         // prevBtn.innerHTML = shortDaysArray[prevDay];
         // nextBtn.innerHTML = shortDaysArray[nextDay];
@@ -357,6 +411,7 @@ function next() {
         currentDay = currentDay + 1;
         prevDay = (daysMatrix[currentDay][currentDay].prev);
         nextDay = (daysMatrix[currentDay][currentDay].next);
+        previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
         displayedDay.innerHTML = daysArray[currentDay];
         updateScripture()
         
@@ -366,11 +421,27 @@ function next() {
 
 //this function opens the scripture when the vitamin front is clicked
 viewSelection.addEventListener('click', event => {
-  event.preventDefault();
   console.log("viewSelection function running");
+  if (scriptView.classList.contains("bonus-style")) {
+    console.log("the scriptView className contained 'bonus-style' so it will be removed");
+    // displayedDay.innerHTML = previousDisplayedDay;
+    // console.log("the displayedDay was set to 'previousDisplayedDay'");
+    displayedDay.innerHTML = daysArray[day];
+    scriptView.classList.remove("bonus-style");
+    scriptView.classList.add("scripture");
+    console.log("the scriptView class name is: ", scriptView.className);
+    scriptView.innerHTML = "";
+    updateScripture()
+  }
+  else{
+    console.log("the scriptView class name did not contain bonus-style, rather: ", scriptView.className);
+    displayedDay.innerHTML = daysArray[day];
+    // event.preventDefault();
+  }
+  event.preventDefault();
   if (selection) {
     scriptView.classList.toggle('showScripture');
-    console.log("the scriptView class is: ", scriptView.className);
+    console.log("the scriptView class name is: ", scriptView.className);
     //console.log(shortDaysArray[currentDay]);
     //scriptureMatrix[0].Evil[0].sun
     //scriptureMatrix[1].Forgiveness[0].sun
@@ -378,6 +449,26 @@ viewSelection.addEventListener('click', event => {
     updateScripture()//moved code below to the updateScripture function
   }
 });
+
+function updateBonusScripture() {
+  console.log("update bonus scripture function ran");
+  scriptView.innerHTML = "";
+  scriptureMatrix.forEach(script => {
+    bonusDay = 7;
+    if (script[selection]) {
+      console.log(script[selection]);
+      script[selection].forEach(daily => {
+        // console.log(daily)
+        // console.log(bonusDay)
+        if (daily[bonusShortDaysArray[bonusDay]]) {
+          console.log(daily[bonusShortDaysArray[bonusDay]]);
+          dailyScript = daily[bonusShortDaysArray[bonusDay]];
+          scriptView.innerHTML = daily[bonusShortDaysArray[bonusDay]];
+        }
+      }); 
+    }
+  });
+}
 
 //gets the scripture for the current day
 function updateScripture() {
@@ -424,23 +515,84 @@ function updateScripture() {
   
 }
 
-scriptView.addEventListener('click', event => {
-  event.preventDefault();
-  console.log("clicked on scriptView element", dailyScript);
-  viewChanger()
+scriptView.addEventListener('click', event => {//when the opened vitamin is clicked, then change to quote and then back to scripture
+  console.log("the scriptView classname is: ", scriptView.className);
+  console.log("the previousDisplayedDay = ", previousDisplayedDay);
+  // if (scriptView.className == "bonus-style") {
+  if (scriptView.classList.contains("bonus-style")) {
+    console.log("the scriptView classname is: ", scriptView.className);
+    viewChanger()
+  }
+  else{
+    if (selection == "Resurrection") {
+      console.log("resurrection has been selected");
+      viewChanger() 
+    }
+    else if (previousDisplayedDay == "Bountiful Bonus!") {
+    // displayedDay.innerHTML = previousDisplayedDay;
+    // scriptView.classList.remove("bonus-style");
+    displayedDay.innerHTML = daysArray[day];
+    event.preventDefault();
+    console.log("clicked on scriptView element", dailyScript);
+    viewChanger()
+    }
+    else {
+      console.log("previousDisplayedDay was undefined");
+      displayedDay.innerHTML = daysArray[day];///////////////////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////////////////////
+      viewChanger()
+    }
+  }
+  
+  
 });
 
 function viewChanger() {
   console.log("viewChanger function running. The scriptView.innerHTML = ", scriptView.innerHTML);
-  if (scriptView.innerHTML === dailyScript) {
+  if (scriptView.classList.contains("bonus-style")) {
+    console.log("the scriptView classname contains bonus-style: ", scriptView.className);
+    console.log("the dailyScript = ", dailyScript);
+    if (scriptView.innerHTML === dailyScript) {
+      dailyScript = "";
+      updateBonusQuote()
+      }
+    else if (scriptView.innerHTML === dailyQuote) {
+      console.log("the dailyquote = ",dailyQuote)
+      console.log("the scriptView.innerHTML contains: ",scriptView.innerHTML);
+      updateBonusScripture()
+    }
+  }
+  else {
+    if (scriptView.innerHTML === dailyScript) {
     dailyScript = "";
     updateQuote()
+    }
+    else if (scriptView.innerHTML === dailyQuote) {
+      console.log("the dailyquote = ",dailyQuote)
+      console.log("the scriptView.innerHTML contains: ",scriptView.innerHTML);
+      updateScripture()
+    }
   }
-  else if (scriptView.innerHTML === dailyQuote) {
-    console.log("the dailyquote = ",dailyQuote)
-    console.log("the scriptView.innerHTML contains: ",scriptView.innerHTML);
-    updateScripture()
-  }
+}
+
+function updateBonusQuote() {
+  console.log("bonus quote update function ran and the innerHTML contains: ", scriptView.innerHTML);
+  scriptView.innerHTML = "";
+  bonusDay = 7;
+  quoteMatrix.forEach(quote => {
+    if (quote[selection]) {
+      console.log("here is the quote[selection]: ", quote[selection]);
+      quote[selection].forEach(dayQuote => {
+        if (dayQuote[bonusShortDaysArray[bonusDay]]) {
+          console.log(dayQuote[bonusShortDaysArray[bonusDay]]);
+          dailyQuote = dayQuote[bonusShortDaysArray[bonusDay]];
+          scriptView.innerHTML = dayQuote[bonusShortDaysArray[bonusDay]];
+          console.log("the quote added: ", dayQuote[bonusShortDaysArray[bonusDay]], "the innerHTML contains: ", scriptView.innerHTML);
+        }
+      })
+    }
+    
+  });
+  // scriptView.innerHTML = dailyQuote[bonusShortDaysArray[bonusDay]];
 }
 
 function updateQuote() {
@@ -498,18 +650,20 @@ function checkForKidsLetter() {
   // alert("just checked for kids letter");
   // console.log("just checked for kids letter");
   let kidsLetterSelect = ("./assets/letters/kids" + selection + ".html");
-  kidsArray.forEach(file => {
-    console.log("here is the selection: ", selection);
+  kidsArray.some(file => {
+    // console.log("here is the selection: ", selection);
     console.log("here are the kids letters files: ", file);
-    if(file == selection) {
-      console.log("file == selection");
-      letterButton.style.left = "480px";
-      kidsLetterButton.style.display = "block";
-    }
-    else {
+    if(file !== selection) {
       letterButton.style.left = "400px";
       kidsLetterButton.style.display = "none";
     }
+    else {
+      console.log("file == selection");
+      letterButton.style.left = "480px";
+      kidsLetterButton.style.display = "block";
+      return file;
+    }
+    
   });
   
 }
@@ -524,4 +678,102 @@ function openKidsLetter() {
 
 function saveState() {//save current setting to storage
   sessionStorage.setItem('storedSelection', selection);
+}
+
+function findBonusDays() {//function to find if vitamin series has a bonus day
+  console.log("findBonusDays function running...")
+  
+  const allSeries = scriptureMatrix.map(function(element, index, array){
+    //console.log(element); 
+    // console.log(index);
+    // console.log(array[index]);
+    let seriesNames = Object.keys(element);//gets the key name (name of vitamin series)
+    let text = seriesNames.toString();//convert array to string
+    //console.log("the series names are: ", text);
+    //console.log(element[text].length)//this is getting the length of the array (how many days)
+    if (element[text].length == 8) {
+      // console.log("the vitamins with bonus days are: ", text);
+      containsBonusDay.push(text);//if the series has 8 days, then add the name to the array
+    }
+  });
+  // console.log(containsBonusDay)//log the array containing all the names of vitamins with bonus days
+  // console.log("vitamins with bonus days are: ");
+  containsBonusDay.map(function(eachName){
+    // console.log(eachName);
+  });
+  
+}
+
+function isThereBonus() {
+  console.log("the isThereBonus function is running...");
+  // console.log("vitamins with bonus days are: ");
+  // containsBonusDay.map(function(eachName){
+  containsBonusDay.some((eachName) => {//changed from map to some to be able to break out of loop when a match is found
+    // console.log(eachName);
+
+    if (eachName == selection) {
+      if (eachName == "Resurrection") {
+        console.log(selection, " is selected");
+        revealBonus = false;
+        bonusBtn.classList.remove("reveal");
+      }
+      else {
+        // console.log(`${eachName} matches ${selection}`);
+        revealBonus = true;
+        console.log("revealBonus = ", revealBonus);
+        return true
+      }
+    }
+    else {
+      revealBonus = false;
+      // console.log("revealBonus = ", revealBonus);
+      bonusBtn.classList.remove("reveal");
+    }
+    
+  });
+
+  if (revealBonus == true) {
+    console.log("revealBonus = ", revealBonus);
+    bonusBtn.classList.add("reveal");
+  }
+  // else {
+  //   revealBonus = false;
+  //   bonusBtn.classList.remove("reveal");
+  // }
+  console.log("isThereBonus function finished running.");
+}
+
+function openBonus() {//should run when bonus button is clicked
+  console.log("the scriptView classname is: ", scriptView.className);
+  console.log("the displayedDay innerHTML = ", displayedDay.innerHTML);
+  previousDisplayedDay = displayedDay.innerHTML;
+  console.log("the previousDisplayedDay = ", previousDisplayedDay);
+  let isBonus = scriptView.classList.contains("bonus-style");
+  console.log("isBonus variable = ", isBonus);
+  scriptView.setAttribute("class", isBonus ? "scripture" : "scripture showScripture bonus-style");
+  // scriptView.classList.toggle("bonus-style");
+  scriptureMatrix.forEach(script => {
+    bonusDay = 7;
+    if (script[selection]) {
+      console.log(script[selection]);
+      script[selection].forEach(daily => {
+        // console.log(daily)
+        // console.log(bonusDay)
+        if (daily[bonusShortDaysArray[bonusDay]]) {
+          console.log(daily[bonusShortDaysArray[bonusDay]]);
+          dailyScript = daily[bonusShortDaysArray[bonusDay]];
+          scriptView.innerHTML = daily[bonusShortDaysArray[bonusDay]];
+        }
+      }); 
+    }
+  });
+  if (scriptView.classList.contains("bonus-style")) {
+    displayedDay.innerHTML = bonusDaysArray[bonusDay];
+    console.log("the displayedDay innerHTML = ", displayedDay.innerHTML);
+    console.log("the previousDisplayedDay = ", previousDisplayedDay);
+  }
+  else {
+    displayedDay.innerHTML = daysArray[day];
+  }
+  
 }

@@ -178,6 +178,16 @@ let scriptureMatrix = [
         {sat: '2 Corinthians 2:9\n"For to this end I wrote that I might put you to the test, whether you are obedient in all things."'},
         {sun: 'Hebrews 5:8\n"Although He was a Son (Jesus), He learned obedience from the things He suffered having been made perfect. Hebe came to all who obey Him the source of eternal salvation."'},
         {bonus: '1 Peter 1:22\n"Since you have in obedience to the truth purified your soul for a sincere love of the brethren, fervently love one another from the heart."'}]},
+{Prayer: [
+        {mon: 'Matthew 6:9a\n"Our Father who is in heaven:"\n\n<i>Think about having a father who is king.</i>'},
+        {tue: 'Matthew 6:9b\n"Hallowed be Your name,"\n\n<i>Think about the importance of a name - an identity.</i>'}, 
+        {wed: 'Matthew 6:10a\n"Your kingdom come."\n\n<i>Think about what God\'s Kingdom is like.</i>'},
+        {thu: 'Matthew 6:10b\n"Your will be done"\n\n<i>Think about what is God\'s will for His people.</i>'}, 
+        {fri: 'Matthew 6:10c\n"On earth as it is in heaven."\n\n<i>Think about heaven\'s beauty and earth\'s beauty.</i>'},
+        {sat: 'Matthew 6:11\n"Give us this day our daily bread."\n\n<i>Think about what bread represents.</i>'},
+        {sun: 'Matthew 6:12\n"Forgive us our debts as we have forgiven our debtors."\n\n<i>Think about forgiveness; how many times should we forgive?</i>'},
+        {bonus: 'Matthew 6:13\n"Do not lead us into temptation, but deliver us from evil."\n\n<i>Think about what is your temptation? Who is the Evil One?</i>'}]},
+
 {Rewards: [
         {sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
         {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
@@ -201,6 +211,7 @@ let scriptureMatrix = [
 //         {sat: '\n""'},
 //         {sun: '\n""'},
 //         {bonus: '\n""'}]},
+
 
 
 
@@ -367,7 +378,7 @@ let quoteMatrix = [
         {fri: 'QUOTE:\n\n"Never argue with a fool. Onlookers may not be able to tell the difference."\n(Mark Twain)'},
         {sat: 'QUOTE:\n\n"Patience is a companion of wisdom."\n(Augustine)'},
         {sun: 'QUOTE:\n\n"Some view the Spiritual quest as one of seeking wisdom, knowledge, and understanding - a learning process."\n(Alice Camille)'},
-        {bonus: 'QUOTE:\n\n"For it is not our natural reasoning powers that will guide us correctly or give us right judgment in all things. No, Christ alone is our wisdom."\n()'}]},
+        {bonus: 'QUOTE:\n\n"For it is not our natural reasoning powers that will guide us correctly or give us right judgment in all things. No, Christ alone is our wisdom."\n(Al Bryant)'}]},
 {Resurrection: [
         {mon: 'QUOTE:\n\n"The Lamb\'s Book of Life is the book of Jesus Christ in which are entered the names of those who have received His eternal life."\n(Tim LaHaye)'},
         {tue: 'QUOTE:\n\n"Believers are living stones connected together with Christ as the Cornerstone."\n(Unknown)'}, 
@@ -385,7 +396,17 @@ let quoteMatrix = [
         {fri: 'QUOTE:\n\n"Truth without obedience is hypocrisy; Obedience without truth is legalism."\n(Jack Wellman)'},
         {sat: 'QUOTE:\n\n"Maturity comes from obedience, not necessarily from age."\n(Leonard Ravenhill)'},
         {sun: 'QUOTE:\n\n"God\'s commands are designed to guide you to life\'s very best."\n(Henry Blackaby)'},
-        {bonus: 'QUOTE:\n\n"You cannot obey God without your obedience spilling out in a blessing to all those around you."\n(Adrian Rogers)'}]},        
+        {bonus: 'QUOTE:\n\n"You cannot obey God without your obedience spilling out in a blessing to all those around you."\n(Adrian Rogers)'}]},
+{Prayer: [
+        {mon: 'QUOTE:\n\n"If you are too busy to pray, then you are too busy."\n(W.E. Sangster)'},
+        {tue: 'QUOTE:\n\n"Lord and Savior, true and kind, be the master of my mind; Bless and guide and strengthen still, all my powers of thought and will."\n(Handley Moule)'}, 
+        {wed: 'QUOTE:\n\n"Before we can pray, \'Lord, Thy kingdom come,\' we must be willing to pray, \'Lord, my kingdom go.\'"\n(Alan Redpath)'},
+        {thu: 'QUOTE:\n\n"Reading the Bible is not like reading any other book in the world. It\'s the only book able to conform us to the image of its author."\n(David Jeremiah)'}, 
+        {fri: 'QUOTE:\n\n"The universe in its immensity was especially created for us humans so that we could see and appreciate the glory and the power of God."\n(Werner Gitt)'},
+        {sat: 'QUOTE:\n\n"When our bodies need energy, we eat food. But when our souls need hope, we are nourished by God\'s precious and very great promises."\n(Jon Bloom)'},
+        {sun: 'QUOTE:\n\n"The glory of Christianity is to conquer by forgiveness."\n(William Blake)'},
+        {bonus: 'QUOTE:\n\n"Satan and his demons never, never act against God\'s people without the permission of God."\n(John MacArthur)'}]},
+        
 {Rewards: [
         {sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
         {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
@@ -407,3 +428,4 @@ let quoteMatrix = [
         //{sat: 'QUOTE:\n\n""\n()'},
         //{sun: 'QUOTE:\n\n""\n()'},
         //{bonus: 'QUOTE:\n\n""\n()'}]},
+

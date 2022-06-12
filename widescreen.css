@@ -368,7 +368,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.05rem;
+    flex-direction: column;
+    font-size: 1.25rem;
     left: 0;
     right: 0;
     margin: auto;
@@ -381,6 +382,33 @@
     /* margin-bottom: 20vh; */
     color: rgb(0, 0, 0);
     background-color: white;
+    user-select: none;
+    border-radius: 50vw/50vw;
+    white-space: pre-wrap; /*this will create a new line after the verse */
+    box-shadow: 2px 2px 8px black;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .bonus-style{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.25rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+    width: 80%;
+    height: 120px;
+    /* min-height: 135px; */
+    margin-top: 2px;
+    /* margin-bottom: 20vh; */
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 221, 29);
     user-select: none;
     border-radius: 50vw/50vw;
     white-space: pre-wrap; /*this will create a new line after the verse */
@@ -524,6 +552,37 @@
     right: 0;
     margin: auto;
     bottom: 0;
+  }
+
+  .bonus-vitamin {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 300px;
+    margin: auto;
+    bottom: 200px;
+    width: 110px;
+    height: 50px;
+    align-items: center;
+    border-radius: 30%/50%;
+    background-color: rgb(255, 221, 29);
+    box-shadow: 2px 2px 8px black;
+    cursor: pointer;
+  }
+  
+  .reveal {
+    display: flex;
+    /* flex-direction: column; */
+    position: absolute;
+    left: 0;
+    right: 300px;
+    margin: auto;
+    bottom: 200px;
+    width: 110px;
+    height: 50px;
+    align-items: center;
+    border-radius: 30%/50%;
+    background-color: rgb(255, 221, 29);
   }
   /* .sidebar {
     display: none;

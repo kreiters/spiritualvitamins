@@ -16,7 +16,7 @@
         margin: auto;
         width: 100vw;
         max-width: 100vw;
-        height: 100vh;
+        height: 110vh;
         background-color: aquamarine;
         text-align: center;
         background-image: url("assets/bottle2.png");
@@ -402,6 +402,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          flex-direction: column;
           font-size: 1.05rem;
           left: 0;
           right: 0;
@@ -422,6 +423,33 @@
           z-index: 100;
         }
       
+        .bonus-style{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          font-size: 1.05rem;
+          left: 0;
+          right: 0;
+          margin: auto;
+          text-align: center;
+          padding: 13px;
+          width: 90%;
+          height: 40%;
+          /* min-height: 135px; */
+          margin-top: 2px;
+          /* margin-bottom: 20vh; */
+          color: rgb(0, 0, 0);
+          background-color: rgb(255, 221, 29);
+          user-select: none;
+          border-radius: 50vw/50vw;
+          white-space: pre-wrap; /*this will create a new line after the verse */
+          box-shadow: 2px 2px 8px black;
+          cursor: pointer;
+          z-index: 100;
+        }
+
         .view {
           display: block;
           position: absolute;
@@ -572,6 +600,39 @@
           margin: auto;
           bottom: 0; */
         }
+        
+  .bonus-vitamin {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 10px;
+    width: 110px;
+    height: 50px;
+    align-items: center;
+    border-radius: 30%/50%;
+    background-color: rgb(255, 221, 29);
+    box-shadow: 2px 2px 8px black;
+    cursor: pointer;
+  }
+  
+  .reveal {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -80px;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30%/50%;
+    background-color: rgb(255, 221, 29);
+  }
  }
 
 
@@ -1137,7 +1198,39 @@
     margin: auto;
     bottom: 0; */
   }
-
+     
+  .bonus-vitamin {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 10px;
+    width: 110px;
+    height: 50px;
+    align-items: center;
+    border-radius: 30%/50%;
+    background-color: rgb(255, 221, 29);
+    box-shadow: 2px 2px 8px black;
+    cursor: pointer;
+  }
+  
+  .reveal {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 10px;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30%/50%;
+    background-color: rgb(255, 221, 29);
+  }
  }
  /* ###########################################################################################################################################
  ########################################################################################################################################### */
@@ -1706,5 +1799,37 @@
           margin: auto;
           bottom: 0; */
         }
-
+         
+  .bonus-vitamin {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 10px;
+    width: 110px;
+    height: 50px;
+    align-items: center;
+    border-radius: 30%/50%;
+    background-color: rgb(255, 221, 29);
+    box-shadow: 2px 2px 8px black;
+    cursor: pointer;
+  }
+  
+  .reveal {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 10px;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30%/50%;
+    background-color: rgb(255, 221, 29);
+  }
   }
