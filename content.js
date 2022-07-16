@@ -187,6 +187,15 @@ let scriptureMatrix = [
         {sat: 'Matthew 6:11\n"Give us this day our daily bread."\n\n<i>Think about what bread represents.</i>'},
         {sun: 'Matthew 6:12\n"Forgive us our debts as we have forgiven our debtors."\n\n<i>Think about forgiveness; how many times should we forgive?</i>'},
         {bonus: 'Matthew 6:13\n"Do not lead us into temptation, but deliver us from evil."\n\n<i>Think about what is your temptation? Who is the Evil One?</i>'}]},
+{Patriotic: [
+        {mon: 'John 8:32\n"And you shall know the truth, and the truth will make you free."'},
+        {tue: 'Luke 8:15\n"And the seeds in the good ground, these are the ones who have heard the Word in an honest and good heart."'}, 
+        {wed: 'Proverbs 28:5\n"Evil men do not understand justice, but those who seek the Lord understand all things."'},
+        {thu: 'Luke 20:25\n"Then render to Caesar the things that are Caesar\'s, and to God the things that are God\'s."'}, 
+        {fri: 'Philemon 21\n"Having confidence in your obedience I write to you, knowing that you will do even more than I say."'},
+        {sat: 'Psalm 19:7\n"The law of the Lord is perfect, converting the soul."'},
+        {sun: 'Psalm 33:12\n"Blessed is the nation where God is Lord."'},
+        {bonus: 'Psalm 119:45\n"And I will walk toward liberty. For I seek God\'s precepts!"'}]},
 
 {Rewards: [
         {sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
@@ -211,6 +220,7 @@ let scriptureMatrix = [
 //         {sat: '\n""'},
 //         {sun: '\n""'},
 //         {bonus: '\n""'}]},
+
 
 
 
@@ -406,7 +416,15 @@ let quoteMatrix = [
         {sat: 'QUOTE:\n\n"When our bodies need energy, we eat food. But when our souls need hope, we are nourished by God\'s precious and very great promises."\n(Jon Bloom)'},
         {sun: 'QUOTE:\n\n"The glory of Christianity is to conquer by forgiveness."\n(William Blake)'},
         {bonus: 'QUOTE:\n\n"Satan and his demons never, never act against God\'s people without the permission of God."\n(John MacArthur)'}]},
-        
+{Patriotic: [
+        {mon: 'QUOTE:\n\n"Truth will ultimately prevail where pain is taken to bring it to light."\n(George Washington)'},
+        {tue: 'QUOTE:\n\n"Honesty is not only the first step to greatness, it is greatness itself."\n(Christian Bovee)'}, 
+        {wed: 'QUOTE:\n\n"In the absence of justice, what is sovereignty but organized robbery?"\n(Augustine)'},
+        {thu: 'QUOTE:\n\n"The best things in life are tax free."\n(Joseph Bronkowski)'}, 
+        {fri: 'QUOTE:\n\n"Maturity comes from obedience, not necessarily from age."\n(Leonard Ravenhill)'},
+        {sat: 'QUOTE:\n\n"Where there is no law, there is no liberty."\n(Benjamin Rush)'},
+        {sun: 'QUOTE:\n\n"May that Being Who is supreme over all, ... continue His blessing upon this nation and its government ... consistent with the ends of His providence."\n(John Quincy Adams)'},
+        {bonus: 'QUOTE:\n\n"No people will tamely surrender their liberties, nor can any be easily subdued, when knowledge is diffused and virtue is preserved."\n(John Adams)'}]},
 {Rewards: [
         {sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
         {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
@@ -428,4 +446,6 @@ let quoteMatrix = [
         //{sat: 'QUOTE:\n\n""\n()'},
         //{sun: 'QUOTE:\n\n""\n()'},
         //{bonus: 'QUOTE:\n\n""\n()'}]},
+
+
 

@@ -25,6 +25,7 @@ let imgMatrix = [
   {Resurrection: {img: "assets/scanned vitamins/resurrection.jpg"}},
   {Obey: {img: "assets/scanned vitamins/obey.jpg"}},
   {Prayer: {img: "assets/scanned vitamins/prayer.jpg"}},
+  {Patriotic: {img: "assets/scanned vitamins/patriotic.jpg"}},
   {Hope: {img: "assets/scanned vitamins/hope.jpg"}}];
 
 let menuBtn = document.getElementById("menuBtn");
@@ -89,6 +90,18 @@ let bonusDaysArray = ["Sacred Sunday",
   "Satisfying Saturday",
   "Bountiful Bonus!"];
 
+//create list of days used in the Patriotic Vitamin
+let patrioticDaysArray = [
+  "Sunday Blessing",
+  "Monday Truth",
+  "Tuesday Honesty",
+  "Wednesday Justice",
+  "Thursday Taxation",
+  "Friday Obedience",
+  "Saturday Law and Order",
+  "Bonus Blessing"
+];
+
 let daysArray = ["Sacred Sunday",
   "Marvelous Monday",
   "Terrific Tuesday",
@@ -109,7 +122,7 @@ let daysMatrix = [
   {6: {prev: "5", next: "0"}}];
 
 let previousDisplayedDay;//value will be the day that was displayed before the bonus was clicked
-let displayedDay = document.getElementById("day-display");
+let displayedDay = document.getElementById("day-display");//this is where the day name gets displayed
 let displayedPrevDay = shortDaysArray[prevDay];
 let prevBtn = document.getElementById("prev");
 let nextBtn = document.getElementById("next");
