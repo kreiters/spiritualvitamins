@@ -92,15 +92,17 @@ let bonusDaysArray = ["Sacred Sunday",
 
 //create list of days used in the Patriotic Vitamin
 let patrioticDaysArray = [
-  "Sunday Blessing",
-  "Monday Truth",
-  "Tuesday Honesty",
-  "Wednesday Justice",
-  "Thursday Taxation",
-  "Friday Obedience",
-  "Saturday Law and Order",
+  "Sunday: Blessing",
+  "Monday: Truth",
+  "Tuesday: Honesty",
+  "Wednesday: Justice",
+  "Thursday: Taxation",
+  "Friday: Obedience",
+  "Saturday: Law and Order",
   "Bonus Blessing"
 ];
+
+let specialDays;//this variable holds the name of the data-daysArray dataset
 
 let daysArray = ["Sacred Sunday",
   "Marvelous Monday",
@@ -151,7 +153,23 @@ function getState() {//added this function to load previous series selections wh
   previousDisplayedDay = displayedDay.innerHTML;
   findBonusDays()//check to see which series contain bonus days
   console.log("getState function running...");
+  specialDays = sessionStorage.getItem('specialDays');//gets the name of specialDays dataset if in memory to set the days array if special days needed (ie: Patriotic series)
+  console.log('the specialDays variable in sessionStorage is: ', specialDays);
   selection = sessionStorage.getItem('storedSelection');
+  console.log('the stored selection value is: ', selection);
+  if (selection == "Resurrection") {//set days to special if series in memory is resurrection
+    displayedDay.innerHTML = resurrectionDaysArray[currentDay];
+    console.log('displayedDay changed...');
+    previousDisplayedDay = displayedDay.innerHTML;
+    console.log('the displayedDay was set to ', resurrectionDaysArray[currentDay])
+  }
+  if (specialDays || selection == "Patriotic") {
+    console.log('the vitamin selected has special days: ', specialDays);
+    if (specialDays == "patrioticDaysArray");//set patriotic days when page first loads
+    displayedDay.innerHTML = patrioticDaysArray[currentDay];
+    console.log('displayedDay changed...');
+    previousDisplayedDay = displayedDay.innerHTML;
+  }
   isThereBonus()
   if (selection == null) {
     checkForKidsLetter()
@@ -193,11 +211,24 @@ function getState() {//added this function to load previous series selections wh
 window.onload = function() {
   previousDisplayedDay = displayedDay.innerHTML;
   console.log("the previousDisplayedDay = ", previousDisplayedDay);
+  console.log('selection = ', selection);
   if (selection == "Resurrection") {//set days to special if series in memory is resurrection
     displayedDay.innerHTML = resurrectionDaysArray[currentDay];
+    console.log('displayedDay changed...');
+    previousDisplayedDay = displayedDay.innerHTML;
+    return//break after setting day for resurrection series
+  }
+  console.log('specialDays = ', specialDays);
+  console.log('the vitamin selected has special days: ', specialDays);
+  if (selection == "Patriotic") {//set patriotic days when page first loads
+  displayedDay.innerHTML = patrioticDaysArray[currentDay];
+  console.log('displayedDay changed...');
+  previousDisplayedDay = displayedDay.innerHTML;
+  return
   }
   else {
     displayedDay.innerHTML = daysArray[day];
+    console.log('displayedDay changed...');
     console.log("on window load, the displayedDay innerHTML was set to daysArray[day]", daysArray[day]);
     if (day == "0") {
         prevDay = "6";
@@ -223,13 +254,16 @@ function returnMain() {
   infoScreen.style.display = "none";
 }
 
+//handle when a vitamin series name link is clicked
 jumpLinks.forEach(link => {
  link.addEventListener('click', event => {
     event.preventDefault();
-    
+    console.log("the link dataset name is: ", link.getAttribute("data-daysArray"));
+    // if (link.getAttribute.dataset == "data-daysArray")
     if (link.innerHTML != "Home") {//keeps home from appearing in letter title
       // console.log("the link data-name is: ", link.getAttribute("data-name"));
       // selection = (link.innerHTML);//old way
+      
       selection = link.getAttribute("data-name");
       isThereBonus()//check to see if the selected series has a bonus scripture
       checkForKidsLetter()
@@ -257,10 +291,21 @@ jumpLinks.forEach(link => {
     let revertDay = d.getDay();
     if (selection == "Resurrection") {//set days to special if series in memory is resurrection
       displayedDay.innerHTML = resurrectionDaysArray[revertDay];
-
+      console.log('displayedDay changed...');
+      return//must be here
+    }
+    if (selection == "Patriotic") {//set revert day using patriotic days array
+      displayedDay.innerHTML = patrioticDaysArray[revertDay];
+      console.log('displayedDay changed...');
+      console.log('the patrioticDaysArray[revertDay] is: ', patrioticDaysArray[revertDay]);
+      specialDays = link.getAttribute("data-daysArray");//if the link requires special days, get the dataset name
+      console.log('the specialDays variable is: ', specialDays);
+      sessionStorage.setItem('specialDays', specialDays);
+    
     }
     else {
     displayedDay.innerHTML = daysArray[revertDay];
+    console.log('displayedDay changed...');
     day = d.getDay();
     currentDay = day;
     prevDay = ((day - 1));
@@ -279,7 +324,7 @@ function seriesSelect() {
   scriptView.classList.add("scripture");
   console.log("seriesSelect function running");
   //viewInstruct.style.display = "none";
-  console.log("the scriptView class is: ", scriptView.className);
+  // console.log("the scriptView class is: ", scriptView.className);
   document.getElementById("myDropdown").classList.toggle("show");
 }
   
@@ -318,6 +363,7 @@ function prev() {
         nextDay = (resurrectionDaysMatrix[currentDay][currentDay].next);
         previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@///////////////////////////////////
         displayedDay.innerHTML = resurrectionDaysArray[currentDay];
+        console.log('displayedDay changed...');
         updateScripture()
       }
       else {
@@ -327,12 +373,41 @@ function prev() {
           nextDay = (resurrectionDaysMatrix[currentDay][currentDay].next);
           previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
           displayedDay.innerHTML = resurrectionDaysArray[currentDay];
+          console.log('displayedDay changed...');
           updateScripture()  
       }
       
     }
-    else {
-      if (day == "0") {
+    else {//if the series is not ressurrection run this when previous button is clicked
+      if (specialDays) {//if the dataset is specialDays then run this
+        if (specialDays == "patrioticDaysArray") {//set days using patriotic days array
+          console.log('the specialDays is ', specialDays);
+          if (day == "0") {
+            day = 6;
+            console.log("The day was 0");
+            currentDay = 6;
+            prevDay = (daysMatrix[currentDay][currentDay].prev);
+            nextDay = (daysMatrix[currentDay][currentDay].next);
+            previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
+            displayedDay.innerHTML = patrioticDaysArray[currentDay];
+            console.log('displayedDay changed...');
+            updateScripture()
+          }
+          else {
+              day = day - 1;
+              currentDay = currentDay - 1;
+              prevDay = (daysMatrix[currentDay][currentDay].prev);
+              nextDay = (daysMatrix[currentDay][currentDay].next);
+              previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
+              displayedDay.innerHTML = patrioticDaysArray[currentDay];
+              console.log('displayedDay changed...');
+              updateScripture()
+              
+          }
+        }
+      }
+      else {//if the series does not have a specialDays dataset then run this
+        if (day == "0") {
           day = 6;
           console.log("The day was 0");
           currentDay = 6;
@@ -344,27 +419,25 @@ function prev() {
           // console.log("The next day is: ", nextDay);
           previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
           displayedDay.innerHTML = daysArray[currentDay];
+          console.log('displayedDay changed...');
           // prevBtn.innerHTML = shortDaysArray[prevDay];
           // nextBtn.innerHTML = shortDaysArray[nextDay];
           updateScripture()
-          
-
-      }
-    
-      else {
-          day = day - 1;
-          
-          currentDay = currentDay - 1;
-          prevDay = (daysMatrix[currentDay][currentDay].prev);
-          nextDay = (daysMatrix[currentDay][currentDay].next);
-          previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
-          displayedDay.innerHTML = daysArray[currentDay];
-          updateScripture()
-          
+        }
+        else {
+            day = day - 1;
+            currentDay = currentDay - 1;
+            prevDay = (daysMatrix[currentDay][currentDay].prev);
+            nextDay = (daysMatrix[currentDay][currentDay].next);
+            previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
+            displayedDay.innerHTML = daysArray[currentDay];
+            console.log('displayedDay changed...');
+            updateScripture()
+            
+        }
       }
     }
   }
-  
 }
 
 function next() {
@@ -378,15 +451,14 @@ function next() {
       currentDay = 0;
       prevDay = (resurrectionDaysMatrix[currentDay][currentDay].prev);
       nextDay = (resurrectionDaysMatrix[currentDay][currentDay].next);
-      // nextDay = "0";
       // console.log("The current day is: ", daysArray[day]);
       // console.log("The prev day is: ", prevDay);
       // console.log("The next day is: ", nextDay);
       previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
       displayedDay.innerHTML = resurrectionDaysArray[currentDay];
-      // prevBtn.innerHTML = shortDaysArray[prevDay];
-      // nextBtn.innerHTML = shortDaysArray[nextDay];
-      updateScripture()  
+      console.log('displayedDay changed...');
+      updateScripture()
+      return  //must be here
     }
     else {
         day = day + 1;
@@ -395,11 +467,41 @@ function next() {
         nextDay = (resurrectionDaysMatrix[currentDay][currentDay].next);
         previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
         displayedDay.innerHTML = resurrectionDaysArray[currentDay];
+        console.log('displayedDay changed...');
         updateScripture()
-        
+        return //must be here
     }
   }
   else {
+    if (specialDays) {//if the dataset is specialDays then run this
+      if (specialDays == "patrioticDaysArray") {//set days using patriotic days array
+        if (day == "6") {
+          day = 0;
+          console.log("The day was 6");
+          currentDay = 0;
+          prevDay = (daysMatrix[currentDay][currentDay].prev);
+          nextDay = (daysMatrix[currentDay][currentDay].next);
+          previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
+          displayedDay.innerHTML = patrioticDaysArray[currentDay];
+          console.log('displayedDay changed...');
+          console.log('the day is: ', patrioticDaysArray[currentDay]);
+          updateScripture()
+          return  //must be here
+        }
+        else {
+            day = day + 1;
+            currentDay = currentDay + 1;
+            prevDay = (daysMatrix[currentDay][currentDay].prev);
+            nextDay = (daysMatrix[currentDay][currentDay].next);
+            previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
+            displayedDay.innerHTML = patrioticDaysArray[currentDay];
+            console.log('displayedDay changed...');
+            console.log('the day is: ', patrioticDaysArray[currentDay]);
+            updateScripture()
+            return //must be here
+        }
+      }
+    }
     if (day == "6") {
         day = 0;
         console.log("The day was 6");
@@ -412,21 +514,21 @@ function next() {
         // console.log("The next day is: ", nextDay);
         previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
         displayedDay.innerHTML = daysArray[currentDay];
-        // prevBtn.innerHTML = shortDaysArray[prevDay];
-        // nextBtn.innerHTML = shortDaysArray[nextDay];
+        console.log('displayedDay changed...');
         updateScripture()
         
     }
   
     else {
-        day = day + 1;
-        
-        currentDay = currentDay + 1;
-        prevDay = (daysMatrix[currentDay][currentDay].prev);
-        nextDay = (daysMatrix[currentDay][currentDay].next);
-        previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
-        displayedDay.innerHTML = daysArray[currentDay];
-        updateScripture()
+      console.log('displayedDay changed...');
+      day = day + 1;
+      currentDay = currentDay + 1;
+      prevDay = (daysMatrix[currentDay][currentDay].prev);
+      nextDay = (daysMatrix[currentDay][currentDay].next);
+      previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
+      displayedDay.innerHTML = daysArray[currentDay];
+      console.log('displayedDay changed...');
+      updateScripture()
         
     }
   }
@@ -439,28 +541,61 @@ viewSelection.addEventListener('click', event => {
     console.log("the scriptView className contained 'bonus-style' so it will be removed");
     // displayedDay.innerHTML = previousDisplayedDay;
     // console.log("the displayedDay was set to 'previousDisplayedDay'");
-    displayedDay.innerHTML = daysArray[day];
-    scriptView.classList.remove("bonus-style");
-    scriptView.classList.add("scripture");
-    console.log("the scriptView class name is: ", scriptView.className);
-    scriptView.innerHTML = "";
-    updateScripture()
+    if (specialDays != 'null') {//if the dataset is specialDays then run this
+      if (specialDays == "patrioticDaysArray") {
+        console.log('this is where the problem is....')
+        scriptView.classList.remove("bonus-style");
+        scriptView.classList.add("scripture");
+        displayedDay.innerHTML = patrioticDaysArray[day];
+        scriptView.innerHTML = "";
+      }
+    }
+    else {
+      displayedDay.innerHTML = daysArray[day];
+      console.log('displayedDay changed...');
+      scriptView.classList.remove("bonus-style");
+      scriptView.classList.add("scripture");
+      console.log("the scriptView class name is: ", scriptView.className);
+      scriptView.innerHTML = "";
+      updateScripture()
+    }
+    
   }
   else{
     console.log("the scriptView class name did not contain bonus-style, rather: ", scriptView.className);
-    displayedDay.innerHTML = daysArray[day];
-    // event.preventDefault();
+    if (selection == "Resurrection") {
+      console.log('this is where the days were getting set wrong');
+      displayedDay.innerHTML = resurrectionDaysArray[day];
+      console.log('displayedDay changed...');
+      scriptView.classList.toggle('showScripture');
+      updateScripture()
+      return
+    }
+    if (specialDays != 'null') {//if the dataset is specialDays then run this
+      if (specialDays == "patrioticDaysArray") {
+        console.log('this is where the patrioticDaysArray is....')
+        scriptView.classList.toggle('showScripture');
+        updateScripture()
+        return
+      }
+    }
+    else {
+      displayedDay.innerHTML = daysArray[day];
+      console.log('displayedDay changed...');
+    }
   }
-  event.preventDefault();
-  if (selection) {
+    
+  // event.preventDefault();
+  // if (selection) {
     scriptView.classList.toggle('showScripture');
+    // scriptView.classList.remove("bonus-style");
     console.log("the scriptView class name is: ", scriptView.className);
     //console.log(shortDaysArray[currentDay]);
     //scriptureMatrix[0].Evil[0].sun
     //scriptureMatrix[1].Forgiveness[0].sun
     //scriptureMatrix[1].Forgiveness[1].mon
     updateScripture()//moved code below to the updateScripture function
-  }
+  // }
 });
 
 function updateBonusScripture() {
@@ -485,16 +620,17 @@ function updateBonusScripture() {
 
 //gets the scripture for the current day
 function updateScripture() {
+  console.log('update scripture function running...');
   if (selection == "Resurrection") {
     scriptView.innerHTML = "";
-    console.log("scripture update function ran");
+    // console.log("scripture update function ran");
     scriptureMatrix.forEach(script => {
       //console.log(image)
       if (script[selection]) {
-        console.log(script[selection]);
+        // console.log(script[selection]);
         script[selection].forEach(daily => {
           if (daily[resurrectionShortDaysArray[currentDay]]) {
-            console.log(daily[resurrectionShortDaysArray[currentDay]]);
+            // console.log(daily[resurrectionShortDaysArray[currentDay]]);
             dailyScript = daily[resurrectionShortDaysArray[currentDay]];
             scriptView.innerHTML = daily[resurrectionShortDaysArray[currentDay]];
           }
@@ -507,14 +643,14 @@ function updateScripture() {
   }
   else {
     scriptView.innerHTML = "";
-    console.log("scripture update function ran");
+    // console.log("scripture update function ran");
     scriptureMatrix.forEach(script => {
       //console.log(image)
       if (script[selection]) {
-        console.log(script[selection]);
+        // console.log(script[selection]);
         script[selection].forEach(daily => {
           if (daily[shortDaysArray[currentDay]]) {
-            console.log(daily[shortDaysArray[currentDay]]);
+            // console.log(daily[shortDaysArray[currentDay]]);
             dailyScript = daily[shortDaysArray[currentDay]];
             scriptView.innerHTML = daily[shortDaysArray[currentDay]];
           }
@@ -529,11 +665,11 @@ function updateScripture() {
 }
 
 scriptView.addEventListener('click', event => {//when the opened vitamin is clicked, then change to quote and then back to scripture
-  console.log("the scriptView classname is: ", scriptView.className);
-  console.log("the previousDisplayedDay = ", previousDisplayedDay);
+  // console.log("the scriptView classname is: ", scriptView.className);
+  // console.log("the previousDisplayedDay = ", previousDisplayedDay);
   // if (scriptView.className == "bonus-style") {
   if (scriptView.classList.contains("bonus-style")) {
-    console.log("the scriptView classname is: ", scriptView.className);
+    // console.log("the scriptView classname is: ", scriptView.className);
     viewChanger()
   }
   else{
@@ -541,10 +677,15 @@ scriptView.addEventListener('click', event => {//when the opened vitamin is clic
       console.log("resurrection has been selected");
       viewChanger() 
     }
+    if (specialDays != 'null') {//if the dataset is specialDays then run this
+      if (specialDays == "patrioticDaysArray") {
+        console.log('this is where the patrioticDaysArray is....')
+        viewChanger()
+      }
+    }
     else if (previousDisplayedDay == "Bountiful Bonus!") {
-    // displayedDay.innerHTML = previousDisplayedDay;
-    // scriptView.classList.remove("bonus-style");
     displayedDay.innerHTML = daysArray[day];
+    console.log('displayedDay changed...');
     event.preventDefault();
     console.log("clicked on scriptView element", dailyScript);
     viewChanger()
@@ -552,6 +693,7 @@ scriptView.addEventListener('click', event => {//when the opened vitamin is clic
     else {
       console.log("previousDisplayedDay was undefined");
       displayedDay.innerHTML = daysArray[day];///////////////////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////////////////////
+      console.log('displayedDay changed...');
       viewChanger()
     }
   }
@@ -562,15 +704,15 @@ scriptView.addEventListener('click', event => {//when the opened vitamin is clic
 function viewChanger() {
   console.log("viewChanger function running. The scriptView.innerHTML = ", scriptView.innerHTML);
   if (scriptView.classList.contains("bonus-style")) {
-    console.log("the scriptView classname contains bonus-style: ", scriptView.className);
-    console.log("the dailyScript = ", dailyScript);
+    // console.log("the scriptView classname contains bonus-style: ", scriptView.className);
+    // console.log("the dailyScript = ", dailyScript);
     if (scriptView.innerHTML === dailyScript) {
       dailyScript = "";
       updateBonusQuote()
       }
     else if (scriptView.innerHTML === dailyQuote) {
-      console.log("the dailyquote = ",dailyQuote)
-      console.log("the scriptView.innerHTML contains: ",scriptView.innerHTML);
+      // console.log("the dailyquote = ",dailyQuote)
+      // console.log("the scriptView.innerHTML contains: ",scriptView.innerHTML);
       updateBonusScripture()
     }
   }
@@ -580,26 +722,26 @@ function viewChanger() {
     updateQuote()
     }
     else if (scriptView.innerHTML === dailyQuote) {
-      console.log("the dailyquote = ",dailyQuote)
-      console.log("the scriptView.innerHTML contains: ",scriptView.innerHTML);
+      // console.log("the dailyquote = ",dailyQuote)
+      // console.log("the scriptView.innerHTML contains: ",scriptView.innerHTML);
       updateScripture()
     }
   }
 }
 
 function updateBonusQuote() {
-  console.log("bonus quote update function ran and the innerHTML contains: ", scriptView.innerHTML);
+  // console.log("bonus quote update function ran and the innerHTML contains: ", scriptView.innerHTML);
   scriptView.innerHTML = "";
   bonusDay = 7;
   quoteMatrix.forEach(quote => {
     if (quote[selection]) {
-      console.log("here is the quote[selection]: ", quote[selection]);
+      // console.log("here is the quote[selection]: ", quote[selection]);
       quote[selection].forEach(dayQuote => {
         if (dayQuote[bonusShortDaysArray[bonusDay]]) {
-          console.log(dayQuote[bonusShortDaysArray[bonusDay]]);
+          // console.log(dayQuote[bonusShortDaysArray[bonusDay]]);
           dailyQuote = dayQuote[bonusShortDaysArray[bonusDay]];
           scriptView.innerHTML = dayQuote[bonusShortDaysArray[bonusDay]];
-          console.log("the quote added: ", dayQuote[bonusShortDaysArray[bonusDay]], "the innerHTML contains: ", scriptView.innerHTML);
+          // console.log("the quote added: ", dayQuote[bonusShortDaysArray[bonusDay]], "the innerHTML contains: ", scriptView.innerHTML);
         }
       })
     }
@@ -611,7 +753,7 @@ function updateBonusQuote() {
 function updateQuote() {
   if (selection == "Resurrection") {
     scriptView.innerHTML = "";
-    console.log("quote update function ran and the innerHTML contains: ", scriptView.innerHTML);
+    // console.log("quote update function ran and the innerHTML contains: ", scriptView.innerHTML);
     quoteMatrix.forEach(quote => {
       if (quote[selection]) {
         console.log("here is the quote[selection]: ", quote[selection]);
@@ -629,10 +771,10 @@ function updateQuote() {
   }
   else {
     scriptView.innerHTML = "";
-    console.log("quote update function ran and the innerHTML contains: ", scriptView.innerHTML);
+    // console.log("quote update function ran and the innerHTML contains: ", scriptView.innerHTML);
     quoteMatrix.forEach(quote => {
       if (quote[selection]) {
-        console.log("here is the quote[selection]: ", quote[selection]);
+        // console.log("here is the quote[selection]: ", quote[selection]);
         quote[selection].forEach(dayQuote => {
           if (dayQuote[shortDaysArray[currentDay]]) {
             console.log(dayQuote[shortDaysArray[currentDay]]);
@@ -764,6 +906,7 @@ function openBonus() {//should run when bonus button is clicked
   let isBonus = scriptView.classList.contains("bonus-style");
   console.log("isBonus variable = ", isBonus);
   scriptView.setAttribute("class", isBonus ? "scripture" : "scripture showScripture bonus-style");
+  console.log("the scriptView classname is: ", scriptView.className);
   // scriptView.classList.toggle("bonus-style");
   scriptureMatrix.forEach(script => {
     bonusDay = 7;
@@ -781,12 +924,35 @@ function openBonus() {//should run when bonus button is clicked
     }
   });
   if (scriptView.classList.contains("bonus-style")) {
-    displayedDay.innerHTML = bonusDaysArray[bonusDay];
-    console.log("the displayedDay innerHTML = ", displayedDay.innerHTML);
-    console.log("the previousDisplayedDay = ", previousDisplayedDay);
+    if (specialDays) {//if the dataset is specialDays then run this
+      if (specialDays == "patrioticDaysArray") {//set days using patriotic days array
+        console.log('the patrioticDaysArray[bonusDay] is ', patrioticDaysArray[bonusDay]);
+        displayedDay.innerHTML = patrioticDaysArray[bonusDay];
+        console.log('displayedDay changed due to bonus button clicked and patriotic day vitamin selected')
+        return
+      }
+    }
+    else {//for all other bonus days run this when bonus button is clicked
+      displayedDay.innerHTML = bonusDaysArray[bonusDay];
+      console.log('displayedDay changed...');
+      console.log("the displayedDay innerHTML = ", displayedDay.innerHTML);
+      console.log("the previousDisplayedDay = ", previousDisplayedDay);
+    }
   }
   else {
-    displayedDay.innerHTML = daysArray[day];
+    if (specialDays == "patrioticDaysArray") {//set days using patriotic days array
+      console.log('the patrioticDaysArray[bonusDay] is ', patrioticDaysArray[bonusDay]);
+      displayedDay.innerHTML = patrioticDaysArray[currentDay];
+      previousDisplayedDay = displayedDay.innerHTML;
+      return
+    }
+    else{
+      displayedDay.innerHTML = daysArray[day];
+      console.log('displayedDay changed...');
+      
+    }
+      displayedDay.innerHTML = daysArray[day];
+      console.log('displayedDay changed...');
   }
   
 }
