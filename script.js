@@ -376,36 +376,34 @@ function prev() {
           console.log('displayedDay changed...');
           updateScripture()  
       }
-      
     }
-    else {//if the series is not ressurrection run this when previous button is clicked
-      if (specialDays) {//if the dataset is specialDays then run this
-        if (specialDays == "patrioticDaysArray") {//set days using patriotic days array
-          console.log('the specialDays is ', specialDays);
-          if (day == "0") {
-            day = 6;
-            console.log("The day was 0");
-            currentDay = 6;
-            prevDay = (daysMatrix[currentDay][currentDay].prev);
-            nextDay = (daysMatrix[currentDay][currentDay].next);
-            previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
-            displayedDay.innerHTML = patrioticDaysArray[currentDay];
-            console.log('displayedDay changed...');
-            updateScripture()
-          }
-          else {
-              day = day - 1;
-              currentDay = currentDay - 1;
-              prevDay = (daysMatrix[currentDay][currentDay].prev);
-              nextDay = (daysMatrix[currentDay][currentDay].next);
-              previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
-              displayedDay.innerHTML = patrioticDaysArray[currentDay];
-              console.log('displayedDay changed...');
-              updateScripture()
-              
-          }
-        }
+    if (selection == "Patriotic") {//set days using patriotic days array
+      console.log('the specialDays is ', specialDays);
+      if (day == "0") {
+        day = 6;
+        console.log("The day was 0");
+        currentDay = 6;
+        prevDay = (daysMatrix[currentDay][currentDay].prev);
+        nextDay = (daysMatrix[currentDay][currentDay].next);
+        previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
+        displayedDay.innerHTML = patrioticDaysArray[currentDay];
+        console.log('displayedDay changed...');
+        updateScripture()
       }
+      else {
+          day = day - 1;
+          currentDay = currentDay - 1;
+          prevDay = (daysMatrix[currentDay][currentDay].prev);
+          nextDay = (daysMatrix[currentDay][currentDay].next);
+          previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
+          displayedDay.innerHTML = patrioticDaysArray[currentDay];
+          console.log('displayedDay changed...');
+          updateScripture()
+          
+      }
+    }
+      
+  
       else {//if the series does not have a specialDays dataset then run this
         if (day == "0") {
           day = 6;
@@ -437,7 +435,7 @@ function prev() {
         }
       }
     }
-  }
+  
 }
 
 function next() {
@@ -472,9 +470,7 @@ function next() {
         return //must be here
     }
   }
-  else {
-    if (specialDays) {//if the dataset is specialDays then run this
-      if (specialDays == "patrioticDaysArray") {//set days using patriotic days array
+  if (selection == "Patriotic") {//set days using patriotic days array
         if (day == "6") {
           day = 0;
           console.log("The day was 6");
@@ -500,8 +496,8 @@ function next() {
             updateScripture()
             return //must be here
         }
-      }
-    }
+  }
+  else {
     if (day == "6") {
         day = 0;
         console.log("The day was 6");
@@ -516,10 +512,11 @@ function next() {
         displayedDay.innerHTML = daysArray[currentDay];
         console.log('displayedDay changed...');
         updateScripture()
-        
+        return
     }
   
     else {
+      console.log('selection = ', selection)
       console.log('displayedDay changed...');
       day = day + 1;
       currentDay = currentDay + 1;
@@ -529,7 +526,7 @@ function next() {
       displayedDay.innerHTML = daysArray[currentDay];
       console.log('displayedDay changed...');
       updateScripture()
-        
+      return  
     }
   }
 }
