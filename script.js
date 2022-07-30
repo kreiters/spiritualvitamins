@@ -365,6 +365,7 @@ function prev() {
         displayedDay.innerHTML = resurrectionDaysArray[currentDay];
         console.log('displayedDay changed...');
         updateScripture()
+        return
       }
       else {
           day = day - 1;
@@ -374,7 +375,8 @@ function prev() {
           previousDisplayedDay = displayedDay.innerHTML;/////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//////////////////////////////
           displayedDay.innerHTML = resurrectionDaysArray[currentDay];
           console.log('displayedDay changed...');
-          updateScripture()  
+          updateScripture()
+          return  
       }
     }
     if (selection == "Patriotic") {//set days using patriotic days array
@@ -389,6 +391,7 @@ function prev() {
         displayedDay.innerHTML = patrioticDaysArray[currentDay];
         console.log('displayedDay changed...');
         updateScripture()
+        return
       }
       else {
           day = day - 1;
@@ -399,7 +402,7 @@ function prev() {
           displayedDay.innerHTML = patrioticDaysArray[currentDay];
           console.log('displayedDay changed...');
           updateScripture()
-          
+          return
       }
     }
       
@@ -421,6 +424,7 @@ function prev() {
           // prevBtn.innerHTML = shortDaysArray[prevDay];
           // nextBtn.innerHTML = shortDaysArray[nextDay];
           updateScripture()
+          return
         }
         else {
             day = day - 1;
@@ -431,7 +435,7 @@ function prev() {
             displayedDay.innerHTML = daysArray[currentDay];
             console.log('displayedDay changed...');
             updateScripture()
-            
+            return
         }
       }
     }
@@ -555,6 +559,7 @@ viewSelection.addEventListener('click', event => {
       console.log("the scriptView class name is: ", scriptView.className);
       scriptView.innerHTML = "";
       updateScripture()
+      return
     }
     
   }
