@@ -662,6 +662,10 @@ function updateScripture() {
 }
 
 scriptView.addEventListener('click', event => {//when the opened vitamin is clicked, then change to quote and then back to scripture
+  console.log('the vitamin was clicked')
+  console.log('selection is: ', selection)
+  console.log('specialDays = ', specialDays)
+  console.log('previousDisplayedDay = ', previousDisplayedDay)
   // console.log("the scriptView classname is: ", scriptView.className);
   // console.log("the previousDisplayedDay = ", previousDisplayedDay);
   // if (scriptView.className == "bonus-style") {
@@ -670,17 +674,20 @@ scriptView.addEventListener('click', event => {//when the opened vitamin is clic
     viewChanger()
   }
   else{
+    console.log('selection = ', selection)
     if (selection == "Resurrection") {
       console.log("resurrection has been selected");
-      viewChanger() 
+      viewChanger()
+      return 
     }
     if (specialDays != 'null') {//if the dataset is specialDays then run this
       if (specialDays == "patrioticDaysArray") {
         console.log('this is where the patrioticDaysArray is....')
         viewChanger()
+        return
       }
     }
-    else if (previousDisplayedDay == "Bountiful Bonus!") {
+    if (previousDisplayedDay == "Bountiful Bonus!") {
     displayedDay.innerHTML = daysArray[day];
     console.log('displayedDay changed...');
     event.preventDefault();
@@ -700,6 +707,7 @@ scriptView.addEventListener('click', event => {//when the opened vitamin is clic
 
 function viewChanger() {
   console.log("viewChanger function running. The scriptView.innerHTML = ", scriptView.innerHTML);
+  console.log("the scriptView classname is: ", scriptView.className)
   if (scriptView.classList.contains("bonus-style")) {
     // console.log("the scriptView classname contains bonus-style: ", scriptView.className);
     // console.log("the dailyScript = ", dailyScript);
@@ -751,19 +759,20 @@ function updateQuote() {
   if (selection == "Resurrection") {
     scriptView.innerHTML = "";
     // console.log("quote update function ran and the innerHTML contains: ", scriptView.innerHTML);
-    quoteMatrix.forEach(quote => {
+    quoteMatrix.some(quote => {
       if (quote[selection]) {
         console.log("here is the quote[selection]: ", quote[selection]);
-        quote[selection].forEach(dayQuote => {
+        quote[selection].some(dayQuote => {
           if (dayQuote[resurrectionShortDaysArray[currentDay]]) {
             console.log(dayQuote[resurrectionShortDaysArray[currentDay]]);
             dailyQuote = dayQuote[resurrectionShortDaysArray[currentDay]];
             scriptView.innerHTML = dayQuote[resurrectionShortDaysArray[currentDay]];
             console.log("the quote added: ", dayQuote[resurrectionShortDaysArray[currentDay]], "the innerHTML contains: ", scriptView.innerHTML);
           }
+          return
         })
       }
-      
+      return
     });
   }
   else {
@@ -784,7 +793,7 @@ function updateQuote() {
       
     });
   }
-  
+  return
 }
 
 function openMenu() {
