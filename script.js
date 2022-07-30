@@ -244,6 +244,16 @@ window.onload = function() {
     
 }
 
+//initialize days
+function dayInit() {
+  d = new Date();
+  day = d.getDay();
+  prevDay = ((day - 1));
+  nextDay = ((day + 1));
+  currentDay = day
+}
+
+
 menuBtn.addEventListener('click', event => {
   event.preventDefault();
   console.log("clicked on menu");
@@ -288,6 +298,7 @@ jumpLinks.forEach(link => {
     }
   
     // resetting all day variables to the current day after a new series is selected
+    dayInit()
     let revertDay = d.getDay();
     if (selection == "Resurrection") {//set days to special if series in memory is resurrection
       displayedDay.innerHTML = resurrectionDaysArray[revertDay];
@@ -567,6 +578,7 @@ viewSelection.addEventListener('click', event => {
     console.log("the scriptView class name did not contain bonus-style, rather: ", scriptView.className);
     if (selection == "Resurrection") {
       console.log('this is where the days were getting set wrong');
+      console.log('day = ', day)
       displayedDay.innerHTML = resurrectionDaysArray[day];
       console.log('displayedDay changed...');
       scriptView.classList.toggle('showScripture');
