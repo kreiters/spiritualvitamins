@@ -549,6 +549,7 @@ function next() {
 
 //this function opens the scripture when the vitamin front is clicked
 viewSelection.addEventListener('click', event => {
+  console.log("the scriptView class name is: ", scriptView.className);
   if (viewInstruct.style.display == "none") {
     console.log('scriptView innerHTML contains: ', scriptView.innerHTML)
     console.log("viewSelection function running");
@@ -601,18 +602,17 @@ viewSelection.addEventListener('click', event => {
         console.log('displayedDay changed...');
       }
     }
-      
-    // event.preventDefault();
-    // if (selection) {
-      scriptView.classList.toggle('showScripture');
-      // scriptView.classList.remove("bonus-style");
-      console.log("the scriptView class name is: ", scriptView.className);
-      //console.log(shortDaysArray[currentDay]);
-      //scriptureMatrix[0].Evil[0].sun
-      //scriptureMatrix[1].Forgiveness[0].sun
-      //scriptureMatrix[1].Forgiveness[1].mon
-      updateScripture()//moved code below to the updateScripture function
-    // }
+    console.log("the scriptView class name is: ", scriptView.className);
+    scriptView.classList.toggle('showScripture');
+    scriptView.classList.remove("bonus-style");
+    if (selection == 'Patriotic') {
+      displayedDay.innerHTML = patrioticDaysArray[day];
+    }
+    else {
+      displayedDay.innerHTML = daysArray[day];
+    }
+    console.log("the scriptView class name is: ", scriptView.className);
+    updateScripture()//moved code below to the updateScripture function
   }
 });
   
