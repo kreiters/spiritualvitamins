@@ -546,71 +546,76 @@ function next() {
   }
 }
 
+
 //this function opens the scripture when the vitamin front is clicked
 viewSelection.addEventListener('click', event => {
-  console.log("viewSelection function running");
-  if (scriptView.classList.contains("bonus-style")) {
-    console.log("the scriptView className contained 'bonus-style' so it will be removed");
-    // displayedDay.innerHTML = previousDisplayedDay;
-    // console.log("the displayedDay was set to 'previousDisplayedDay'");
-    if (specialDays != 'null') {//if the dataset is specialDays then run this
-      if (specialDays == "patrioticDaysArray") {
-        console.log('this is where the problem is....')
+  if (viewInstruct.style.display == "none") {
+    console.log('scriptView innerHTML contains: ', scriptView.innerHTML)
+    console.log("viewSelection function running");
+    if (scriptView.classList.contains("bonus-style")) {
+      console.log("the scriptView className contained 'bonus-style' so it will be removed");
+      // displayedDay.innerHTML = previousDisplayedDay;
+      // console.log("the displayedDay was set to 'previousDisplayedDay'");
+      if (specialDays != 'null') {//if the dataset is specialDays then run this
+        if (specialDays == "patrioticDaysArray") {
+          console.log('this is where the problem is....')
+          scriptView.classList.remove("bonus-style");
+          scriptView.classList.add("scripture");
+          displayedDay.innerHTML = patrioticDaysArray[day];
+          scriptView.innerHTML = "";
+        }
+      }
+      else {
+        displayedDay.innerHTML = daysArray[day];
+        console.log('displayedDay changed...');
         scriptView.classList.remove("bonus-style");
         scriptView.classList.add("scripture");
-        displayedDay.innerHTML = patrioticDaysArray[day];
+        console.log("the scriptView class name is: ", scriptView.className);
         scriptView.innerHTML = "";
+        updateScripture()
+        return
       }
+      
     }
-    else {
-      displayedDay.innerHTML = daysArray[day];
-      console.log('displayedDay changed...');
-      scriptView.classList.remove("bonus-style");
-      scriptView.classList.add("scripture");
-      console.log("the scriptView class name is: ", scriptView.className);
-      scriptView.innerHTML = "";
-      updateScripture()
-      return
-    }
-    
-  }
-  else{
-    console.log("the scriptView class name did not contain bonus-style, rather: ", scriptView.className);
-    if (selection == "Resurrection") {
-      console.log('this is where the days were getting set wrong');
-      console.log('day = ', day)
-      displayedDay.innerHTML = resurrectionDaysArray[day];
-      console.log('displayedDay changed...');
-      scriptView.classList.toggle('showScripture');
-      updateScripture()
-      return
-    }
-    if (specialDays != 'null') {//if the dataset is specialDays then run this
-      if (specialDays == "patrioticDaysArray") {
-        console.log('this is where the patrioticDaysArray is....')
+    else{
+      console.log("the scriptView class name did not contain bonus-style, rather: ", scriptView.className);
+      if (selection == "Resurrection") {
+        console.log('this is where the days were getting set wrong');
+        console.log('day = ', day)
+        displayedDay.innerHTML = resurrectionDaysArray[day];
+        console.log('displayedDay changed...');
         scriptView.classList.toggle('showScripture');
         updateScripture()
         return
       }
+      if (specialDays != 'null') {//if the dataset is specialDays then run this
+        if (specialDays == "patrioticDaysArray") {
+          console.log('this is where the patrioticDaysArray is....')
+          scriptView.classList.toggle('showScripture');
+          updateScripture()
+          return
+        }
+      }
+      else {
+        displayedDay.innerHTML = daysArray[day];
+        console.log('displayedDay changed...');
+      }
     }
-    else {
-      displayedDay.innerHTML = daysArray[day];
-      console.log('displayedDay changed...');
-    }
+      
+    // event.preventDefault();
+    // if (selection) {
+      scriptView.classList.toggle('showScripture');
+      // scriptView.classList.remove("bonus-style");
+      console.log("the scriptView class name is: ", scriptView.className);
+      //console.log(shortDaysArray[currentDay]);
+      //scriptureMatrix[0].Evil[0].sun
+      //scriptureMatrix[1].Forgiveness[0].sun
+      //scriptureMatrix[1].Forgiveness[1].mon
+      updateScripture()//moved code below to the updateScripture function
+    // }
   }
-    
-  // event.preventDefault();
-  // if (selection) {
-    scriptView.classList.toggle('showScripture');
-    // scriptView.classList.remove("bonus-style");
-    console.log("the scriptView class name is: ", scriptView.className);
-    //console.log(shortDaysArray[currentDay]);
-    //scriptureMatrix[0].Evil[0].sun
-    //scriptureMatrix[1].Forgiveness[0].sun
-    //scriptureMatrix[1].Forgiveness[1].mon
-    updateScripture()//moved code below to the updateScripture function
-  // }
 });
+  
 
 function updateBonusScripture() {
   console.log("update bonus scripture function ran");
