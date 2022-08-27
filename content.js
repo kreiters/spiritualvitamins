@@ -196,7 +196,15 @@ let scriptureMatrix = [
         {sat: 'Psalm 19:7\n"The law of the Lord is perfect, converting the soul."'},
         {sun: 'Psalm 33:12\n"Blessed is the nation where God is Lord."'},
         {bonus: 'Psalm 119:45\n"And I will walk toward liberty. For I seek God\'s precepts!"'}]},
-
+{Reborn: [
+        {mon: 'John 3:16\n"For God so loved the world, that He gave His only Son, that whoever believes in Him (Jesus) should not perish, but have eternal life."'},
+        {tue: 'John 3:3, 5\n"Truly, truly I say to you, Unless one is born again, he cannot see the kingdom of God. Truly, truly ... unless one is born of water and of the Spirit, he cannot enter into the kingdom of heaven."'}, 
+        {wed: 'Revelation 3:20\n"Behold. I (Jesus) stand at the door and knock if anyone hears My voice and opens the door, I will come in to him, and dine with him, and he with me."'},
+        {thu: 'Romans 3:23\n"For all have sinned and fall short of the glory of God, being justified as a gift by His grace through redemption, which is for Christ."'}, 
+        {fri: 'Romans 6:23\n"For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord."'},
+        {sat: 'Romans 10:9\n"that if you confess with your mouth that Jesus is old and believe in your heart that God raised Him from the dead, you shall be saved."'},
+        {sun: 'Ephesians 2:8\n"For by grace you have been saved through faith; and that not of yourselves, it is a gift of God; not as a result of works, so that no one may boast."'},
+        {bonus: 'Isaiah 55:6, 7b\n"Seek the Lord while He may be found. Call upon Him while He is near ... for God will abundantly pardon."'}]},
 {Rewards: [
         {sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
         {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
@@ -425,6 +433,15 @@ let quoteMatrix = [
         {sat: 'QUOTE:\n\n"Where there is no law, there is no liberty."\n(Benjamin Rush)'},
         {sun: 'QUOTE:\n\n"May that Being Who is supreme over all, ... continue His blessing upon this nation and its government ... consistent with the ends of His providence."\n(John Quincy Adams)'},
         {bonus: 'QUOTE:\n\n"No people will tamely surrender their liberties, nor can any be easily subdued, when knowledge is diffused and virtue is preserved."\n(John Adams)'}]},
+{Reborn: [
+        {mon: 'QUOTE:\n\n"If you\'re really born again, there\'s nothing can separate you from God."\n(William Marrion Branham)'},
+        {tue: 'QUOTE:\n\n"Until a man is born again, his praise is mere noise or religious entertainment. Only the living can praise the Lord."\n(David O. Oyedepo)'}, 
+        {wed: 'QUOTE:\n\n"The highest form of deliverance is to be born again."\n(Unknown)'},
+        {thu: 'QUOTE:\n\n"The spiritual life is a gift of the Living Spirit. The spiritual is no mere development of the natural man. He is a new creation born from above."\n(Henry Drummond)'}, 
+        {fri: 'QUOTE:\n\n"As is true of man who is born naturally and receives a human nature from his parents, so man born anew receives a new nature, a new capacity for service and devotion to God."\n(John F. Walvoord)'},
+        {sat: 'QUOTE:\n\n"Eternal life is not a peculiar feeling inside. If you are born again, eternal life is that quality of life that you possess right now."\n(Major Ian Thomas)'},
+        {sun: 'QUOTE:\n\n"Faith is the evidence of new birth, not the cause of it."\n(John Piper)'},
+        {bonus: 'QUOTE:\n\n"Fully born again in the Lord brings a total separation from believers and unbelievers."\n(Peter Korley)'}]},
 {Rewards: [
         {sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
         {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
