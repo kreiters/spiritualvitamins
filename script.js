@@ -27,6 +27,7 @@ let imgMatrix = [
   {Prayer: {img: "assets/scanned vitamins/prayer.jpg"}},
   {Patriotic: {img: "assets/scanned vitamins/patriotic.jpg"}},
   {Reborn: {img: "assets/scanned vitamins/born again.jpg"}},
+  {Promises: {img: "assets/scanned vitamins/promises.jpg"}},
   {Hope: {img: "assets/scanned vitamins/hope.jpg"}}];
 
 let menuBtn = document.getElementById("menuBtn");
@@ -551,6 +552,7 @@ function next() {
 //this function opens the scripture when the vitamin front is clicked
 viewSelection.addEventListener('click', event => {
   console.log("the scriptView class name is: ", scriptView.className);
+  console.log("viewInstruct.style.display is: ", viewInstruct.style.display);
   if (viewInstruct.style.display == "none") {
     console.log('scriptView innerHTML contains: ', scriptView.innerHTML)
     console.log("viewSelection function running");

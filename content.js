@@ -205,6 +205,15 @@ let scriptureMatrix = [
         {sat: 'Romans 10:9\n"that if you confess with your mouth that Jesus is old and believe in your heart that God raised Him from the dead, you shall be saved."'},
         {sun: 'Ephesians 2:8\n"For by grace you have been saved through faith; and that not of yourselves, it is a gift of God; not as a result of works, so that no one may boast."'},
         {bonus: 'Isaiah 55:6, 7b\n"Seek the Lord while He may be found. Call upon Him while He is near ... for God will abundantly pardon."'}]},
+{Promises: [
+        {mon: 'Romans 10:17\n<span>"So <u>faith</u> comes from hearing and hearing by the word of Christ."</span>'},
+        {tue: '1 Corinthians 15:33\n<span>"Do not be deceived. Bad corrupts good <u>morals</u>."</span>'}, 
+        {wed: 'Romans 11:33\n<span>"Oh, the depth of the riches both of the wisdom and <u>knowledge</u> of God!"</span>'},
+        {thu: 'Acts 24:24-25\n<span>"Felix arrived with Drusilla, his wife. And sent for Paul, and heard Paul speak about faith in Jesus Christ... he was discussing <u>self-control</u>. Felix became frightened."</span>'}, 
+        {fri: 'Romans 15:4\n<span>"For whatever was written in earlier times was written for our instruction, that through <u>perseverance</u> and the encouragement of Scriptures we might have hope."</span>'},
+        {sat: '1 Timothy 3:16\n<span>"And by common confession great is the mystery of <u>godliness</u>."</span>'},
+        {sun: '1 Peter 2:2-3\n<span>"Like newborn babes ... you may grow in respect to salvation if you have tasted the <u>kindness</u> of the Lord."</span>'},
+        {bonus: 'Ephesians 3:19\n<span>"And to know the <u>love of Christ</u> which surpasses knowledge, that you may be filled up to all the fullness of God."</span>'}]},
 {Rewards: [
         {sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
         {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
@@ -442,6 +451,15 @@ let quoteMatrix = [
         {sat: 'QUOTE:\n\n"Eternal life is not a peculiar feeling inside. If you are born again, eternal life is that quality of life that you possess right now."\n(Major Ian Thomas)'},
         {sun: 'QUOTE:\n\n"Faith is the evidence of new birth, not the cause of it."\n(John Piper)'},
         {bonus: 'QUOTE:\n\n"Fully born again in the Lord brings a total separation from believers and unbelievers."\n(Peter Korley)'}]},
+{Promises: [
+        {mon: 'FAITH:\n\n"Faith begins with a backward look at the cross, but it lives with a forward look at the promises."\n(John Piper)'},
+        {tue: 'VIRTUE:\n\n"Gratitude is the mother of all virtues."\n(G.K. Chesterton)'}, 
+        {wed: 'KNOWLEDGE:\n\n"The end of all learning is to know God, and out of that knowledge to love and imitate Him."\n(John Milton)'},
+        {thu: 'SELF-CONTROL:\n\n"I am a spiritual being... after this body is dead my spirit will soar. I choose self-control... I will be impassioned by my faith... I choose self-control."\n(Max Lucado)'}, 
+        {fri: 'PERSERVERANCE:\n\n"By perseverance the snail reached the ark."\n(Charles Spurgeon)'},
+        {sat: 'GODLINESS:\n\n"The key to godliness is not more knowledge but more obedience."\n(Woodrow Kroll)'},
+        {sun: 'KINDNESS:\n\n"The greatest thing a man can do for his Heavenly Father is to be kind to some of His other children."\n(Henry Drummond)'},
+        {bonus: 'LOVE:\n\n"Not all of us can do great things. But we can do small things with great love."\n(Mother Teresa)'}]},
 {Rewards: [
         {sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
         {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
