@@ -553,7 +553,7 @@ function next() {
 viewSelection.addEventListener('click', event => {
   console.log("the scriptView class name is: ", scriptView.className);
   console.log("viewInstruct.style.display is: ", viewInstruct.style.display);
-  if (viewInstruct.style.display == "none") {
+  if (viewInstruct.style.display == "none" || viewInstruct.style.display == "block") {
     console.log('scriptView innerHTML contains: ', scriptView.innerHTML)
     console.log("viewSelection function running");
     if (scriptView.classList.contains("bonus-style")) {
