@@ -30,6 +30,7 @@ let imgMatrix = [
   {Promises: {img: "assets/scanned vitamins/promises.jpg"}},
   {Satan: {img: "assets/scanned vitamins/satan.jpg"}},
   {Harvest: {img: "assets/scanned vitamins/harvest.jpg"}},
+  {Immanuel: {img: "assets/scanned vitamins/immanuel.jpg"}},
   {Hope: {img: "assets/scanned vitamins/hope.jpg"}}];
 
 let menuBtn = document.getElementById("menuBtn");
@@ -148,6 +149,15 @@ let viewInstruct = document.getElementById("show-instructions");
 let dailyQuote;
 
 let storedSelection;
+
+let audio = document.querySelector("audio");
+
+if (audio) {
+    audio.addEventListener('click', (e) => {
+    console.log('audio clicked');
+  });
+}
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //added 1/18/22   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -742,18 +752,19 @@ function viewChanger() {
       dailyScript = "";
       updateBonusQuote()
       }
-    else if (scriptView.innerHTML === dailyQuote) {
+    else if (scriptView.innerHTML === dailyQuote  || scriptView.innerHTML.includes('tooltiptext')) {
       // console.log("the dailyquote = ",dailyQuote)
       // console.log("the scriptView.innerHTML contains: ",scriptView.innerHTML);
       updateBonusScripture()
     }
   }
   else {
+    console.log('the scriptView.innerHTML = ', scriptView.innerHTML)
     if (scriptView.innerHTML === dailyScript) {
     dailyScript = "";
     updateQuote()
     }
-    else if (scriptView.innerHTML === dailyQuote) {
+    else if (scriptView.innerHTML === dailyQuote || scriptView.innerHTML.includes('tooltiptext')) {
       // console.log("the dailyquote = ",dailyQuote)
       // console.log("the scriptView.innerHTML contains: ",scriptView.innerHTML);
       updateScripture()
@@ -774,6 +785,17 @@ function updateBonusQuote() {
           dailyQuote = dayQuote[bonusShortDaysArray[bonusDay]];
           scriptView.innerHTML = dayQuote[bonusShortDaysArray[bonusDay]];
           // console.log("the quote added: ", dayQuote[bonusShortDaysArray[bonusDay]], "the innerHTML contains: ", scriptView.innerHTML);
+        }
+        //show the lyrics if tooltiptext is in the element
+        if (scriptView.innerHTML.includes('tooltiptext')) {
+          console.log('tooltiptext style is: ', document.querySelector('.tooltiptext').style)
+          if (document.querySelector('.tooltiptext').style.visibility != "visible"){
+            console.log('the tooltiptext was hidden')
+            document.querySelector('.tooltiptext').style.visibility = "visible";
+          }
+          else if (document.querySelector('.tooltiptext').style.visibility == "visible"){
+            document.querySelector('.tooltiptext').style.visibility = "hidden";
+          }
         }
       })
     }
@@ -814,6 +836,17 @@ function updateQuote() {
             dailyQuote = dayQuote[shortDaysArray[currentDay]];
             scriptView.innerHTML = dayQuote[shortDaysArray[currentDay]];
             console.log("the quote added: ", dayQuote[shortDaysArray[currentDay]], "the innerHTML contains: ", scriptView.innerHTML);
+            //show the lyrics if tooltiptext is in the element
+            if (dailyQuote.includes('tooltiptext')) {
+              console.log('tooltiptext style is: ', document.querySelector('.tooltiptext').style)
+              if (document.querySelector('.tooltiptext').style.visibility != "visible"){
+                console.log('the tooltiptext was hidden')
+                document.querySelector('.tooltiptext').style.visibility = "visible";
+              }
+              else if (document.querySelector('.tooltiptext').style.visibility == "visible"){
+                document.querySelector('.tooltiptext').style.visibility = "hidden";
+              }
+            }
           }
         })
       }

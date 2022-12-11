@@ -581,6 +581,13 @@
           margin: auto;
           bottom: 0; */
         }
+        
+        .lyrics {
+          background-color: rgb(142, 250, 155);
+          padding: 0 5px;
+          border-radius: 20%/50%;
+          cursor: pointer;
+        }
 
  }
 
@@ -1178,6 +1185,13 @@
           margin: auto;
           bottom: 0; */
         }
+        
+        .lyrics {
+          background-color: rgb(142, 250, 155);
+          padding: 0 5px;
+          border-radius: 20%/50%;
+          cursor: pointer;
+        }
 
 }
 
@@ -1770,6 +1784,13 @@
           right: 0;
           margin: auto;
           bottom: 0; */
+        }
+
+        .lyrics {
+          background-color: rgb(142, 250, 155);
+          padding: 0 5px;
+          border-radius: 20%/50%;
+          cursor: pointer;
         }
 
   }

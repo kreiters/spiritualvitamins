@@ -633,6 +633,44 @@
     border-radius: 30%/50%;
     background-color: rgb(255, 221, 29);
   }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    background-color: rgb(142, 250, 155);
+    padding: 0 5px;
+    border-radius: 20%/50%;
+    cursor: pointer;
+  }
+
+  .tooltip .tooltiptext {
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+    width: 100vw;
+    height: 400px;
+    top: -440px;
+    left: -20%;
+    margin-left: -450%;
+    background-color: lightblue;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    overflow-y: scroll;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .lyric-container {
+    position: relative;
+    width: 100vw;
+    left: -50px;
+    right: -30px;
+    margin: auto;
+  }
  }
 
 
@@ -1231,6 +1269,53 @@
     border-radius: 30%/50%;
     background-color: rgb(255, 221, 29);
   }
+
+  .lyrics {
+    background-color: rgb(142, 250, 155);
+    padding: 0 5px;
+    border-radius: 20%/50%;
+    cursor: pointer;
+  }
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    background-color: rgb(142, 250, 155);
+    padding: 0 5px;
+    border-radius: 20%/50%;
+    cursor: pointer;
+  }
+
+  .tooltip .tooltiptext {
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+    width: 100vw;
+    height: 400px;
+    top: -440px;
+    left: -20%;
+    margin-left: -450%;
+    background-color: lightblue;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    overflow-y: scroll;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .lyric-container {
+    position: relative;
+    width: 100vw;
+    left: -50px;
+    right: -30px;
+    margin: auto;
+  }
+
+
  }
  /* ###########################################################################################################################################
  ########################################################################################################################################### */
@@ -1832,4 +1917,43 @@
     border-radius: 30%/50%;
     background-color: rgb(255, 221, 29);
   }
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    background-color: rgb(142, 250, 155);
+    padding: 0 5px;
+    border-radius: 20%/50%;
+    cursor: pointer;
+  }
+
+  .tooltip .tooltiptext {
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+    width: 100vw;
+    height: 400px;
+    top: -440px;
+    left: -20%;
+    margin-left: -450%;
+    background-color: lightblue;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    overflow-y: scroll;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .lyric-container {
+    position: relative;
+    width: 100vw;
+    left: -50px;
+    right: -30px;
+    margin: auto;
+  }
+  
   }
