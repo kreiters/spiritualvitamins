@@ -250,6 +250,15 @@ let scriptureMatrix = [
         {sat: 'Colossians 1:18\n"He is also head of the body, the church, and He is the beginning, the first born from the dead so that He Himself might come to have first place in everything."'},
         {sun: 'Hebrews 3:14\n"For we have become partakers of Christ, if we hold fast the beginning of our assurance firm until the end."'},
         {bonus: 'Revelation 21:6\n"And He said to me, It is done, I am the Alpha and the Omega, the beginning and the end."'}]},
+{Book: [
+        {mon: 'Psalm 19:7a\n"The LAW of the Lord is PERFECT, restoring the soul."'},
+        {tue: 'Psalm 19:7b\n"The TESTIMONY of the Lord is SURE, making wise the simple."'}, 
+        {wed: 'Psalm 19:8a\n"The PRECEPTS of the Lord are RIGHT, rejoicing the heart."'},
+        {thu: 'Psalm 19:8b\n"The COMMANDMENT of the Lord is PURE, enlightening the eyes."'}, 
+        {fri: 'Psalm 19:9a\n"The FEAR of the Lord is CLEAN, enduring forever."'},
+        {sat: 'Psalm 19:9b\n"The JUDGMENTS of the Lord are TRUE, they are righteous altogether."'},
+        {sun: 'Psalm 119:160a\n"The sum of Thy WORD is TRUTH."'},
+        {bonus: 'Psalm 119:160b\n"Every one of Thy RIGHTEOUS ORDINANCES is EVERLASTING."'}]},
 {Rewards: [
         {sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
         {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
@@ -532,6 +541,15 @@ let quoteMatrix = [
         {sat: 'QUOTE:\n\n"Never underestimate the power you have to take your life in a new direction."\n(Germany Kent)'},
         {sun: 'QUOTE:\n\n"Every day is a chance to begin again. Don\'t focus on the failures of yesterday, start today with positive thoughts and expectations."\n(Catherine Pulsifer)'},
         {bonus: 'QUOTE:\n\n"Forgiveness says you are given a second chance to make a new beginning."\n(Desmond Tutu)'}]},
+{Book: [
+        {mon: 'QUOTE:\n\n"God\'s word reveals insights into the world, and we must continue in His word faithfully, if we are to see our circumstances clearly."\n(David Jeremiah)'},
+        {tue: 'QUOTE:\n\n"Bible verses have a way of entering through our eyes, swirling around in our mind, and showing up in our hands and feet."\n(David Jeremiah)'}, 
+        {wed: 'QUOTE:\n\n"None walks so evenly with God, as they who are assured of the love of God."\n(Thomas Manton)'},
+        {thu: 'QUOTE:\n\n"Our obedience to God\'s commandments demonstrates our love for Him."\n(David Jeremiah)'}, 
+        {fri: 'QUOTE:\n\n"Only he who can say, \'The Lord is the strength of my life,\' can go on to say, Of whom shall I be afraid?"\n(Alexander MacLaren)'},
+        {sat: 'QUOTE:\n\n"You never so touch the ocean of God\'s love as when you forgive and love your enemies."\n(Corrie ten Boom)'},
+        {sun: 'QUOTE:\n\n"If one thing lies at the basis of the whole biblical teaching about God, it is that God knows all things."\n(J. Gresham Machen)'},
+        {bonus: 'QUOTE:\n\n"God\'s love does not take a day off."\n(David Jeremiah)'}]},
 {Rewards: [
         {sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
         {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
