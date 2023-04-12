@@ -259,6 +259,15 @@ let scriptureMatrix = [
         {sat: 'Psalm 19:9b\n"The JUDGMENTS of the Lord are TRUE, they are righteous altogether."'},
         {sun: 'Psalm 119:160a\n"The sum of Thy WORD is TRUTH."'},
         {bonus: 'Psalm 119:160b\n"Every one of Thy RIGHTEOUS ORDINANCES is EVERLASTING."'}]},
+{Pride: [
+        {mon: 'Proverbs 16:18\n"Pride goes before destruction, and a haughty spirit before stumbling."'},
+        {tue: '1 John 2:16\n"For all that is in the world, the lust of the flesh, the lust of the eyes, and the boastful pride of life is not from the Father, but from the world."'}, 
+        {wed: '1 Peter 5:5-6\n"Cloth yourself with humility toward one another, for God is opposed to the proud, but gives grace to the humble."'},
+        {thu: 'Isaiah 13:11\n"I will also put an end to the arrogance of the proud, and abase the haughtiness of the ruthless."'}, 
+        {fri: 'James 4:10\n"God is opposed to the proud, but gives grace to the humble."'},
+        {sat: 'Proverbs 8:13\n"The fear of the LORD is to hate evil, pride, arrogance and the evil way. And the perverted mouth I hate."'},
+        {sun: 'Proverbs 11:2\n"When pride comes, then comes dishonor, but with the humble is wisdom."'},
+        {bonus: 'James 4:10\n"Humble yourselves in the presence of the Lord, and He will exalt you."'}]},
 {Rewards: [
         {sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
         {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
@@ -550,6 +559,15 @@ let quoteMatrix = [
         {sat: 'QUOTE:\n\n"You never so touch the ocean of God\'s love as when you forgive and love your enemies."\n(Corrie ten Boom)'},
         {sun: 'QUOTE:\n\n"If one thing lies at the basis of the whole biblical teaching about God, it is that God knows all things."\n(J. Gresham Machen)'},
         {bonus: 'QUOTE:\n\n"God\'s love does not take a day off."\n(David Jeremiah)'}]},
+{Pride: [
+        {mon: 'QUOTE:\n\n"You can have no greater sign of confident pride than when you think you are humble enough."\n(William Law)'},
+        {tue: 'QUOTE:\n\n"God sends no one away empty except those who are full of themselves."\n(D. L. Moody)'}, 
+        {wed: 'QUOTE:\n\n"A person wrapped up in himself makes a small package."\n(Henry Emerson Fosdick)'},
+        {thu: 'QUOTE:\n\n"Pride builds walls between people, humility builds bridges."\n(Rick Warren)'}, 
+        {fri: 'QUOTE:\n\n"For pride is spiritual cancer; it eats up the very possibility of love or contentment, or even common sense."\n(C. S. Lewis)'},
+        {sat: 'QUOTE:\n\n"Pride may be set down as \'the sin of human nature.\'"\n(Charles Spurgeon)'},
+        {sun: 'QUOTE:\n\n"Pride is a barrier to all spiritual progress."\n(Harry Ironside)'},
+        {bonus: 'QUOTE:\n\n"The surest mark of true conversion is humility."\n(J. C. Ryle)'}]},        
 {Rewards: [
         {sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
         {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
