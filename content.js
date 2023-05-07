@@ -268,6 +268,15 @@ let scriptureMatrix = [
         {sat: 'Proverbs 8:13\n"The fear of the LORD is to hate evil, pride, arrogance and the evil way. And the perverted mouth I hate."'},
         {sun: 'Proverbs 11:2\n"When pride comes, then comes dishonor, but with the humble is wisdom."'},
         {bonus: 'James 4:10\n"Humble yourselves in the presence of the Lord, and He will exalt you."'}]},
+{Holy: [
+        {mon: 'Habakkuk 2:20\n"But the LORD is in His holy temple. Let all the earth be silent before Him."'},
+        {tue: '2 Corinthians 7:1\n"Therefore, having these promises, beloved, let us cleanse ourselves from all defilement of flesh and spirit, perfecting holiness in the fear of God."'}, 
+        {wed: 'Romans 12:1\n"I urge you therefore, brethren, by the mercies of God present your bodies a living and holy sacrifice, acceptable to God."'},
+        {thu: '1 Chronicles 16:10\n"Glory in His Holy name; let the heart of those who seek the Lord be glad."'}, 
+        {fri: 'Psalm 16:10\n"For You will not abandon my soul to Sheol neither will You allow Your Holy One to see the pit."'},
+        {sat: 'Deuteronomy 5:12\n"Observe the sabbath day to keep it holy as the LORD your God commanded you."'},
+        {sun: 'Psalm 145:21\n"My mouth will speak the praise of the LORD; and all flesh will bless His Holy name forever and ever."'},
+        {bonus: 'Matthew 7:6\n"Do not give what is holy to dogs, and do not throw your pearls before swine lest they trample them under their feet, and turn and tear you to pieces."'}]},
 {Rewards: [
         {sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
         {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
@@ -567,7 +576,16 @@ let quoteMatrix = [
         {fri: 'QUOTE:\n\n"For pride is spiritual cancer; it eats up the very possibility of love or contentment, or even common sense."\n(C. S. Lewis)'},
         {sat: 'QUOTE:\n\n"Pride may be set down as \'the sin of human nature.\'"\n(Charles Spurgeon)'},
         {sun: 'QUOTE:\n\n"Pride is a barrier to all spiritual progress."\n(Harry Ironside)'},
-        {bonus: 'QUOTE:\n\n"The surest mark of true conversion is humility."\n(J. C. Ryle)'}]},        
+        {bonus: 'QUOTE:\n\n"The surest mark of true conversion is humility."\n(J. C. Ryle)'}]},
+{Holy: [
+        {mon: 'QUOTE:\n\n"Holiness is not just for some select few spiritual giants; ... everyone who names the name of the Lord is called to live a holy life."\n(Nancy Leigh DeMoss)'},
+        {tue: 'QUOTE:\n\n"You want to make a difference in your world? Live a holy life. People are watching the way we act more than they are listening to what we say."\n(Max Lucado)'}, 
+        {wed: 'QUOTE:\n\n"May all Christians be found worthy of either the pure white crown of a holy life or the royal red crown of martyrdom."\n(Cyprian)'},
+        {thu: 'QUOTE:\n\n"If there is not at least a yearning in our hearts to live a holy life pleasing to God, we need to seriously question whether our faith in Christ is genuine."\n(Jerry Bridges)'}, 
+        {fri: 'QUOTE:\n\n"Grace is not the freedom to sin, it is the power to live a holy life."\n(Joyce Meyer)'},
+        {sat: 'QUOTE:\n\n"A holy life is in itself a wonderful power, and will make up for many deficiencies; it is in fact the best sermon a man can ever deliver."\n(Charles Spurgeon)'},
+        {sun: 'QUOTE:\n\n"A holy life will produce the deepest impression. Lighthouses blow no horns; they only shine."\n(Dwight L. Moody)'},
+        {bonus: 'QUOTE:\n\n"The Christian is a holy rebel loose in the world with access to the throne of God."\n(A.W. Tozer)'}]},        
 {Rewards: [
         {sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
         {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
