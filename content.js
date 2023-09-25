@@ -277,6 +277,15 @@ let scriptureMatrix = [
         {sat: 'Deuteronomy 5:12\n"Observe the sabbath day to keep it holy as the LORD your God commanded you."'},
         {sun: 'Psalm 145:21\n"My mouth will speak the praise of the LORD; and all flesh will bless His Holy name forever and ever."'},
         {bonus: 'Matthew 7:6\n"Do not give what is holy to dogs, and do not throw your pearls before swine lest they trample them under their feet, and turn and tear you to pieces."'}]},
+{Grief: [
+        {mon: 'Psalm 119:76\n"May Your unfailing love be my comfort, according to Your promise to Your servant"'},
+        {tue: 'Psalm 77:10\n"Then I said, \'It is my grief, that the right hand of the Most High has changed.\'"'}, 
+        {wed: 'Proverbs 17:25\n"A foolish son is a grief to his father"'},
+        {thu: 'Isaiah 53:4\n"Surely our griefs He, Jesus, Himself bore, and our sorrows He carried."'}, 
+        {fri: 'Genesis 6:6\n"And the Lord was sorry that He had made men, and He was grieved in His heart."'},
+        {sat: 'John 21:17\n"Peter was grieved because Jesus said to him the third time, \'Do you love Me?\'"'},
+        {sun: 'Matthew 26:38\n"Then Jesus said to them, \'My soul is deeply grieved.\'"'},
+        {bonus: 'Isaiah 53:3\n"He was despised and forsaken of men. A man of sorrows and acquainted with grief."'}]},
 {Rewards: [
         {sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
         {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
@@ -585,7 +594,16 @@ let quoteMatrix = [
         {fri: 'QUOTE:\n\n"Grace is not the freedom to sin, it is the power to live a holy life."\n(Joyce Meyer)'},
         {sat: 'QUOTE:\n\n"A holy life is in itself a wonderful power, and will make up for many deficiencies; it is in fact the best sermon a man can ever deliver."\n(Charles Spurgeon)'},
         {sun: 'QUOTE:\n\n"A holy life will produce the deepest impression. Lighthouses blow no horns; they only shine."\n(Dwight L. Moody)'},
-        {bonus: 'QUOTE:\n\n"The Christian is a holy rebel loose in the world with access to the throne of God."\n(A.W. Tozer)'}]},        
+        {bonus: 'QUOTE:\n\n"The Christian is a holy rebel loose in the world with access to the throne of God."\n(A.W. Tozer)'}]},
+{Grief: [
+        {mon: 'QUOTE:\n\n"I infer that losses, disappointments.. are God\'s workmen."\n(Samuel Rutherford)'},
+        {tue: 'QUOTE:\n\n"God has a purpose for trials and testing."\n(Warren Wierabe)'}, 
+        {wed: 'QUOTE:\n\n"Tears are the diamonds of heaven\'s sighs, ... and are numbered with the most sublime strains that reach the majestic high."\n(Charles H. Spurgeon)'},
+        {thu: 'QUOTE:\n\n"One glimpse of His dear face our sorrow will erase. So bravely run the race \'til we see Christ."\n(Esther Kerr Rusthnoi)'}, 
+        {fri: 'QUOTE:\n\n"Your place is not to question God, nor doubt Him but to obey Him."\n(Kay Arthur)'},
+        {sat: 'QUOTE:\n\n"Never doubt in the dark what God told you in the light."\n(V. Raymond Edman)'},
+        {sun: 'QUOTE:\n\n"Life is hard, but God is good and heaven is real."\n(Billy Graham)'},
+        {bonus: 'QUOTE:\n\n"God\'s strength can only work (in our) weakness."\n(Andrew Murray)'}]},        
 {Rewards: [
         {sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"'}, 
         {mon: 'The Crown of Victors\n\n1 Corinthians 9:24\n"Those who run in a race all run, but only one receives the prize (reward)."'},
