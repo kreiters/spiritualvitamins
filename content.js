@@ -934,6 +934,35 @@ let scriptureMatrix = [
     ],
   },
   {
+    Love_: [
+      {
+        mon: '1 John 4:8\n"He who does not love does not know God; for God is love."',
+      },
+      {
+        tue: '1 Peter 4:8\n"And above all things have fervent love for one another, for love will cover a multitude of sins."',
+      },
+      {
+        wed: 'Deuteronomy 6:5\n"And you shall love the Lord your God with all your heart and with all your soul and with all your might."',
+      },
+      {
+        thu: '1 Timothy 1:7\n"For God has not given us a spirit of fear, but of power and of love and of a sound mind."',
+      },
+      {
+        fri: 'Ephesians 5:2\n"And walk in love, as Christ also has loved us and given Himself for us."',
+      },
+      {
+        sat: '1 Corinthians 16:22\n"If anyone does not love the Lord Jesus Christ, let him be accursed."',
+      },
+      {
+        sun: 'Romans 8:28\n"And we know that all things work together for good to those who love God, to those who are called according to His purpose."',
+      },
+      {
+        bonus:
+          '1 John 4:12\n"No one has seen God at any time. If we love one another, God abides in us."',
+      },
+    ],
+  },
+  {
     Rewards: [
       {
         sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"',
@@ -1906,6 +1935,35 @@ let quoteMatrix = [
       {
         bonus:
           'QUOTE:\n\n"The desire of excessive power caused the angels to fall: the desire of knowledge caused men to fall (Garden of Eden)."\n(Francis Bacon)',
+      },
+    ],
+  },
+  {
+    Love_: [
+      {
+        mon: 'QUOTE:\n\n"God and love are synonymous. Love is not an attribute of God, it is God. Whatever God is, love is."\n(Oswald Chambers)',
+      },
+      {
+        tue: 'QUOTE:\n\n"Though our feelings come and go, God’s love for us does not."\n(C.S. Lewis)',
+      },
+      {
+        wed: 'QUOTE:\n\n"Love is the doorway through which the human soul passes from selfishness to service."\n(Jack Hyles)',
+      },
+      {
+        thu: 'QUOTE:\n\n"No matter what storm you face, you need to know that God loves you. He has not abandoned you."\n(Oswald Graham)',
+      },
+      {
+        fri: 'QUOTE:\n\n"God carries your picture in His wallet."\n(Tony Campolo)',
+      },
+      {
+        sat: 'QUOTE:\n\n"God loves us too much to indulge our every whim."\n(Max Lucado)',
+      },
+      {
+        sun: 'QUOTE:\n\n"When you know how much God is in love with you, then you can only live radiating that love."\n(Mother Teresa)',
+      },
+      {
+        bonus:
+          'QUOTE:\n\n"God’s love for us is proclaimed by each sunrise."\n(Anonymous)',
       },
     ],
   },
