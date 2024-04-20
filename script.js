@@ -39,6 +39,7 @@ let imgMatrix = [
   { Angels: { img: "assets/scanned vitamins/angels.jpg" } },
   { Love_: { img: "assets/scanned vitamins/love_.jpg" } },
   { Mystery: { img: "assets/scanned vitamins/mystery.jpg" } },
+  { Resurrection_: { img: "assets/scanned vitamins/resurrection_.jpg" } },
   { Hope: { img: "assets/scanned vitamins/hope.jpg" } },
 ];
 
