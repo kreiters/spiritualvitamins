@@ -963,6 +963,36 @@ let scriptureMatrix = [
     ],
   },
   {
+    Mystery: [
+      {
+        mon: 'THE SOWER Matthew 13:3-18\n"Behold, a sower went out to sow. And as he sowed, some seed fell by the wayside. And the birds came and devoured them."',
+      },
+      {
+        tue: 'THE PEARL Matthew 13:45-46\n"Again the kingdom of heaven is like a merchant seeking beautiful pearls, who when he had found one pearl of great price, went and sold all that he had and bought it."',
+      },
+      {
+        wed: 'MUSTARD SEED Matthew 13:31-32\n"The kingdom of heaven is like a mustard seed, which a man took and sowed it in a field ...least of all seeds ...it becomes a tree that the birds of the air come and nest in its branches."',
+      },
+      {
+        thu: 'HIDDEN TREASURE Matthew 13:44\n"Again the kingdom of heaven is like a treasure hidden in a field which a man found and hid and for joy over it he goes and sells all he has and buys the field."',
+      },
+      {
+        fri: 'THE DRAGNET Matthew 13:47\n"Again the kingdom of heaven is like a dragnet that was cast into the sea and gathered some of every kind, ...angels sat down and separated the wicked from among the just."',
+      },
+      {
+        sat: 'WHEAT AND TARES Matthew 13:24-25\n"The kingdom of heaven is like a man who sows good seed in his field, but while men slept, his enemy came and sowed tares among the wheat ...let both grow together until harvest ...first gather tares and bind them and burn them, then gather the wheat into my barn."',
+      },
+      {
+        sun: 'TEN MINAS Luke 19:11-27\n"A certain nobleman went into a far country to receive for himself a kingdom and to return. So he called three of his servants, gave minas to each. Do business until I return ...And so when he returned ...first earned 10 minas; second earned 5 minas; third earned none and said, "Master ... I put your minas in a handkerchief."',
+      },
+      {
+        bonus:
+          'CHRIST AND THE CHURCH Ephesians 5:28-32\n"Husbands ought to love their own wives as their own bodies ...for no one hates his own flesh, but cherishes it, just as the Lord does the church. This is a great mystery, but I speak concerning Christ and the church."',
+      },
+    ],
+  },
+
+  {
     Rewards: [
       {
         sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"',
@@ -1964,6 +1994,35 @@ let quoteMatrix = [
       {
         bonus:
           'QUOTE:\n\n"God’s love for us is proclaimed by each sunrise."\n(Anonymous)',
+      },
+    ],
+  },
+  {
+    Mystery: [
+      {
+        mon: 'QUOTE:\n\n"Mystery creates wonder and wonder is the basis of man’s desire to understand."\n(Neil Armstrong)',
+      },
+      {
+        tue: 'QUOTE:\n\n"The mystery of God - His plan that was previously hidden, even though He made it for our ultimate glory before the world began."\n(Unknown)',
+      },
+      {
+        wed: 'QUOTE:\n\n"The Bible considers five mysteries. 1. The mystery of the universe, 2. The mystery of man, 3. The mystery of God, 4. The mystery of Christ, and 5. The mystery of the church."\n(Unknown)',
+      },
+      {
+        thu: 'QUOTE:\n\n"Jesus did not give the parables to teach us how to live. He gave them, I believe, to correct our notions about who God is and who God loves."\n(Phillip Yancy)',
+      },
+      {
+        fri: 'QUOTE:\n\n"Christian life is centered in the mystery of the incarnation of Christ, the union of God and man"\n(Xavier University)',
+      },
+      {
+        sat: 'QUOTE:\n\n"Let the study of the Bible become central in your life - not just so you will know it, but that you will obey it."\n(Billy Graham)',
+      },
+      {
+        sun: 'QUOTE:\n\n"You are encircled by the arms of the mystery of God."\n(Hildegard Bingen)',
+      },
+      {
+        bonus:
+          'QUOTE:\n\n"If you refuse Christ until you understand all mysteries, you will perish in your sins. Come while the gate is open."\n(Charles H. Spurgeon)',
       },
     ],
   },
