@@ -991,7 +991,35 @@ let scriptureMatrix = [
       },
     ],
   },
-
+  {
+    Resurrection_: [
+      {
+        mon: 'John 11:25-26\n"Jesus said to her, I am the resurrection and the life; he who believes in Me shall live even if he dies, everyone who lives and believes in Me shall never die."',
+      },
+      {
+        tue: "Matthew 22:23,30\n\"To the Sadducees, who say there is no resurrection, Jesus said to them, 'You are mistaken. For in the resurrection they neither marry nor are they given in marriage.'\"",
+      },
+      {
+        wed: 'John 5:28-29\n"Do nor marvel at this; for the hour is coming in which all who are in the graves will hear His (Jesus\') voice and come forth - those who have done good, to the resurrection of life, and those who have done evil to the resurrection of condemnation."',
+      },
+      {
+        thu: '1 Corinthians 15:13-14\n"If there is no resurrection of the dead, then Christ is not risen. And if Christ is not risen, Then our preaching is empty and your faith is also empty."',
+      },
+      {
+        fri: 'Isaiah 26:19\n"Your dead shall live; together with my dead body they shall arise; awake and sing you who dwell in dust; for your dew is like the dew of herbs; and the earth shall cast out the dead."',
+      },
+      {
+        sat: 'Romans 6:5\n"For if we have been united together in the likeness of His death, certainly we also shall be in the likeness of His resurrection."',
+      },
+      {
+        sun: '1 Peter 1:3\n"Blessed be the God and Father of our Lord Jesus Christ, Who according to His great mercy has caused us to be born again to a living hope through the resurrection of Jesus Christ from the dead."',
+      },
+      {
+        bonus:
+          'Revelation 20:6\n"Blessed and Holy is the one who has a part in the first resurrection. Over these the second death has no power, but they shall be priests of God and of Christ, and shall reign with Him a thousand years."',
+      },
+    ],
+  },
   {
     Rewards: [
       {
@@ -2023,6 +2051,35 @@ let quoteMatrix = [
       {
         bonus:
           'QUOTE:\n\n"If you refuse Christ until you understand all mysteries, you will perish in your sins. Come while the gate is open."\n(Charles H. Spurgeon)',
+      },
+    ],
+  },
+  {
+    Resurrection_: [
+      {
+        mon: 'QUOTE:\n\n"The resurrection of Jesus changes the face of death for all His people. Death is no longer a prison, but a passage into God\'s presence."\n(J.I. Packer)',
+      },
+      {
+        tue: 'QUOTE:\n\n"The minute you decide to receive Jesus as Savior and Lord, the power of the Holy Spirit comes into your life. It\'s the power of the resurrection - the same thing that raised Jesus from the dead."\n(Tim Keller)',
+      },
+      {
+        wed: 'QUOTE:\n\n"The resurrection is a fact better attested than any event recorded in history, whether ancient or modern."\n(Charles H. Spurgeon)',
+      },
+      {
+        thu: 'QUOTE:\n\n"We live and die; Christ died and lived"\n(John Stott)',
+      },
+      {
+        fri: 'QUOTE:\n\n"There is more evidence that Jesus rose from the dead than there is that Julius Caesar ever lived or that Alexander the Great died at age thirty-three."\n(Billy Graham)',
+      },
+      {
+        sat: 'QUOTE:\n\n"To preach Christianity means primarily to preach the resurrection ... the resurrection and its consequences were the gospel or good news which the Christians brought."\n(C.S. Lewis)',
+      },
+      {
+        sun: 'QUOTE:\n\n"The cross is the victory, the resurrection is the triumph. The resurrection is the public display of the victory, the triumph of the crucified one."\n(Leon Morris)',
+      },
+      {
+        bonus:
+          'QUOTE:\n\n"Every parting gives a foretaste of death; every coming together again a foretaste of resurrection."\n(Arthur Schopenhauer)',
       },
     ],
   },
