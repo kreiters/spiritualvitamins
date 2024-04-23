@@ -904,6 +904,74 @@ let scriptureMatrix = [
       },
     ],
   },
+  // {Purity: [
+  //         {mon: '\n""'},
+  //         {tue: '\n""'},
+  //         {wed: '\n""'},
+  //         {thu: '\n""'},
+  //         {fri: '\n""'},
+  //         {sat: '\n""'},
+  //         {sun: '\n""'},
+  //         {bonus: '\n""'}]},
+  {
+    Thankful_: [
+      {
+        mon: 'Matthew 11:25\n"At that time Jesus said, I thank You Father, Lord of heaven and earth."',
+      },
+      {
+        tue: "Revelation 7:11-12\n\"All the angels were standing around the throne ...saying, 'Amen, blessing and glory and wisdom and thanksgiving and honor and power and might be to our God forever.'\"",
+      },
+      {
+        wed: 'Psalm 50:14\n"Offer to God thanksgiving, and pay your vows to the Most High."',
+      },
+      {
+        thu: '1 Timothy 4:3\n"For every creature of God is good, and nothing is to be refused if it is received with thankgiving."',
+      },
+      {
+        fri: '2 Corinthians 9:15\n"Thanks be to God for His indescribable gift!"',
+      },
+      {
+        sat: 'Psalm 95:2\n"Let us come before His presence with thanksgiving."',
+      },
+      {
+        sun: 'Philippians 4:5\n"Be anxious for nothing, but in everything by prayer and supplication, with thanksgiving, let you request be made to God."',
+      },
+      {
+        bonus:
+          'Psalm 107:21\n"O that men would give thanks to the Lord for His goodness."',
+      },
+    ],
+  },
+
+  {
+    Joy: [
+      {
+        mon: 'Psalm 95:1\n"O come let us sing for joy to the Lord. Let us shout joyfully to the rock of our salvation."',
+      },
+      {
+        tue: 'Psalm 81:1\n"Sing for joy to God our strength; shout joyfully to the God of Jacob."',
+      },
+      {
+        wed: 'Matthew 5:12\n"Rejoice and be glad for your reward in heaven is great, for so they persecuted the prophets who were before you."',
+      },
+      {
+        thu: 'Luke 15:10\n"In the same way, I tell you, there is joy in the presence of the angels of God over one sinner who repents."',
+      },
+      {
+        fri: 'Philippians 2:2\n"Make my joy complete by being of the same mind, maintaining the same love, united in spirit, intent on one purpose."',
+      },
+      {
+        sat: '1 John 4:1\n"And these things we write, so that our joy may be made complete."',
+      },
+      {
+        sun: 'Matthew 2:10\n"And when they saw the star, they rejoiced exceedingly with great joy."',
+      },
+      {
+        bonus:
+          'Romans 14:17\n"For the kingdom of God is not eating and drinking but righteousness and peace and joy in the Holy Spirit."',
+      },
+    ],
+  },
   {
     Angels: [
       {
@@ -1964,6 +2032,74 @@ let quoteMatrix = [
       {
         bonus:
           'QUOTE:\n\n"God\'s strength can only work (in our) weakness."\n(Andrew Murray)',
+      },
+    ],
+  },
+  //{Purity: [
+  //{mon: 'QUOTE:\n\n""\n()'},
+  //{tue: 'QUOTE:\n\n""\n()'},
+  //{wed: 'QUOTE:\n\n""\n()'},
+  //{thu: 'QUOTE:\n\n""\n()'},
+  //{fri: 'QUOTE:\n\n""\n()'},
+  //{sat: 'QUOTE:\n\n""\n()'},
+  //{sun: 'QUOTE:\n\n""\n()'},
+  //{bonus: 'QUOTE:\n\n""\n()'}]},
+  {
+    Thankful_: [
+      {
+        mon: 'QUOTE:\n\n"One day is not long enough to thank God for all He\'s given you. His blessings come daily."\n(Adrian Rogers)',
+      },
+      {
+        tue: 'QUOTE:\n\n"Gratitude to God makes even a temporal blessing a taste of heaven."\n(Unknown)',
+      },
+      {
+        wed: 'QUOTE:\n\n"God gave you a gift of 86,400 seconds today. Have you used one to say Thank You?"\n(William A. Ward)',
+      },
+      {
+        thu: 'QUOTE:\n\n"If the only prayer you ever say in your entire life is Thank You, that will be enough."\n(Meister Eckhart)',
+      },
+      {
+        fri: 'QUOTE:\n\n"Being a Christian is more than instantaneous conversion - it is a daily process whereby you grow to be more and more like Christ."\n(Billy Graham)',
+      },
+      {
+        sat: 'QUOTE:\n\n"All around us is fuel for the fire of thanks if we will but notice."\n(Jon Bloom)',
+      },
+      {
+        sun: 'QUOTE:\n\n"God is in control and therefore in everything I can give thanks."\n(Kay Arthur)',
+      },
+      {
+        bonus:
+          'QUOTE:\n\n"Even when life may be difficult, we should thank God for all He does for us which we do not deserve."\n(Billy Graham)',
+      },
+    ],
+  },
+
+  {
+    Joy: [
+      {
+        mon: 'QUOTE:\n\n"The truest, purest joy flows from a discovery of Jesus Christ. He is the hidden treasure that gives such joy to the finder."\n(Robert Murry McCheyne)',
+      },
+      {
+        tue: 'QUOTE:\n\n"Ask for all joy; open thy mouth wide, and He (God) will fill it."\n(Matthew Henry)',
+      },
+      {
+        wed: 'QUOTE:\n\n"Joy is not necessarily the absence of suffering, it is the presence of God."\n(Pierre de Chardin)',
+      },
+      {
+        thu: 'QUOTE:\n\n"But if you possess faith, your heart cannot do otherwise than laugh for joy in the Lord."\n(Martin Luther)',
+      },
+      {
+        fri: 'QUOTE:\n\n"Surely we serve a good Master (the Lord), who makes peace and joy essential to our religion."\n(Matthew Henry)',
+      },
+      {
+        sat: 'QUOTE:\n\n"Praise is the mode of love which always has some element of joy in it"\n(C.S. Lewis)',
+      },
+      {
+        sun: 'QUOTE:\n\n"Deep contented joy comes from a place of complete security and confidence (in God)."\n(Charles Swindoll)',
+      },
+      {
+        bonus:
+          'QUOTE:\n\n"He is our joy and our happiness, even as He is our peace."\n(Martyn Lloyd-Jones)',
       },
     ],
   },
