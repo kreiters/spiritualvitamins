@@ -1138,29 +1138,58 @@ let scriptureMatrix = [
   {
     Churches: [
       {
-        mon: 'Ephesus - The Loveless Church Christ holds the seven stars in His right hand. He commends their deeds and hard work. He does not tolerate their losing their first love. He promises that whoever overcomes will eat from the tree of life.\n"Revelation 2:7"',
+        mon: 'Ephesus - The Loveless Church\n"Christ holds the seven stars in His right hand. He commends their deeds and hard work. He does not tolerate their losing their first love. He promises that whoever overcomes will eat from the tree of life."\nRevelation 2:7',
       },
       {
-        tue: 'Smyrna - The Persecuted Church I know your works, tribulation, and poverty, but you are rich; Do not fear any of those things which you are about to suffer. He who overcomes shall not be hurt by the second death.\n"Revelation 2:11"',
+        tue: 'Smyrna - The Persecuted Church\n"I know your works, tribulation, and poverty, but you are rich; Do not fear any of those things which you are about to suffer. He who overcomes shall not be hurt by the second death."\nRevelation 2:11',
       },
       {
-        wed: 'Pergamos - The Compromising Church I know your works, and where you dwell, where Satan\'s throne is. Repent, or else I will come to you quickly and will fight against them with the sword of My mouth. To him who overcomes I will give some of the hidden manna to eat.\n"Revelation 2:17"',
+        wed: 'Pergamos - The Compromising Church\n"I know your works, and where you dwell, where Satan\'s throne is. Repent, or else I will come to you quickly and will fight against them with the sword of My mouth. To him who overcomes I will give some of the hidden manna to eat."\nRevelation 2:17',
       },
       {
-        thu: 'Thyatira - The Corrupt Church I know your works, love, service, faith, and your patience; as for your works, the last are more than the first. And he who overcomes and keeps My works until the end, I will give power over the nations.\n"Revelation 2:26"',
+        thu: 'Thyatira - The Corrupt Church\n"I know your works, love, service, faith, and your patience; as for your works, the last are more than the first. And he who overcomes and keeps My works until the end, I will give power over the nations."\nRevelation 2:26',
       },
       {
-        fri: 'Sardis - The Dead Church I have not found your works perfect before God. Therefore how you have received and heard, hold fast and repent. He who overcomes shall be clothed in white garments and I will not blot out his name in the Book of Life.\n"Revelation 3:5"',
+        fri: 'Sardis - The Dead Church\n"I have not found your works perfect before God. Therefore how you have received and heard, hold fast and repent. He who overcomes shall be clothed in white garments and I will not blot out his name in the Book of Life."\nRevelation 3:5',
       },
       {
-        sat: 'Philadelphia - The Faithful Church I know your works, I have set before you an open door, and no one can shut it; Because you have kept My command to persevere I also will keep you from the hour of trial. He who overcomes, I will make him a pillar in the temple of My God and he shall go out no more.\n"Revelation 3:12"',
+        sat: 'Philadelphia - The Faithful Church\n"I know your works, I have set before you an open door, and no one can shut it; Because you have kept My command to persevere I also will keep you from the hour of trial. He who overcomes, I will make him a pillar in the temple of My God and he shall go out no more."\nRevelation 3:12',
       },
       {
-        sun: 'Laodicea - The Lukewarm Church I know your works, that you are neither cold or hot. I wish you were cold or hot. As many as I love, I rebuke and chasten. Therefore be zealous and repent. To him who overcomes I will grant to sit with Me and with My Father on His throne.\n"Revelation 3:21"',
+        sun: 'Laodicea - The Lukewarm Church\n"I know your works, that you are neither cold or hot. I wish you were cold or hot. As many as I love, I rebuke and chasten. Therefore be zealous and repent. To him who overcomes I will grant to sit with Me and with My Father on His throne."\nRevelation 3:21',
       },
       {
         bonus:
-          ' I am the Alpha and the Omega, the beginning and the end. He who overcomes shall inherit all things.\n"Revelation 21:7"',
+          '"I am the Alpha and the Omega, the beginning and the end. He who overcomes shall inherit all things."\nRevelation 21:7',
+      },
+    ],
+  },
+  {
+    I_AM: [
+      {
+        mon: '"I Am the Bread of Life." (John 6:35)\n\n"He who feeds on Me will live because of Me."\nJohn 6:40',
+      },
+      {
+        tue: '"I Am the Light of the World." (John 8:12)\n\n"He who follows Me shall not walk in darkness, but have the light of life."\nJohn 8:12',
+      },
+      {
+        wed: '"I am the Door." (John 10:7)\n\n"I say to you, I Am the door of the sheep. I Am the door. If anyone enters by Me, he will be saved."\nJohn 10:9',
+      },
+      {
+        thu: '"I Am the Good Shepherd." (John 10:11)\n\n"I Am the Good Shepherd, and I know My sheep, and I am known by My own."\nJohn 10:14',
+      },
+      {
+        fri: '"I Am the Resurrection and the Life." (John 11:25)\n\nJesus\' friends Mary and Martha are distraught. Jesus has arrived too late their brother Lazarus is dead.\nJohn 11:26',
+      },
+      {
+        sat: '"I Am the Way, the Truth, and the Life. No one comes to the Father except by Me." (John 14:6)\n\nJesus is leaving the disciples. Jesus helped them to see the Father and understand that They were One.',
+      },
+      {
+        sun: 'The Christians are the branches.\n\n"I Am the True Vine and My Father is the Gardener. Every branch in Me that does not bear fruit God prunes. He prunes the branches so they will produce much fruit."\nJohn 15:1-5',
+      },
+      {
+        bonus:
+          '"Before Abraham was I Am." (John 8:48)\n\n(This is an amazing statement! It is the statement which confounded the unbelieving Pharisees!)',
       },
     ],
   },
@@ -2439,7 +2468,7 @@ let quoteMatrix = [
         tue: 'Quote: \n\n"As long as the church remains an effective platform for God\'s light to reveal to the world the sacrifice Jesus made, the church will be naturally irresistible."\n(Reggie Joiner)',
       },
       {
-        wed: 'Quote: \n\n"Jesus compares the church to the lamp- stands in Revelation - a strong reminder of the church\'s responsibility."\n(Reggie Joiner)',
+        wed: 'Quote: \n\n"Jesus compares the church to the lampstands in Revelation - a strong reminder of the church\'s responsibility."\n(Reggie Joiner)',
       },
       {
         thu: 'Quote: \n\n"Conscience is a divinely implanted ability in Man, telling him that he ought to do right."\n(Dwight L. Moody)',
@@ -2456,6 +2485,35 @@ let quoteMatrix = [
       {
         bonus:
           'Quote: \n\n"By relying on God\'s power and being obedient to His word, you can be an overcomer in any situation."\n(John C. Broger)',
+      },
+    ],
+  },
+  {
+    I_AM: [
+      {
+        mon: 'Quote: \n\n"Jesus is offering us everlasting life. Bread is the staple of physical life. Jesus is the staple of our spiritual life."\n(Jean Boomstrad)',
+      },
+      {
+        tue: 'Quote: \n\n"Jesus, as the light of the world, offers us a choice between the darkness of sin and the glistening light of a life in His presence."\n(Jean Boomstrad)',
+      },
+      {
+        wed: 'Quote: \n\n"The only legitimate access to the sheep was through the door. Jesus is the door and He alone offers the true path of Salvation."\n(Jean Boomstrad)',
+      },
+      {
+        thu: 'Quote: \n\n"Jesus is the Door and so much more. He is the Shepherd - the One whose voice the sheep know and trust. Jesus as the Good Shepherd, died to save each of us."\n(Jean Boomstrad)',
+      },
+      {
+        fri: "Quote: \n\n\"The grieving Martha hears Jesus say, 'Your brother will rise again.' Martha responds in faith “Jesus the Resurrection and the Life will raise all who believe in the last days just as He raised Lazarus.\"\n(Jean Boomstrad)",
+      },
+      {
+        sat: 'Quote: \n\n"Jesus as the Way, the Truth and the Life is our only source for Salvation. Thomas and the rest of the disciples could not comprehend His leaving them. Jesus helped them to see the Father and to understand God and Jesus are One."\n(Jean Boomstrad)',
+      },
+      {
+        sun: 'Quote: \n\n"As Jesus spoke the vines hung heavy with ripened fruit throughout the region. Jesus as the vive is our source of life - life today and everlasting life."\n(Jean Boomstrad)',
+      },
+      {
+        bonus:
+          'Quote: \n\n"When Jesus announced the title of I am to Himself, He claimed to be God. Not a helper to God, or a great teacher, but the Divine, eternal, pre-existent perfect being!"\n(Jean Boomstrad)',
       },
     ],
   },
