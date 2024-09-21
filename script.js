@@ -44,6 +44,9 @@ let imgMatrix = [
   { Mystery: { img: "assets/scanned vitamins/mystery.jpg" } },
   { Resurrection_: { img: "assets/scanned vitamins/resurrection_.jpg" } },
   { Hope: { img: "assets/scanned vitamins/hope.jpg" } },
+  { Victory: { img: "assets/scanned vitamins/victory.jpg" } },
+  { Churches: { img: "assets/scanned vitamins/churches.jpg" } },
+  { I_AM: { img: "assets/scanned vitamins/i_am.jpg" } },
 ];
 
 let menuBtn = document.getElementById("menuBtn");

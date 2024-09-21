@@ -904,15 +904,33 @@ let scriptureMatrix = [
       },
     ],
   },
-  // {Purity: [
-  //         {mon: '\n""'},
-  //         {tue: '\n""'},
-  //         {wed: '\n""'},
-  //         {thu: '\n""'},
-  //         {fri: '\n""'},
-  //         {sat: '\n""'},
-  //         {sun: '\n""'},
-  //         {bonus: '\n""'}]},
+  {
+    Purity: [
+      {
+        mon: 'James 1:27\n"Pure and genuine religion in the sight of God the Father means caring for widows and orphans ...and refusing to let the world corrupt you."',
+      },
+      {
+        tue: 'Hebrews 12:14\n"Be at peace with everyone, and work out living a holy life; those who are not holy will not see the Lord."',
+      },
+      {
+        wed: 'Philippians 2:14\n"Do everything without grumbling or arguing, so that you may become blameless and pure children of God."',
+      },
+      {
+        thu: '1 Timothy 6:10-11\n"For the love of money is the root of all evil. But you pursue righteousness, godliness, faith, love, patience, and gentleness."',
+      },
+      {
+        fri: 'Titus 1:15\n"To the pure, all things are pure but to those who are defiled and unbelieving, nothing is pure."',
+      },
+      { sat: 'Psalm 101:3\n"I will set nothing wicked before my eyes."' },
+      {
+        sun: 'Isaiah 61:10\n"I will greatly rejoice in the Lord; my soul will exalt my God. He has clothed me in a garment of salvation and wrapped me in a robe of righteousness."',
+      },
+      {
+        bonus:
+          'Psalm 51:2\n"Wash me thoroughly from my iniquity, and cleanse me from my sin."',
+      },
+    ],
+  },
   {
     Thankful_: [
       {
@@ -1085,6 +1103,180 @@ let scriptureMatrix = [
       {
         bonus:
           'Revelation 20:6\n"Blessed and Holy is the one who has a part in the first resurrection. Over these the second death has no power, but they shall be priests of God and of Christ, and shall reign with Him a thousand years."',
+      },
+    ],
+  },
+  {
+    Victory: [
+      {
+        mon: 'Psalm 98:1\n"O, sing to the Lord a new song! For He has done marvelous things. His right hand and His holy arm have gained Him the victory."',
+      },
+      {
+        tue: 'Matthew 12:20\n"A bruised reed He will not break and smoking flax He will not quench, till He sends forth justice to victory."',
+      },
+      {
+        wed: '1 John 5:4\n"For whatever is born of God overcomes the world. And this is the victory that has overcome the world - our faith."',
+      },
+      {
+        thu: '1 Corinthians 15:55\n"O death; where is your sting? O hades; where is your victory?"',
+      },
+      {
+        fri: '1 Corinthians 15:56-57\n"The sting of death is sin: and the strength of sin is the law, but thanks be to God, Who gives us the victory through our Lord Jesus Christ."',
+      },
+      {
+        sat: '2 Samuel 23:10\n"He (David) arose and attacked the Philistines until his hand was weary, the Lord brought about a great victory that day."',
+      },
+      {
+        sun: '1 Corinthians 15:54\n"But when this perishable will have put on the imperishable, and this mortal will have put on immortality, then will come about the saying that is written, "Death is swallowed up in victory.""',
+      },
+      {
+        bonus:
+          '1 Chronicles 29:11\n"Yours O Lord is the greatness and the power and the glory and the victory and the majesty indeed everything that is in the heavens and the earth."',
+      },
+    ],
+  },
+  {
+    Churches: [
+      {
+        mon: 'Ephesus - The Loveless Church\n"Christ holds the seven stars in His right hand. He commends their deeds and hard work. He does not tolerate their losing their first love. He promises that whoever overcomes will eat from the tree of life."\nRevelation 2:7',
+      },
+      {
+        tue: 'Smyrna - The Persecuted Church\n"I know your works, tribulation, and poverty, but you are rich; Do not fear any of those things which you are about to suffer. He who overcomes shall not be hurt by the second death."\nRevelation 2:11',
+      },
+      {
+        wed: 'Pergamos - The Compromising Church\n"I know your works, and where you dwell, where Satan\'s throne is. Repent, or else I will come to you quickly and will fight against them with the sword of My mouth. To him who overcomes I will give some of the hidden manna to eat."\nRevelation 2:17',
+      },
+      {
+        thu: 'Thyatira - The Corrupt Church\n"I know your works, love, service, faith, and your patience; as for your works, the last are more than the first. And he who overcomes and keeps My works until the end, I will give power over the nations."\nRevelation 2:26',
+      },
+      {
+        fri: 'Sardis - The Dead Church\n"I have not found your works perfect before God. Therefore how you have received and heard, hold fast and repent. He who overcomes shall be clothed in white garments and I will not blot out his name in the Book of Life."\nRevelation 3:5',
+      },
+      {
+        sat: 'Philadelphia - The Faithful Church\n"I know your works, I have set before you an open door, and no one can shut it; Because you have kept My command to persevere I also will keep you from the hour of trial. He who overcomes, I will make him a pillar in the temple of My God and he shall go out no more."\nRevelation 3:12',
+      },
+      {
+        sun: 'Laodicea - The Lukewarm Church\n"I know your works, that you are neither cold or hot. I wish you were cold or hot. As many as I love, I rebuke and chasten. Therefore be zealous and repent. To him who overcomes I will grant to sit with Me and with My Father on His throne."\nRevelation 3:21',
+      },
+      {
+        bonus:
+          '"I am the Alpha and the Omega, the beginning and the end. He who overcomes shall inherit all things."\nRevelation 21:7',
+      },
+    ],
+  },
+  {
+    I_AM: [
+      {
+        mon: '"I Am the Bread of Life." (John 6:35)\n\n"He who feeds on Me will live because of Me."\nJohn 6:40',
+      },
+      {
+        tue: '"I Am the Light of the World." (John 8:12)\n\n"He who follows Me shall not walk in darkness, but have the light of life."\nJohn 8:12',
+      },
+      {
+        wed: '"I am the Door." (John 10:7)\n\n"I say to you, I Am the door of the sheep. I Am the door. If anyone enters by Me, he will be saved."\nJohn 10:9',
+      },
+      {
+        thu: '"I Am the Good Shepherd." (John 10:11)\n\n"I Am the Good Shepherd, and I know My sheep, and I am known by My own."\nJohn 10:14',
+      },
+      {
+        fri: '"I Am the Resurrection and the Life." (John 11:25)\n\nJesus\' friends Mary and Martha are distraught. Jesus has arrived too late their brother Lazarus is dead.\nJohn 11:26',
+      },
+      {
+        sat: '"I Am the Way, the Truth, and the Life. No one comes to the Father except by Me." (John 14:6)\n\nJesus is leaving the disciples. Jesus helped them to see the Father and understand that They were One.',
+      },
+      {
+        sun: 'The Christians are the branches.\n\n"I Am the True Vine and My Father is the Gardener. Every branch in Me that does not bear fruit God prunes. He prunes the branches so they will produce much fruit."\nJohn 15:1-5',
+      },
+      {
+        bonus:
+          '"Before Abraham was I Am." (John 8:48)\n\n(This is an amazing statement! It is the statement which confounded the unbelieving Pharisees!)',
+      },
+    ],
+  },
+  {
+    Hope: [
+      {
+        mon: 'Romans 15:13\n"May the God of hope fill you with all joy and peace as you trust in Him, so that you may overflow with hope by the power of the Holy Spirit."',
+      },
+      {
+        tue: 'Romans 5:5\n"Now hope does not disappoint because the love of God has been poured out in our hearts by the Holy Spirit Who was given to us."',
+      },
+      {
+        wed: 'Lamentations 3:26\n"It is good that one should hope and wait quietly for the salvation of the Lord."',
+      },
+      {
+        thu: 'Psalm 119:147\n"I rise before the dawning of the morning, and cry for help, I hope in your word."',
+      },
+      {
+        fri: 'Titus 1:2\n"In hope of eternal life which God, Who cannot lie, promised before time began."',
+      },
+      {
+        sat: 'Psalm 39:7\n"And now, Lord, what do I wait for? My hope is in you."',
+      },
+      {
+        sun: 'Psalm 16:9\n"Therefore my heart is glad, and my glory rejoices: my flesh will rest in hope."',
+      },
+      {
+        bonus:
+          '1 John 3:2a,3\n"Beloved, now we are children of God; ... and everyone who has this hope in Him purifies himself, just as He (Jesus) is pure."',
+      },
+    ],
+  },
+  {
+    Faith: [
+      {
+        mon: '1 Peter 1:5\n"(Christians) are protected by the power of God through faith for a salvation ready to be revealed in the last time."',
+      },
+      {
+        tue: '1 Corinthians 15:33\n"Do not be deceived. Bad company corrupts good morals."',
+      },
+      {
+        wed: 'Isaiah 40:13\n"Who has directed the Spirit of the Lord,… Who taught Him knowledge, and showed Him the way of understanding?"',
+      },
+      {
+        thu: '2 Timothy 3:2-4\n"For man will be lovers of themselves, lovers of money, boasters, proud ... unthankful, unholy, unloving, unforgiving, slanderers without self control."',
+      },
+      {
+        fri: 'Revelation 3:10\n"Because you have kept My command to persevere, I will also keep you from the hour of trial which shall come upon the whole world."',
+      },
+      {
+        sat: '1 Timothy 2:4\n"And without controversy great is the mystery of godliness. God was manifest in the flesh, justified in the Spirit, seen by angels, preached among the gentiles, believed on in the world, received up into glory."',
+      },
+      {
+        sun: 'Romans 12:10\n"Cling to what is good. Be kindly affectionate to one another with brotherly love."',
+      },
+      {
+        bonus:
+          '1 Corinthians 13:13\n"But now abide faith, hope, love, these three; but the greatest of these is love."',
+      },
+    ],
+  },
+  {
+    Hate: [
+      {
+        mon: 'Proverbs 8:13\n"The fear of the Lord is to hate evil. Pride and arrogance and the evil way and the perverse mouth I hate."',
+      },
+      {
+        tue: 'Proverbs 12:22\n"Lying lips are an abomination to the Lord. But those who deal truthfully are His delight."',
+      },
+      {
+        wed: 'Psalm 5:6b\n"You shall destroy those who speak falsehood; the Lord abhors the bloodthirsty and deceitful person."',
+      },
+      {
+        thu: 'Proverbs 11:5\n"The righteousness of the blameless will direct his way straight. But the wicked will fall by his own wickedness."',
+      },
+      {
+        fri: 'Proverbs 1:15-16\n"Keep your foot from their path; for their feet run to evil, and they make haste to shed blood."',
+      },
+      {
+        sat: '2 Peter 1:3\n"His (Jesus\') divine power has given to us all things that pertain to life and godliness, through knowledge of Him who called us by glory and virtue."',
+      },
+      {
+        sun: '2 Thessalonians 5:21-22\n"Test all things; hold fast what is good; abstain from every form of evil."',
+      },
+      {
+        bonus:
+          'Ecclesiastes 3:8\n"A time to love, and a time to hate; a time of war; and a time of peace."',
       },
     ],
   },
@@ -2035,15 +2227,36 @@ let quoteMatrix = [
       },
     ],
   },
-  //{Purity: [
-  //{mon: 'QUOTE:\n\n""\n()'},
-  //{tue: 'QUOTE:\n\n""\n()'},
-  //{wed: 'QUOTE:\n\n""\n()'},
-  //{thu: 'QUOTE:\n\n""\n()'},
-  //{fri: 'QUOTE:\n\n""\n()'},
-  //{sat: 'QUOTE:\n\n""\n()'},
-  //{sun: 'QUOTE:\n\n""\n()'},
-  //{bonus: 'QUOTE:\n\n""\n()'}]},
+  {
+    Purity: [
+      {
+        mon: 'QUOTE:\n\n"When saints cease to seek holiness, purity, righteousness, truth ...then it is that Satan comes."\n(Smith Wigglesworth)',
+      },
+      {
+        tue: 'QUOTE:\n\n"The proof of spiritual maturity is not how pure you are, but an awareness of your impurity."\n(Philip Brooks)',
+      },
+      {
+        wed: 'QUOTE:\n\n"Pure morality points you to the purest one of all - Jesus, Son of God."\n(Ravi Zacharias)',
+      },
+      {
+        thu: 'QUOTE:\n\n"God has guarded His Word so that only the pure in heart can see its secrets."\n(Winkie Pratney)',
+      },
+      {
+        fri: 'QUOTE:\n\n"He that loves the Word and the purity of its precepts cannot turn traitor."\n(William Gurnell)',
+      },
+      {
+        sat: 'QUOTE:\n\n"O Lord keep our heart, keep our eyes, keep our feet, keep our tongues."\n(William Tiptaft)',
+      },
+      {
+        sun: 'QUOTE:\n\n"Become pure in heart. The pure heart shall see God."\n(Henry Drummond)',
+      },
+      {
+        bonus:
+          'QUOTE:\n\n"This desire for a heart of purity is a creation of the Holy Spirit at work in the heart."\n(Duncan Campbell)',
+      },
+    ],
+  },
+
   {
     Thankful_: [
       {
@@ -2216,6 +2429,176 @@ let quoteMatrix = [
       {
         bonus:
           'QUOTE:\n\n"Every parting gives a foretaste of death; every coming together again a foretaste of resurrection."\n(Arthur Schopenhauer)',
+      },
+    ],
+  },
+  {
+    Victory: [
+      {
+        mon: 'Quote: \n\n"God is faithful to give His chosen ones victory as they seek His face."\n(Unknown)',
+      },
+      {
+        tue: 'Quote: \n\n"Remember, you are not fighting for victory but from victory, for Jesus Christ has already defeated Satan."\n(Warren Wiersbe)',
+      },
+      { wed: 'Quote: \n\n"The smile of God is victory."\n(Unknown)' },
+      {
+        thu: 'Quote: \n\n"If I put things between me and Christ, it is idolatry. If I put Christ between me and things, it is victory."\n(Adrian Rogers)',
+      },
+      {
+        fri: 'Quote: \n\n"The first step on the way to victory is to recognize the enemy."\n(Corrie Ten Boom)',
+      },
+      {
+        sat: 'Quote: \n\n"God will never lead you into a battle he hasn\'t already given you victory over."\n(Brendan Bagnell)',
+      },
+      {
+        sun: "Quote: \n\n\"When we pray for the Spirit's help ... we will simply fall down at the Lord's feet in our weakness. There we will find the victory and power that comes from His love.\"\n(Andrew Murry)",
+      },
+      {
+        bonus:
+          'Quote: \n\n"With God we will gain the victory and God will trample down our enemies."\n(Unknown)',
+      },
+    ],
+  },
+  {
+    Churches: [
+      {
+        mon: 'Quote: \n\n"The lampstand was positioned strategically to do one thing. Cast light on the table and on the bread that represented God\'s goodness and provision."\n(Reggie Joiner)',
+      },
+      {
+        tue: 'Quote: \n\n"As long as the church remains an effective platform for God\'s light to reveal to the world the sacrifice Jesus made, the church will be naturally irresistible."\n(Reggie Joiner)',
+      },
+      {
+        wed: 'Quote: \n\n"Jesus compares the church to the lampstands in Revelation - a strong reminder of the church\'s responsibility."\n(Reggie Joiner)',
+      },
+      {
+        thu: 'Quote: \n\n"Conscience is a divinely implanted ability in Man, telling him that he ought to do right."\n(Dwight L. Moody)',
+      },
+      {
+        fri: 'Quote: \n\n"The first step on the way to victory is to recognize the enemy."\n(Corrie Ten Boom)',
+      },
+      {
+        sat: 'Quote: \n\n"A person who wholly follows the Lord is the one who believes that the promises of God are trustworthy, that He is with His people, and that they are well able to overcome."\n(Watchman Nee)',
+      },
+      {
+        sun: 'Quote: \n\n"Unconfessed sin in the soul is like a bullet in the body."\n(Dwight L. Moody)',
+      },
+      {
+        bonus:
+          'Quote: \n\n"By relying on God\'s power and being obedient to His word, you can be an overcomer in any situation."\n(John C. Broger)',
+      },
+    ],
+  },
+  {
+    I_AM: [
+      {
+        mon: 'Quote: \n\n"Jesus is offering us everlasting life. Bread is the staple of physical life. Jesus is the staple of our spiritual life."\n(Jean Boomstrad)',
+      },
+      {
+        tue: 'Quote: \n\n"Jesus, as the light of the world, offers us a choice between the darkness of sin and the glistening light of a life in His presence."\n(Jean Boomstrad)',
+      },
+      {
+        wed: 'Quote: \n\n"The only legitimate access to the sheep was through the door. Jesus is the door and He alone offers the true path of Salvation."\n(Jean Boomstrad)',
+      },
+      {
+        thu: 'Quote: \n\n"Jesus is the Door and so much more. He is the Shepherd - the One whose voice the sheep know and trust. Jesus as the Good Shepherd, died to save each of us."\n(Jean Boomstrad)',
+      },
+      {
+        fri: "Quote: \n\n\"The grieving Martha hears Jesus say, 'Your brother will rise again.' Martha responds in faith “Jesus the Resurrection and the Life will raise all who believe in the last days just as He raised Lazarus.\"\n(Jean Boomstrad)",
+      },
+      {
+        sat: 'Quote: \n\n"Jesus as the Way, the Truth and the Life is our only source for Salvation. Thomas and the rest of the disciples could not comprehend His leaving them. Jesus helped them to see the Father and to understand God and Jesus are One."\n(Jean Boomstrad)',
+      },
+      {
+        sun: 'Quote: \n\n"As Jesus spoke the vines hung heavy with ripened fruit throughout the region. Jesus as the vive is our source of life - life today and everlasting life."\n(Jean Boomstrad)',
+      },
+      {
+        bonus:
+          'Quote: \n\n"When Jesus announced the title of I am to Himself, He claimed to be God. Not a helper to God, or a great teacher, but the Divine, eternal, pre-existent perfect being!"\n(Jean Boomstrad)',
+      },
+    ],
+  },
+  {
+    Hope: [
+      {
+        mon: 'Quote: \n\n"Faith points us beyond our problems to the hope we have in Christ."\n(Billy Graham)',
+      },
+      {
+        tue: 'Quote: \n\n"Sometimes, a message of God\'s hope is the only gift you can offer another person. Sometimes, this is the only gift we really need."\n(Corrie Ten Boom)',
+      },
+      {
+        wed: 'Quote: \n\n"Optimism is a wish without warrant; Christian hope is a certainty, guaranteed by God Himself."\n(I.J. Packer)',
+      },
+      {
+        thu: 'Quote: \n\n"Christ wants to give you hope for the future. He wants you to learn what it means to walk with Him very day."\n(Billy Graham)',
+      },
+      {
+        fri: 'Quote: \n\n"My hope does not rest in the affairs of this world. It rests in Christ Who is coming again."\n(Billy Graham)',
+      },
+      {
+        sat: 'Quote: \n\n"Hope means expectancy when things are otherwise hopeless."\n(G.K. Chesterton)',
+      },
+      {
+        sun: "Quote: \n\n\"Earth's troubles fade in the light of heaven's hope.\"\n(Billy Graham)",
+      },
+      {
+        bonus:
+          'Quote: \n\n"Our Christian hope is that we are going to live with Christ in a new earth, where there is no more death, but where life is what it was always meant to be."\n(Timothy Keller)',
+      },
+    ],
+  },
+  {
+    Faith: [
+      {
+        mon: 'Quote: \n\n"Faith literally means to give up, surrender, or commit. Faith is complete confidence."\n(Billy Graham)',
+      },
+      {
+        tue: 'Quote: \n\n"Virtue - even attempted virtue - brings light, indulgence brings fog."\n(C.S. Lewis)',
+      },
+      {
+        wed: 'Quote: \n\n"Of all treasures of knowledge, the most vital knowledge is His existence, power, love, and promises."\n(Spencer W. Kimball)',
+      },
+      {
+        thu: 'Quote: \n\n"We must have a spirit of power toward the enemy, a spirit of love towards men, and a spirit of self-control."\n(Watchman Nee)',
+      },
+      {
+        fri: 'Quote: \n\n"Storms make the oak grow deeper roots."\n(George Herbert)',
+      },
+      {
+        sat: 'Quote: \n\n"The key to godliness is not more knowledge but more obedience."\n(Woodrow Kroll)',
+      },
+      {
+        sun: 'Quote: \n\n"Kind words can be short yet only to speak, but their echoes are truly endless."\n(Mother Teresa)',
+      },
+      {
+        bonus:
+          'Quote: \n\n"God proved His love on the cross. When Christ hung, and bled, it was God saying to the world, I love you."\n(Billy Graham)',
+      },
+    ],
+  },
+  {
+    Hate: [
+      {
+        mon: 'Quote: \n\n"You cannot remain neutral, take the narrow gate. Jesus taught that there are two roads. You choose."\n(Billy Graham)',
+      },
+      {
+        tue: 'Quote: \n\n"Prayer is the best response to hatred."\n(Charles Spurgeon)',
+      },
+      {
+        wed: 'Quote: \n\n"The book of Proverbs is a divine seminary of wisdom and revelation to learn the ways of God."\n(Brian Simmons)',
+      },
+      { thu: 'Quote: \n\n"Hate things not people!"\n(Unknown)' },
+      {
+        fri: 'Quote: \n\n"God does not hate literal feet, eyes, tongues, He does not hate sinners. God hates all that do evil."\n(Damon J. Gray)',
+      },
+      {
+        sat: 'Quote: \n\n"If those (good) characteristics are taught and modeled to our children as things to seek, ... when they are older they will revert to what they learned as a child."\n(Darlene Stern)',
+      },
+      {
+        sun: 'Quote: \n\n"You cannot pray for someone and hate them at the same time. Even if you are asking God to restrain their evil actions, you should also be praying that He will change their hearts."\n(Billy Graham)',
+      },
+      {
+        bonus:
+          'Quote: \n\n"Whenever we cannot love in the old human way ... God can give us the perfect way."\n(Corrie Ten Boom)',
       },
     ],
   },
