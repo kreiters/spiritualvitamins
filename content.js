@@ -1223,7 +1223,7 @@ let scriptureMatrix = [
     ],
   },
   {
-    Faith: [
+    Faith_: [
       {
         mon: '1 Peter 1:5\n"(Christians) are protected by the power of God through faith for a salvation ready to be revealed in the last time."',
       },
@@ -2547,7 +2547,7 @@ let quoteMatrix = [
     ],
   },
   {
-    Faith: [
+    Faith_: [
       {
         mon: 'Quote: \n\n"Faith literally means to give up, surrender, or commit. Faith is complete confidence."\n(Billy Graham)',
       },

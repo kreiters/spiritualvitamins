@@ -48,6 +48,7 @@ let imgMatrix = [
   { Churches: { img: "assets/scanned vitamins/churches.jpg" } },
   { I_AM: { img: "assets/scanned vitamins/i_am.jpg" } },
   { Hope_: { img: "assets/scanned vitamins/hope_.jpg" } },
+  { Faith_: { img: "assets/scanned vitamins/faith_.jpg" } },
 ];
 
 let menuBtn = document.getElementById("menuBtn");
