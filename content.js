@@ -1194,7 +1194,7 @@ let scriptureMatrix = [
     ],
   },
   {
-    Hope: [
+    Hope_: [
       {
         mon: 'Romans 15:13\n"May the God of hope fill you with all joy and peace as you trust in Him, so that you may overflow with hope by the power of the Holy Spirit."',
       },
@@ -1214,7 +1214,7 @@ let scriptureMatrix = [
         sat: 'Psalm 39:7\n"And now, Lord, what do I wait for? My hope is in you."',
       },
       {
-        sun: 'Psalm 16:9\n"Therefore my heart is glad, and my glory rejoices: my flesh will rest in hope."',
+        sun: 'Psalm 16:9\n"Therefore my heart is glad, and my glory rejoices; my flesh will rest in hope."',
       },
       {
         bonus:
@@ -2518,7 +2518,7 @@ let quoteMatrix = [
     ],
   },
   {
-    Hope: [
+    Hope_: [
       {
         mon: 'Quote: \n\n"Faith points us beyond our problems to the hope we have in Christ."\n(Billy Graham)',
       },
