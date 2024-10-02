@@ -1281,6 +1281,35 @@ let scriptureMatrix = [
     ],
   },
   {
+    Compassion: [
+      {
+        mon: 'Psalm 69:16\n"Hear me, O Lord, for your lovingkindness is good; turn to me according to the greatness of Your compassion."',
+      },
+      {
+        tue: 'Colossians 3:12\n"And so as those who have been chosen of God, holy and beloved, put on a heart of compassion."',
+      },
+      {
+        wed: 'Psalm 78:38\n"But He, being full of compassion, forgave their iniquity, and did not destroy them."',
+      },
+      {
+        thu: 'Mark 8:2\n"I (Jesus) have compassion on the multitude because they have now continued with me three days and have nothing to eat."',
+      },
+      {
+        fri: 'Jude 21,22\n"Keep yourself in the love of God, looking for the mercy of our Lord Jesus Christ into eternal life. And on some have compassion according to the multitude of His mercies."',
+      },
+      {
+        sat: 'Psalm 111:4\n"He (God) has made His wonderful works to be remembered; the Lord is gracious and full of compassion."',
+      },
+      {
+        sun: 'Lamentations 3:22\n"The Lord\'s loving kindnesses indeed never cease, for His compassions never fail. The are new every morning; great is Thy faithfulness."',
+      },
+      {
+        bonus:
+          '1 Peter 3:8\n"Finally, all of you be of one mind having compassion for one another; love as brothers, be tenderhearted, be courteous ... that you may inherit a blessing."',
+      },
+    ],
+  },
+  {
     Rewards: [
       {
         sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"',
@@ -2599,6 +2628,35 @@ let quoteMatrix = [
       {
         bonus:
           'Quote: \n\n"Whenever we cannot love in the old human way ... God can give us the perfect way."\n(Corrie Ten Boom)',
+      },
+    ],
+  },
+  {
+    Compassion: [
+      {
+        mon: 'Quote: \n\n"Let your words be the genuine picture of your heart."\n(John Wesley)',
+      },
+      {
+        tue: 'Quote: \n\n"His (God\'s) is a loving, tender hand, full of sympathy and compassion."\n(D.L. Moody)',
+      },
+      {
+        wed: 'Quote: \n\n"Compassions will cure more sins than condemnation."\n(Henry Ward Beecher)',
+      },
+      {
+        thu: 'Quote: \n\n"By compassion we make others\' misery our own, and so, by relieving them we relieve ourselves also."\n(Thomas Browne, Sr.)',
+      },
+      {
+        fri: 'Quote: \n\n"Few things are so deadly as a misguided sense of compassion."\n(Chuck Colson)',
+      },
+      {
+        sat: 'Quote: \n\n"Compassion requires only one thing ... to step outside ourselves long enough to embrace another."\n(Unknown)',
+      },
+      {
+        sun: 'Quote: \n\n"More smiling, less worry. More compassion, less judgment. More blessed, less stressed. More love, less hate."\n(Roy T. Bennett)',
+      },
+      {
+        bonus:
+          'Quote: \n\n"Compassion is the basis of morality."\n(Arthur Schopenhauer)',
       },
     ],
   },
