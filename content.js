@@ -1310,6 +1310,35 @@ let scriptureMatrix = [
     ],
   },
   {
+    Grace_: [
+      {
+        mon: 'Luke 2:20\n"And the Child (Jesus) continued to grow and become strong, increasing in wisdom; and the grace of God was upon Him."',
+      },
+      {
+        tue: 'James 4:6\n"But He (God) gives a greater grace.  Therefore it says, "God is opposed to the proud, but gives grace to the humble.""',
+      },
+      {
+        wed: '2 Corinthians 9:8\n"And God is able to make all grace abound to you, that always having all sufficiency in everything, you may have in abundance for every good deed."',
+      },
+      {
+        thu: 'John 1:16-17\n"For of His (God\'s) fulness we have all received; grace upon grace."',
+      },
+      {
+        fri: '2 Peter 3:18\n"But grow in grace and knowledge of our Lord and Savior Jesus Christ. To Him be the glory, both now and to the day of eternity."',
+      },
+      {
+        sat: 'Hebrews 4:16\n"Let us therefore draw near with confidence to the throne of grace, that we may receive mercy and may find grace to help in time of need."',
+      },
+      {
+        sun: '2 Corinthians 12:9\n"And He (God) said to me, "My grace is sufficient for you.""',
+      },
+      {
+        bonus:
+          'Galatians 5:4\n"You have severed from Christ, you are seeking to be justified by law; you have fallen from grace."',
+      },
+    ],
+  },
+  {
     Rewards: [
       {
         sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"',
@@ -2657,6 +2686,35 @@ let quoteMatrix = [
       {
         bonus:
           'Quote: \n\n"Compassion is the basis of morality."\n(Arthur Schopenhauer)',
+      },
+    ],
+  },
+  {
+    Grace_: [
+      {
+        mon: 'Quote: \n\n"Thank the Lord for using each person as a tool in your life to deepen your insight into His grace and conforming you into the image of His Son."\n(Charles Stanley)',
+      },
+      {
+        tue: 'Quote: \n\n"Grace is freely given, not hoarded."\n(Marianne Williamson)',
+      },
+      {
+        wed: 'Quote: \n\n"Abounding sin is the terror of the world, but abounding grace is the hope of mankind."\n(A.W. Tozer)',
+      },
+      {
+        thu: 'Quote: \n\n"Grace can neither be bought, earned, or won by the creature (person). If it could it could not be grace."\n(A.W. Pink)',
+      },
+      {
+        fri: "Quote: \n\n\"Your worst days are never so bad that you are beyond the reach of God's grace, and your best days are never so good that you are beyond the need of God's grace.\"\n(Jerry Bridges)",
+      },
+      {
+        sat: 'Quote: \n\n"God\'s mercy and grace give me hope - for myself, and for the world."\n(Billy Graham)',
+      },
+      {
+        sun: 'Quote: \n\n"We are permitted to draw upon God\'s store of grace from day to day as we need it."\n(Dwight Moody)',
+      },
+      {
+        bonus:
+          "Quote: \n\n\"If I'm not showing grace ... have I forgotten the grace I've been shown?\"\n(John MacArthur)",
       },
     ],
   },
