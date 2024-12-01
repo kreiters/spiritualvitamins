@@ -1339,6 +1339,33 @@ let scriptureMatrix = [
     ],
   },
   {
+    Seedtime: [
+      { mon: 'Ecclesiastes 3:2\n"A time to plant and a time to harvest."' },
+      {
+        tue: 'Matthew 13:31-32\n"The kingdom of heaven is like a mustard seed, which a man took and sowed in his field; And this is smaller than all other seeds, but when it is full grown, it is larger than the garden plants, and becomes a tree."',
+      },
+      {
+        wed: 'Jeremiah 2:21-22\n"Yet I have planted you a choice vine, a completely faithful seed. How then have you turned yourself before me into the degenerate shoot of a foreign vine?"',
+      },
+      {
+        thu: 'Luke 8:11\n"Now the parable is this: The seed is the word of God and those beside the road are those who have heard; then the devil comes and takes away the word."',
+      },
+      {
+        fri: 'John 4:29\n"But when the crop permits, he immediately puts in the sickle, because the harvest has come."',
+      },
+      {
+        sat: 'Hebrews 6:8\n"For the one who sows to his own flesh shall from the flesh reap corruption, but the one who shall sow from the Spirit will reap eternal life."',
+      },
+      {
+        sun: 'Matthew 9:36-37\n"And seeing the multitude, He felt compassion for them because they were distressed and downcast as sheep without a shepherd. Then He said to His disciples, "The harvest is plentiful but the workers are few. Therefore ask the Lord of harvest to send out workers into His harvest."',
+      },
+      {
+        bonus:
+          'John 4:35\n"Do not say, "There is yet four months, and then comes the harvest." Behold I say to you, "Lift up your eyes and look on the fields that they are white for the harvest.""',
+      },
+    ],
+  },
+  {
     Rewards: [
       {
         sun: 'Christ\'s Reward\n\nRevelation 22:12\n"Behold I am coming quickly and My reward is with me"',
@@ -2715,6 +2742,35 @@ let quoteMatrix = [
       {
         bonus:
           "Quote: \n\n\"If I'm not showing grace ... have I forgotten the grace I've been shown?\"\n(John MacArthur)",
+      },
+    ],
+  },
+  {
+    Seedtime: [
+      {
+        mon: 'Quote: \n\n"We plant the seeds but God gives the harvest."\n(Unknown)',
+      },
+      {
+        tue: 'Quote: \n\n"Spiritual growth is just like a little seed. If cultivated it wii grow as it reaches for the light."\n(Unknown)',
+      },
+      {
+        wed: 'Quote: \n\n"You will never grow to your fullest potential until you plant seeds of joy, love, fulfillment, hope, and success. God can only return to you what you plant."\n(Unknown)',
+      },
+      {
+        thu: 'Quote: \n\n"You can grow flowers or you can grow weeds."\n(Unknown)',
+      },
+      {
+        fri: 'Quote: \n\n"Don\'t rush the growing process.  Good things take time."\n(Unknown)',
+      },
+      {
+        sat: 'Quote: \n\n"Your mind is a garden. Your thoughts are seeds."\n(Unknown)',
+      },
+      {
+        sun: 'Quote: \n\n"The kingdom of God is a government with its own economy that is established via seedtime and harvest. The seed is the word of God which is sown into the soil (the heart) of the believer by speaking."\n(Bill Winston)',
+      },
+      {
+        bonus:
+          'Quote: \n\n"You take care of the sowing, God takes care of the growing."\n(Unknown)',
       },
     ],
   },
