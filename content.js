@@ -636,7 +636,7 @@ let scriptureMatrix = [
         fri: 'Romans 6:23\n"For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord."',
       },
       {
-        sat: 'Romans 10:9\n"that if you confess with your mouth that Jesus is old and believe in your heart that God raised Him from the dead, you shall be saved."',
+        sat: 'Romans 10:9\n"that if you confess with your mouth that Jesus is Lord and believe in your heart that God raised Him from the dead, you shall be saved."',
       },
       {
         sun: 'Ephesians 2:8\n"For by grace you have been saved through faith; and that not of yourselves, it is a gift of God; not as a result of works, so that no one may boast."',
